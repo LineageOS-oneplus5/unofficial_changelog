@@ -1,0 +1,152 @@
+project android/
+ec6b414      Bruno Martins        Switch to our fork of DownloadsProvider
+89f4dda      Eamon Powell         manifest: android-11.0.0_r1 -> android-11.0.0_r4
+1a06296      Michael Bestas       manifest: Switch to our Terminal fork
+8812d9f      Bruno Martins        Switch to our fork of Telecomm
+1cc147c      LuK1337              lineage: Reenable Profiles
+8d0d782      LuK1337              lineage: Reenable FlipFlap
+project bootable/recovery/
+65b18d38     Timi                 recovery: don't update recovery
+project build/make/
+963b171bf    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+c8c72d01c    Akhil Narang         releasetools: ota_from_target_files: fix build for A-Only dynamic devices not building vendor
+939887032    LuK1337              Unset BOARD_EXT4_SHARE_DUP_BLOCKS
+project device/oneplus/msm8998-common/
+fcce2089     Timi                 msm8998-common: drop QC blobs for sw effects
+6a80485c     Ramjee Singh         msm8998-common: configs: Use AOSP implementation for sw effects
+30379b5b     Timi                 msm8998-common: update mixer paths from OOS 10
+5a6912c5     Pranav Vashi         msm8998-common: sepolicy: Address rild prop denials
+982aeac1     Timi                 msm8998-common: sepolicy: address qtidataservices denials
+b6e37f55     Timi                 msm8998-common: sepolicy: address camera prop denials
+94c833ec     Bruno Martins        msm8998-common: sepolicy: Address thermal-engine denials
+80bbcd9e     Pranav Vashi         msm8998-common: sepolicy: Fix neverallows with property isolation enabled
+50b78741     Felix                msm8998-common: Use BOARD_VENDOR_SEPOLICY_DIRS
+f8e816a7     Yifan Hong           msm8998-common: Replace BOARD_CHARGER_ENABLE_SUSPEND with ro.charger.enable_suspend
+26b2d628     David Sehr           msm8998-common: Use dex2oat64
+27a8148d     Brad Ebinger         msm8998-common: overlay: Add translatable="false" tags to ims package overlays
+d1c6652c     Subhajeet Muhuri     msm8998-common: overlay: Update pinner list for new SystemUI location
+f62b308f     Martin Stjernholm    msm8998-common: overlay: Update paths to the new ART APEX.
+0c2a2358     Nicolas Geoffray     msm8998-common: overlay: Update in pinned files.
+4f4325e0     Bruno Martins        msm8998-common: overlay: Pin the same RenderScript libs
+98b92114     Timi                 msm8998-common: overlay: pin SystemUI & surfaceflinger
+d0ab625c     Brad Ebinger         msm8998-common: overlay: Remove old configuration and use new config for MMTEL/RCS
+a09c7d19     Timi                 msm8998-common: ueventd: set permissions for graphics nodes
+8ddb7249     Timi                 msm8998-common: update privapp-permissions-qti from LA.UM.8.4.r1-06000-8x98.0
+baeb76ad     Yingjie Wang         msm8998-common: Remove gnss hidl entries in manifest.xml
+c8109cfd     Monika Singh         msm8998-common: Add qseecom hal 1.0 to manifest
+c6faaa1f     Pavan Kumar M        msm8998-common: Add permissions for RCS service
+f91d28c1     Mohit Aggarwal       msm8998-common: sec_config: Add net_raw permissions for time_daemon service
+ae44131d     Timi                 msm8998-common: uprev NFC and build libchrome for NFC
+f1118d6c     xyyx                 msm8998-common: Enable TARGET_USES_OLD_MNC_FORMAT
+f14dc65f     LuK1337              msm8998-common: Move PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE to common.mk
+8942e409     Rashed Abdel-Tawab   msm8998-common: Enable vendor and system property isolation
+103aeb23     codeworkx            msm8998-common: build versioned vndk
+426e6db4     dianlujitao          msm8998-common: Remove console code from post boot
+1efb9f3b     shoudil              msm8998-common: Add framework detect modules to PRODUCT_PACKAGES
+3a4f1f72     dianlujitao          msm8998-common: init: Fix compilation on R
+7b0df2be     ix5                  msm8998-common: Add protobuf vendorcompat lib
+c754c606     Pranav Vashi         msm8998-common: Copy native public libraries
+973006e6     Michael Bestas       msm8998-common: Correct EGL symlink
+08d287e6     Ethan Chen           msm8998-common: Move EGL link creation to real make target
+e3ab120f     Pranav Vashi         msm8998-common: Update RFS symlinks
+ec2bc2ad     Timi                 msm8998-common: remove duplicated TimeService from seapp contexts
+9ea30309     Timi                 msm8998-common: remove TimeService certificate
+1023d446     dianlujitao          msm8998-common: Provide shim for libdpmframework.so
+f46ef17e     Timi                 [DNM] msm8998-common: remove VR
+f48cfaf7     Timi                 msm8998-common: sepolicy: label /persist
+6f5b52c0     Dante Russo          msm8998-common: gps: Remove libhidltransport & libhwbinder references
+ffa81d94     Pranav Vashi         msm8998-common: Remove non-existing or self-contained services
+998f0ce0     Mohit Aggarwal       msm8998-common: Change uid/gid of time_daemon
+e7754d9a     Jaekyun Seok         msm8998-common: rootdir: Add 'vendor.' prefix to a vendor HAL  service name
+19549028     Roshan Pius          msm8998-common: overlay: Remove wifi related internal overlays
+162eaef0     Mikhail Naganov      msm8998-common: Switch to Audio HAL V6
+752f146c     Robert Shih          msm8998-common: Enable v1.3 clearkey drm plugin
+fe84de45     Arian                msm8998-common: Build new aidl qti power HAL
+project frameworks/av/
+c612b746a9   Revathi Uddaraju     audiopolicy: support extended feature in audiopolicymanager
+5afe73c768   Naresh Tanniru       audiopolicy: make audio policy extensible
+project frameworks/base/
+1ba83115d8e  qqzhou               Download: Add support to manually pause/resume download
+c710fcbcc97  Utkarsh Gupta        SystemUI: Add visualizer feature
+0401a27e449  beanstown106         SystemUI: Allow to enable Lockscreen Media Art [1/3]
+bea3d33f21d  Adrian DC            frameworks/base: Lights notifications brightness support
+634c9fbb49d  Sam Mortimer         frameworks/base: Battery and Notification Lights
+bd08cad0804  Bruno Martins        fixup! Add support for runtime toggle of navbar
+8b3758ec177  Bruno Martins        fixup! SystemUI: Add double tap to sleep gesture
+cfdbe73280a  Bruno Martins        fixup! SystemUI: Fix up right clock handling when showing heads up
+33feffc8d6e  Roman Birg           SystemUI: Add Profiles tile
+ac55a5c09ae  eray orçunus         SystemUI: Enable and fix QS detail view, adapt layout to 11
+9486b6a8876  Linux4               SystemUI: Add powershare QS tile
+2ffafb75ea5  Marko Man            SystemUI: Add AOD QS tile
+b06fbeffd2f  Danny Baumann        SystemUI: Add VPN tile
+6bb1bb4843a  Joey                 SystemUI: Add reading mode tile
+ac7679fa37e  Steve Kondik         SystemUI: Add LiveDisplay tile
+70df4efb80c  BestPig              SystemUI: Add USB Tether tile
+78e8bfc0268  Adnan Begovic        SystemUI: Add AmbientDisplay tile
+4ac0ff666e2  stofstik             SystemUI: Add tile to show volume panel
+592cdea8a81  Altaf-Mahdi          SystemUI: Add Sync tile
+7d687f5b144  Michael Bestas       SystemUI: Add heads up tile
+54c0afdb2d8  Keith Mok            SystemUI: Add caffeine QS tile
+a346ffd7169  Tim Schumacher       SystemUI: Enable NFC tile
+9eb4231b024  Andrzej Ressel       SystemUI: Allow user to add/remove QS with one click
+da75161d5e9  Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+045bc4e402f  LuK1337              SystemUI: Fix up right clock handling when showing heads up
+a16836cda08  Danny Baumann        Allow adjusting screen density to smaller sizes.
+3a711ebebe5  Adnan Begovic        frameworks: Add unlinked ringtone and notification volumes
+534a5a7629a  LuK1337              Revert "wifi: Allow lineage-sdk to access framework-wifi.impl"
+71819344a98  Arne Coucheron       SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds
+313b6e5e39f  a.derendyaev         SystemUI: runtime configurable audio panel location
+project frameworks/native/
+c109c9e0d    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project hardware/interfaces/
+268e66218    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project lineage-sdk/
+7bf74325     Bruno Martins        sdk: Kill TelephonyExtUtils class
+af3c06c2     Bruno Martins        sdk: Mark ADB_NOTIFY and ADB_PORT settings as deprecated
+9eca9027     Bruno Martins        sdk: Remove "long-press back to kill app" feature
+612a8b98     LuK1337              sdk: Switch to public API getting WiFi SSID
+project lineage/hudson/
+0c6dab3      Paul Keith           updater: Fix broken json
+fac680d      Nolen Johnson        hudson: Next best thing after the 3310
+64f04c0      Arne Coucheron       Revert "hudson: Drop S4 Sprint (jfltespr)"
+ba960f1      Kevin F. Haggerty    hudson: Samsung msm8974, come on down
+project lineage/mirror/
+41e2cc8      Tim Schumacher       Updated aosp-minimal to 10-Oct-2020 12:01 UTC
+e215784      Tim Schumacher       Updated aosp-minimal to 09-Oct-2020 12:01 UTC
+project lineage/wiki/
+0eef5a8      Aayush Gupta         wiki: Add Nokia 6.1 (PL2)
+611cf7c      Arne Coucheron       Revert "wiki: devices: jfltespr: Reflect discontinuation of builds"
+02b8aea      Kevin F. Haggerty    wiki: devices: Promote hlte* devices to 17.1
+ff1c5a0      Kevin F. Haggerty    wiki: devices: Promote klte* devices to 17.1
+project packages/apps/LineageParts/
+f161d39      Luca Stefani         LineageParts: Specify different exceptions in queryNonIndexableKeys()
+b44e40d      Luca Stefani         LineageParts: Keep SEARCH_INDEX_DATA_PROVIDER()
+project packages/apps/Profiles/
+fc49dee      LuK1337              Profiles: Switch to public API getting WiFi SSID
+bb56591      LuK1337              Profiles: mk -> bp
+project packages/apps/Settings/
+8e16262f48   Steve Kondik         Settings: Add lockscreen visualizer toggle
+e42dec4177   beanstown106         Settings: Add toggle for Lockscreen Media Art [2/3]
+5398f53fe5   Sam Mortimer         Settings: Add back battery and notification lights settings
+3a4b9c9e7a   Danny Baumann        Settings: Add back increasing ring feature (2/2).
+19105ab5db   Pranav Vashi         Settings: Fix default value for proximity on wake pref
+db9c8535b7   Michael Bestas       Settings: Add toggle for heads up notifications
+project packages/apps/SettingsIntelligence/
+4bf9993      Qiang Wu             Normalize dynamic search result in Japanese
+2ccd4be      Pingzhi Wang         Scrolling search results and autorotate cause crash
+bae264b      Luca Stefani         SettingsIntelligence: Regen database on build version change
+project packages/apps/Trebuchet/
+404226857    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project packages/providers/DownloadProvider/
+939f471b     Zhao Wei Liew        DownloadProvider: Add support for manual pause/resume
+e545b589     Lasse Brudeskar Vikås DownloadProvider: Display download speed in notification
+1db4e8eb     Pierre-Hugues Husson Fix "Invalid columns in request:" errors, when there are multiple columns
+project packages/services/Telecomm/
+ac1eebc3     Danny Baumann        Add back increasing ring feature (1/2).
+project system/bt/
+3e7ceb549    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+28e31cbd0    Danny Wood           Revert "Bluetooth HFP: Use WBS by default (1/5)"
+project system/core/
+46cfbc960    Adnan Begovic        logcat: Map '-C' to 'logcat -v color'
+11ead20d6    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+0bfde553f    Scott Mertz          debuggerd: add Lineage version to tombstones
