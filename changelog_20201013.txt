@@ -1,0 +1,71 @@
+project android/
+ec6b414      Bruno Martins        Switch to our fork of DownloadsProvider
+89f4dda      Eamon Powell         manifest: android-11.0.0_r1 -> android-11.0.0_r4
+project build/make/
+963b171bf    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project device/oneplus/msm8998-common/
+fcce2089     Timi                 msm8998-common: drop QC blobs for sw effects
+6a80485c     Ramjee Singh         msm8998-common: configs: Use AOSP implementation for sw effects
+project frameworks/base/
+8bc046d3fc3  Lucchetto            fix duplicated baseband version string
+1ba83115d8e  qqzhou               Download: Add support to manually pause/resume download
+c710fcbcc97  Utkarsh Gupta        SystemUI: Add visualizer feature
+0401a27e449  beanstown106         SystemUI: Allow to enable Lockscreen Media Art [1/3]
+bea3d33f21d  Adrian DC            frameworks/base: Lights notifications brightness support
+634c9fbb49d  Sam Mortimer         frameworks/base: Battery and Notification Lights
+bd08cad0804  Bruno Martins        fixup! Add support for runtime toggle of navbar
+8b3758ec177  Bruno Martins        fixup! SystemUI: Add double tap to sleep gesture
+cfdbe73280a  Bruno Martins        fixup! SystemUI: Fix up right clock handling when showing heads up
+33feffc8d6e  Roman Birg           SystemUI: Add Profiles tile
+ac55a5c09ae  eray orçunus         SystemUI: Enable and fix QS detail view, adapt layout to 11
+9486b6a8876  Linux4               SystemUI: Add powershare QS tile
+2ffafb75ea5  Marko Man            SystemUI: Add AOD QS tile
+b06fbeffd2f  Danny Baumann        SystemUI: Add VPN tile
+6bb1bb4843a  Joey                 SystemUI: Add reading mode tile
+ac7679fa37e  Steve Kondik         SystemUI: Add LiveDisplay tile
+70df4efb80c  BestPig              SystemUI: Add USB Tether tile
+78e8bfc0268  Adnan Begovic        SystemUI: Add AmbientDisplay tile
+4ac0ff666e2  stofstik             SystemUI: Add tile to show volume panel
+592cdea8a81  Altaf-Mahdi          SystemUI: Add Sync tile
+7d687f5b144  Michael Bestas       SystemUI: Add heads up tile
+54c0afdb2d8  Keith Mok            SystemUI: Add caffeine QS tile
+a346ffd7169  Tim Schumacher       SystemUI: Enable NFC tile
+9eb4231b024  Andrzej Ressel       SystemUI: Allow user to add/remove QS with one click
+da75161d5e9  Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+045bc4e402f  LuK1337              SystemUI: Fix up right clock handling when showing heads up
+project frameworks/native/
+c109c9e0d    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project hardware/interfaces/
+268e66218    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project lineage-sdk/
+7bf74325     Bruno Martins        sdk: Kill TelephonyExtUtils class
+af3c06c2     Bruno Martins        sdk: Mark ADB_NOTIFY and ADB_PORT settings as deprecated
+project lineage/hudson/
+0c6dab3      Paul Keith           updater: Fix broken json
+fac680d      Nolen Johnson        hudson: Next best thing after the 3310
+project lineage/mirror/
+41e2cc8      Tim Schumacher       Updated aosp-minimal to 10-Oct-2020 12:01 UTC
+e215784      Tim Schumacher       Updated aosp-minimal to 09-Oct-2020 12:01 UTC
+project lineage/wiki/
+0eef5a8      Aayush Gupta         wiki: Add Nokia 6.1 (PL2)
+project packages/apps/Settings/
+8e16262f48   Steve Kondik         Settings: Add lockscreen visualizer toggle
+e42dec4177   beanstown106         Settings: Add toggle for Lockscreen Media Art [2/3]
+5398f53fe5   Sam Mortimer         Settings: Add back battery and notification lights settings
+3a4b9c9e7a   Danny Baumann        Settings: Add back increasing ring feature (2/2).
+19105ab5db   Pranav Vashi         Settings: Fix default value for proximity on wake pref
+project packages/apps/Trebuchet/
+404226857    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project packages/providers/DownloadProvider/
+939f471b     Zhao Wei Liew        DownloadProvider: Add support for manual pause/resume
+e545b589     Lasse Brudeskar Vikås DownloadProvider: Display download speed in notification
+1db4e8eb     Pierre-Hugues Husson Fix "Invalid columns in request:" errors, when there are multiple columns
+project packages/services/Telecomm/
+ac1eebc3     Danny Baumann        Add back increasing ring feature (1/2).
+project system/bt/
+3e7ceb549    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+28e31cbd0    Danny Wood           Revert "Bluetooth HFP: Use WBS by default (1/5)"
+project system/core/
+46cfbc960    Adnan Begovic        logcat: Map '-C' to 'logcat -v color'
+11ead20d6    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+0bfde553f    Scott Mertz          debuggerd: add Lineage version to tombstones
