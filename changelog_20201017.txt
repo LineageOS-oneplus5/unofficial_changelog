@@ -1,0 +1,225 @@
+project android/
+6b45776      dianlujitao          lineage: Enable some QCOM repos
+e34de33      Jan Altensen         manifest: Switch frameworks/opt/net/wifi to our fork
+f8a7322      LuK1337              lineage: Reenable Etar
+42c3317      LuK1337              manifest: Switch frameworks/opt/telephony to our fork
+50753ee      Michael Bestas       manifest: Switch most apps to our forks
+ec6b414      Bruno Martins        Switch to our fork of DownloadsProvider
+project bionic/
+4ff0e09df    LuK1337              linker: Convert lineage product variables to soong config variables
+7190a29c2    Ethan Chen           bionic: Squash of pre-P mutex behavior restoration
+project bootable/recovery/
+84720dc1     LuK1337              recovery: Handle LINEAGE_VERSION_APPEND_TIME_OF_DAY in ver_date
+project build/make/
+8f66b208b    Jan Altensen         soong: add TARGET_SPECIFIC_HEADER_PATH
+95126119a    Pig                  Drop lineage soong product variables inclusion
+963b171bf    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+c8c72d01c    Akhil Narang         releasetools: ota_from_target_files: fix build for A-Only dynamic devices not building vendor
+939887032    LuK1337              Unset BOARD_EXT4_SHARE_DUP_BLOCKS
+project build/soong/
+a7d097f5     Jan Altensen         soong: allow overriding header files
+8856f47f     Pig                  soong: Drop lineage soong product variables
+project device/lineage/sepolicy/
+9c84679      Bruno Martins        Remove adb.network.port label
+project device/oneplus/msm8998-common/
+a2b37221     Adhitya Mohan        msm8998-common: Rewrite init
+eaa81adf     Michael Bestas       msm8998-common: sepolicy: Label fingerprint sensor properties
+fcce2089     Timi                 msm8998-common: drop QC blobs for sw effects
+6a80485c     Ramjee Singh         msm8998-common: configs: Use AOSP implementation for sw effects
+project external/tinycompress/
+f3c8e4d      LuK1337              tinycompress: Convert lineage product variables to soong config variables
+project frameworks/av/
+1dab634ddd   Susmitha Gummalla    Camera: Add support for preview frame fd
+d860b094eb   Shuzhen Wang         Camera: Add extensions to CameraClient
+f501f10643   Revathi Uddaraju     audiopolicy: support extended feature in audiopolicymanager
+ffc2e067fd   Naresh Tanniru       audiopolicy: make audio policy extensible
+3a14805638   LuK1337              camera: Convert lineage product variables to soong config variables
+project frameworks/base/
+0570c0b5d55  Lucchetto            fix duplicated baseband version string
+d7bde7e3915  TheScarastic         Don't start fingerprint for FOD devices early
+42bf6752d96  Peter Cai            Squashed import of in-display fingerprint sensors related changes
+88a99ab7e7d  Sauhard Pande        Camera: Add feature extensions
+c994401e9a9  Wang Han             SystemUI: Relax AVC level requirement
+4f69c0d720e  Puneet Mishra        frameworks/base: Support for third party NFC features and extensions
+94c9b70fca3  LuK1337              SystemUI: Allow overlaying max notification icons
+1ba83115d8e  qqzhou               Download: Add support to manually pause/resume download
+c710fcbcc97  Utkarsh Gupta        SystemUI: Add visualizer feature
+0401a27e449  beanstown106         SystemUI: Allow to enable Lockscreen Media Art [1/3]
+bea3d33f21d  Adrian DC            frameworks/base: Lights notifications brightness support
+634c9fbb49d  Sam Mortimer         frameworks/base: Battery and Notification Lights
+bd08cad0804  Bruno Martins        fixup! Add support for runtime toggle of navbar
+8b3758ec177  Bruno Martins        fixup! SystemUI: Add double tap to sleep gesture
+cfdbe73280a  Bruno Martins        fixup! SystemUI: Fix up right clock handling when showing heads up
+33feffc8d6e  Roman Birg           SystemUI: Add Profiles tile
+ac55a5c09ae  eray orçunus         SystemUI: Enable and fix QS detail view, adapt layout to 11
+9486b6a8876  Linux4               SystemUI: Add powershare QS tile
+2ffafb75ea5  Marko Man            SystemUI: Add AOD QS tile
+b06fbeffd2f  Danny Baumann        SystemUI: Add VPN tile
+6bb1bb4843a  Joey                 SystemUI: Add reading mode tile
+ac7679fa37e  Steve Kondik         SystemUI: Add LiveDisplay tile
+70df4efb80c  BestPig              SystemUI: Add USB Tether tile
+78e8bfc0268  Adnan Begovic        SystemUI: Add AmbientDisplay tile
+4ac0ff666e2  stofstik             SystemUI: Add tile to show volume panel
+592cdea8a81  Altaf-Mahdi          SystemUI: Add Sync tile
+7d687f5b144  Michael Bestas       SystemUI: Add heads up tile
+54c0afdb2d8  Keith Mok            SystemUI: Add caffeine QS tile
+a346ffd7169  Tim Schumacher       SystemUI: Enable NFC tile
+9eb4231b024  Andrzej Ressel       SystemUI: Allow user to add/remove QS with one click
+da75161d5e9  Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+045bc4e402f  LuK1337              SystemUI: Fix up right clock handling when showing heads up
+a16836cda08  Danny Baumann        Allow adjusting screen density to smaller sizes.
+3a711ebebe5  Adnan Begovic        frameworks: Add unlinked ringtone and notification volumes
+534a5a7629a  LuK1337              Revert "wifi: Allow lineage-sdk to access framework-wifi.impl"
+71819344a98  Arne Coucheron       SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds
+313b6e5e39f  a.derendyaev         SystemUI: runtime configurable audio panel location
+902a82c4530  Jesse Chan           Implement quick QS brightness slider [1/3]
+2eca07b0f5a  Alberto97            SystemUI: Port statusbar brightness control
+468e24e95da  Alberto97            SystemUI: Port brightness slider changes
+f58f644bba3  LuK1337              fixup! fw/b: Button backlight brightness
+project frameworks/native/
+b1b3489cb    Pierre-Hugues Husson surfaceflinger: Add support for extension lib
+c936fc954    dianlujitao          sf: Exclude VDS use of HWC on non-UM platforms
+4337e2c4f    Ramakant Singh       sf: Fix virtual display related issues.
+5521dce1f    Pig                  libui: Convert lineage product variables to soong config variables
+c109c9e0d    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project frameworks/opt/telephony/
+cdf06a840    Yujing Gu            Truncate baseband version string to 45 characters at most
+project frameworks/opt/timezonepicker/
+95fd579      LuK1337              Restore time_zone_item ripple effect
+96ca448      Gitsaibot            Change ItemBackground for Black Theme
+project hardware/interfaces/
+b16b86512    LuK1337              camera: Convert lineage product variables to soong config variables
+268e66218    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project hardware/lineage/interfaces/
+4271c4e      Pig                  cryptfshw: Convert lineage product variables to soong config variables
+project kernel/oneplus/msm8998/
+1e11e7cad360 Ghanim Fodi          msm: ipa: update msm_ipa.h with latest IPA versions constants
+1510183905bf Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into op8998-eleven
+c7826d812d44 Greg Kroah-Hartman   Merge 4.4.239 into android-4.4-p
+08e290674368 Greg Kroah-Hartman   Linux 4.4.239
+b2ae876677d7 Anant Thazhemadam    net: usb: rtl8150: set random MAC address when set_ethernet_addr() fails
+e5e3293bd5a0 David Howells        rxrpc: Fix server keyring leak
+74c09469251b David Howells        rxrpc: Downgrade the BUG() for unsupported token type in rxrpc_read()
+bccdc2fd68a6 Marc Dionne          rxrpc: Fix rxkad token xdr encoding
+aaf8fe791e16 Eric Dumazet         bonding: set dev->needed_headroom in bond_setup_by_slave()
+d4fc45e32b8d Herbert Xu           xfrm: Use correct address family in xfrm_state_find
+4c30fd07ca40 Voon Weifeng         net: stmmac: removed enabling eee in EEE set callback
+b932860a1168 Antony Antony        xfrm: clone whole liftime_cur structure in xfrm_do_migrate
+62457d397b90 Antony Antony        xfrm: clone XFRMA_REPLAY_ESN_VAL in xfrm_do_migrate
+9b9dcd96e5b4 Richard Weinberger   mtd: nand: Provide nand_cleanup() function to free NAND related resources
+557d674f48c7 Anant Thazhemadam    net: team: fix memory leak in __team_options_register
+2c67cd9cfbaa Eric Dumazet         team: set dev->needed_headroom in team_setup_by_port()
+1e33ef76e155 Eric Dumazet         sctp: fix sctp_auth_init_hmacs() error path
+e60a4ee690f1 Tommi Rantala        perf top: Fix stdio interface input handling with glibc 2.28+
+c8e50ece3d61 Tetsuo Handa         driver core: Fix probe_count imbalance in really_probe()
+fed8fd79e38f Aaron Ma             platform/x86: thinkpad_acpi: re-initialize ACPI buffer size when reuse
+07559a8f5294 Tom Rix              platform/x86: thinkpad_acpi: initialize tp_nvram_state variable
+16f015675a23 Linus Torvalds       usermodehelper: reset umask to default before executing user process
+785ef2d0c549 Anant Thazhemadam    net: wireless: nl80211: fix out-of-bounds access in nl80211_del_key()
+0e3e69e0a8bc Peilin Ye            fbcon: Fix global-out-of-bounds read in fbcon_get_font()
+17b0824cffb9 Geert Uytterhoeven   Revert "ravb: Fixed to be able to unload modules"
+d737dd43ab1a Peilin Ye            Fonts: Support FONT_EXTRA_WORDS macros for built-in fonts
+ca308ad621a8 Peilin Ye            fbdev, newport_con: Move FONT_EXTRA_WORDS macros into linux/font.h
+3f5bfa0a2c34 Will McVicker        netfilter: ctnetlink: add a range check for l3/l4 protonum
+97f8be925b06 Al Viro              ep_create_wakeup_source(): dentry name can change under you...
+199140bc63cd Al Viro              epoll: EPOLL_CTL_ADD: close the race in decision to take fast path
+648bffab7616 Al Viro              epoll: replace ->visited/visited_list with generation count
+ea984dfe0e79 Al Viro              epoll: do not insert into poll queues until all sanity checks are done
+9bef609e85ce Nicolas VINCENT      i2c: cpm: Fix i2c_ram structure
+95fd9f7ac0dc Yu Kuai              iommu/exynos: add missing put_device() call in exynos_iommu_of_xlate()
+695e83a1ff2b Marek Szyprowski     clk: samsung: exynos4: mark 'chipid' clock as CLK_IGNORE_UNUSED
+c8bf391fcdd1 Jeffrey Mitchell     nfs: Fix security label length not being reset
+eaf09b94a7d7 Xie He               drivers/net/wan/hdlc: Set skb->protocol before transmitting
+a8e3971f6205 Xie He               drivers/net/wan/lapbether: Make skb->protocol consistent with the header
+4724c2273c70 Olympia Giannou      rndis_host: increase sleep time in the query-response loop
+45a545d3ce64 Lucy Yan             net: dec: de2104x: Increase receive ring size for Tulip
+50f6a5f99664 Jean Delvare         drm/amdgpu: restore proper ref count in amdgpu_display_crtc_set_config
+e07ac9b7f5f2 Jiri Kosina          Input: i8042 - add nopnp quirk for Acer Aspire 5 A515
+c5d3bcee7362 dillon min           gpio: tc35894: fix up tc35894 interrupt configuration
+project lineage-sdk/
+7bf74325     Bruno Martins        sdk: Kill TelephonyExtUtils class
+af3c06c2     Bruno Martins        sdk: Mark ADB_NOTIFY and ADB_PORT settings as deprecated
+9eca9027     Bruno Martins        sdk: Remove "long-press back to kill app" feature
+612a8b98     LuK1337              sdk: Switch to public API getting WiFi SSID
+project lineage/hudson/
+0c6dab3      Paul Keith           updater: Fix broken json
+fac680d      Nolen Johnson        hudson: Next best thing after the 3310
+64f04c0      Arne Coucheron       Revert "hudson: Drop S4 Sprint (jfltespr)"
+ba960f1      Kevin F. Haggerty    hudson: Samsung msm8974, come on down
+project lineage/mirror/
+69d4251      Tim Schumacher       Updated aosp-minimal to 17-Oct-2020 12:01 UTC
+d6f88f8      Tim Schumacher       Updated aosp-minimal to 16-Oct-2020 12:01 UTC
+f8d0a3f      Tim Schumacher       Updated aosp-minimal to 15-Oct-2020 12:01 UTC
+b1bcf29      Tim Schumacher       Updated aosp-minimal to 13-Oct-2020 12:01 UTC
+41e2cc8      Tim Schumacher       Updated aosp-minimal to 10-Oct-2020 12:01 UTC
+e215784      Tim Schumacher       Updated aosp-minimal to 09-Oct-2020 12:01 UTC
+project lineage/scripts/
+2fea594      Michael Bestas       aosp-merger: Adapt for new default manifest location
+project lineage/wiki/
+52132a0      LuK1337              wiki: MIUI dev -> MIUI weekly
+0eef5a8      Aayush Gupta         wiki: Add Nokia 6.1 (PL2)
+611cf7c      Arne Coucheron       Revert "wiki: devices: jfltespr: Reflect discontinuation of builds"
+02b8aea      Kevin F. Haggerty    wiki: devices: Promote hlte* devices to 17.1
+ff1c5a0      Kevin F. Haggerty    wiki: devices: Promote klte* devices to 17.1
+project packages/apps/Etar/
+d46b1b72     LuK1337              Etar: Switch to common kotlinx prebuilts
+7cfefcd8     LineageOS Builder    Automatic translation import
+project packages/apps/LineageParts/
+f161d39      Luca Stefani         LineageParts: Specify different exceptions in queryNonIndexableKeys()
+b44e40d      Luca Stefani         LineageParts: Keep SEARCH_INDEX_DATA_PROVIDER()
+project packages/apps/Nfc/
+6314c7d8     Puneet Mishra        NFC: Adding new vendor specific interface to NFC Service
+69914dbe     Maoliang Tang        Avoid NFC continuous crash
+project packages/apps/Profiles/
+fc49dee      LuK1337              Profiles: Switch to public API getting WiFi SSID
+bb56591      LuK1337              Profiles: mk -> bp
+project packages/apps/Settings/
+d5c89d36f4   Steve Kondik         Settings: Add a RemotePreference for device-specific doze settings
+8e16262f48   Steve Kondik         Settings: Add lockscreen visualizer toggle
+e42dec4177   beanstown106         Settings: Add toggle for Lockscreen Media Art [2/3]
+5398f53fe5   Sam Mortimer         Settings: Add back battery and notification lights settings
+3a4b9c9e7a   Danny Baumann        Settings: Add back increasing ring feature (2/2).
+19105ab5db   Pranav Vashi         Settings: Fix default value for proximity on wake pref
+db9c8535b7   Michael Bestas       Settings: Add toggle for heads up notifications
+project packages/apps/SettingsIntelligence/
+4bf9993      Qiang Wu             Normalize dynamic search result in Japanese
+2ccd4be      Pingzhi Wang         Scrolling search results and autorotate cause crash
+bae264b      Luca Stefani         SettingsIntelligence: Regen database on build version change
+project packages/apps/Trebuchet/
+404226857    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+project packages/apps/TvSettings/
+2f364a38     Aaron Kling          Add rooted development option
+88677736     Aaron Kling          Show Trust in security settings
+6cf14a11     Aaron Kling          Add button to shut down device
+b12deac0     Zhao Wei Liew        Settings: Add intent to launch LineageOS platlogo upon multiple taps
+64d69c42     dhacker29            Add build date (ro.build.date from build.prop) to About screen.
+af73a563     dhacker29            One does not simply become a Developer
+02966e2c     dhacker29            Add LineageOS version to the About screen
+project packages/overlays/Lineage/
+0a9abbd      Josh Fox (XlxFoXxlX) overlays: Adjust black accent for light/dark themes
+project packages/providers/DownloadProvider/
+939f471b     Zhao Wei Liew        DownloadProvider: Add support for manual pause/resume
+e545b589     Lasse Brudeskar Vikås DownloadProvider: Display download speed in notification
+1db4e8eb     Pierre-Hugues Husson Fix "Invalid columns in request:" errors, when there are multiple columns
+project packages/services/Telecomm/
+ac1eebc3     Danny Baumann        Add back increasing ring feature (1/2).
+project system/bt/
+3e7ceb549    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+28e31cbd0    Danny Wood           Revert "Bluetooth HFP: Use WBS by default (1/5)"
+project system/core/
+284ea554c    Pig                  init: Convert lineage product variables to soong config variables
+46cfbc960    Adnan Begovic        logcat: Map '-C' to 'logcat -v color'
+11ead20d6    Michael Bestas       Merge tag 'android-11.0.0_r4' into staging/lineage-18.0_merge-android-11.0.0_r4
+0bfde553f    Scott Mertz          debuggerd: add Lineage version to tombstones
+project vendor/lineage/
+0ca69006     Bruno Martins        soong: Set a default for TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS
+a98d12f8     Pig                  soong: Add lineage soong config variables
+92388f84     Pig                  Revert lineage soong product variables changes
+1460ac1c     Bruno Martins        Revert "soong_config: Add flag for msm8974 1440p EGL workaround"
+b2c606a0     Han Wang             prebuilt: Remove lineage-adb.rc
+a78e5b2a     Bruno Martins        Revert "lineage: Add flag for skipping EV_REL input in recovery"
+8f6c870a     Pig                  soong: Run bpfix
+80b922cb     LuK1337              soong: Add SOONG_CONFIG_DATASERVICES_USES_PRE_UPLINK_FEATURES_NETMGRD
+project vendor/qcom/opensource/dataservices/
+8b27609      Bruno Martins        rmnetctl: Move soong config to vendor/lineage
+f3e9f9d      LuK1337              librmnetctl: Add flag for netmgrd without uplink features support
