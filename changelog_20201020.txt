@@ -1,0 +1,178 @@
+project android/
+d703543      Aayush Gupta         android: Enable QCOM FM repository
+project bootable/recovery/
+a5d8e638     Alessandro Astone    recovery: wipe bootloader message from index 0 when using custom offsets
+c9a3611b     Alessandro Astone    recovery: Allow custom bootloader msg offset in block misc
+84720dc1     LuK1337              recovery: Handle LINEAGE_VERSION_APPEND_TIME_OF_DAY in ver_date
+project build/make/
+8f66b208b    Jan Altensen         soong: add TARGET_SPECIFIC_HEADER_PATH
+95126119a    Pig                  Drop lineage soong product variables inclusion
+project build/soong/
+540a69eb     Dan Willemsen        Add support for macOS 11 SDK
+9d1dfd98     Alessandro Astone    soong: Add equivalent for LOCAL_EXPORT_CFLAGS
+39af6c07     Abhisek Devkota      Add dumpvars for WITH_SU and WITH_GMS
+636923c6     Rashed Abdel-Tawab   soong: Add LINEAGE_VERSION to dumpvars
+a7d097f5     Jan Altensen         soong: allow overriding header files
+project device/oneplus/cheeseburger/
+b9bb082      Timi                 cheeseburger: remove libhwbinder, libhidltransport dependencies
+project device/oneplus/dumpling/
+1ac1c85      Timi                 dumpling: remove inexistent calib blob
+7d053be      Timi                 dumpling: update fingerprint from OOS 10.0 hotfix 1 * QKQ1.191014.012
+a72f365      Pranav Vashi         dumpling: Move in libmmcamera2_iface_modules
+a84d511      Pranav Vashi         dumpling: Bring in few more cam libs
+b1c146c      Timi                 dumpling: update audio ACDB files
+cba660e      Timi                 dumpling: require 10.0 hotfix 1 firmware
+project device/oneplus/msm8998-common/
+7bf8741      Timi                 msm8998-common: remove USB entry from manifest
+project device/qcom/sepolicy-legacy-um/
+ac7ded2c     Aayush Gupta         legacy-um: qva: Label dpmd in /system/product/ again
+9b426600     Aayush Gupta         common: Generate contexts for rtc
+project frameworks/av/
+1dab634ddd   Susmitha Gummalla    Camera: Add support for preview frame fd
+d860b094eb   Shuzhen Wang         Camera: Add extensions to CameraClient
+f501f10643   Revathi Uddaraju     audiopolicy: support extended feature in audiopolicymanager
+ffc2e067fd   Naresh Tanniru       audiopolicy: make audio policy extensible
+project frameworks/base/
+db55eb74410  Lucchetto            fix duplicated baseband version string
+5cbf91cf387  Michael Bestas       Forward port CM Screen Security settings (1/2)
+2328b51faa1  Prerna Kalla         LockSettingsService : Restrict access to getpassword API
+1fb41e59c84  Justin DeMartino     Fix Build Credentials refactored to use byte[]
+0cdb87b9fc9  AnilKumar Chimata    frameworks: base: Port password retention feature
+47af45a47ef  HrX03                SystemUI: Bring back expanded volume panel
+2f09bacae02  Ashwin R C           SystemUI: Adapt screenshot sound to ringer modes
+53eea7ece9b  Dave Daynard         Remove DUN requirement for tethering
+3cfdccaf877  Danesh M             Camera: allow camera to use power key as shutter
+e31f210618c  Chen Xu              Fix WebView vulnerability by disallowing file access
+8d1bef4679a  Dan Sandler          Sanitize Bluetooth device names without regex
+9c76118b0e3  xuejianbao           Fix color mismatch of pointers
+c2a245f27bd  Oasis Feng           Fix CDM.requestNotificationAccess() in profile.
+d7bde7e3915  TheScarastic         Don't start fingerprint for FOD devices early
+42bf6752d96  Peter Cai            Squashed import of in-display fingerprint sensors related changes
+88a99ab7e7d  Sauhard Pande        Camera: Add feature extensions
+c994401e9a9  Wang Han             SystemUI: Relax AVC level requirement
+project frameworks/native/
+b1b3489cb    Pierre-Hugues Husson surfaceflinger: Add support for extension lib
+c936fc954    dianlujitao          sf: Exclude VDS use of HWC on non-UM platforms
+project frameworks/opt/telephony/
+c4fc8b46d    rongmei.li           Failed to show hold call when user click swap and merge simultaneously
+project hardware/lineage/interfaces/
+69e1998      Roman Kiryanov       Add vintf_fragments to android.hardware.usb@1.0-service.basic
+project kernel/oneplus/msm8998/
+1be6389d96b1 Timi                 aMerge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+887cae0a5083 Greg Kroah-Hartman   Merge 4.4.240 into android-4.4-p
+d98913ec3269 Greg Kroah-Hartman   Linux 4.4.240
+df439d2680b8 Dominik Przychodni   crypto: qat - check cipher length for aead AES-CBC-HMAC-SHA
+71ad78026008 yangerkun            spi: unbinding slave before calling spi_destroy_queue
+265e6dc04875 Jan Kara             reiserfs: Fix oops during mount
+0d6877c37dc0 Jan Kara             reiserfs: Initialize inode keys properly
+11b63afba323 Mychaela N. Falconia USB: serial: ftdi_sio: add support for FreeCalypso JTAG+UART adapters
+e199fc5a68cd Scott Chen           USB: serial: pl2303: add device-id for HP GC device
+54202ff16a3b Anant Thazhemadam    staging: comedi: check validity of wMaxPacketSize of usb endpoints found
+38183676344f Leonid Bloch         USB: serial: option: Add Telit FT980-KS composition
+76e5c961c19a Wilken Gottwalt      USB: serial: option: add Cellient MPL200 card
+cd77a65cb140 Oliver Neukum        media: usbtv: Fix refcounting mixup
+cbb6274d5b72 Luiz Augusto von Dentz Bluetooth: Disconnect if E0 is used for Level 4
+0ae6ea94c69d Patrick Steinhardt   Bluetooth: Fix update of connection state in `hci_encrypt_cfm`
+554ab8c6e143 Luiz Augusto von Dentz Bluetooth: Consolidate encryption handling in hci_encrypt_cfm
+8bcbf0502aec Alain Michaud        Bluetooth: fix kernel oops in store_pending_adv_report
+5abe9f99f512 Luiz Augusto von Dentz Bluetooth: MGMT: Fix not checking if BT_HS is enabled
+e7b465bda9b9 Luiz Augusto von Dentz Bluetooth: A2MP: Fix not initializing all members
+project lineage/mirror/
+69d4251      Tim Schumacher       Updated aosp-minimal to 17-Oct-2020 12:01 UTC
+project packages/apps/Contacts/
+706971dfe    Scott Warner         Contacts: Make the launch screen follow the system theme
+4ff0602b7    Jesse Chan           Contacts: manually configure dark theme for list
+205f07ba6    Jesse Chan           Contacts: allow framework to do dark theming automatically
+251f8edc0    Joey                 Contacts: use white nav bar
+a037ca0aa    Danny Baumann        Allow calling contacts via specific phone accounts.
+5a3270fcf    yuichiro fujiwara    Place EmergencyInfo shortcut on drawer
+925c67872    yuichiro fujiwara    Place MyInfo shortcut on drawer
+e0e07c2f0    Asher Simonds        Contacts: adaptive icon
+project packages/apps/Dialer/
+f59c19f59    Sungjae              Fix theme for PostCallActivity
+9b18e8b26    Danny Baumann        Fix translation of 'contacts' tab title and main menu.
+9badc8603    rongmei.li            Failed to show hold call when user click swap and merge simultaneously
+0d40bb8b0    Scott Warner         Dialer: Use a DayNight launch theme
+20b2a9701    Jesse Chan           Dialer: allow framework to do dark theming automatically
+d8bcc22af    Raman Tenneti        Updated target SDK from 28 to 29.
+114f24f8f    codeworkx            Dialer: AudioModeProvider: use wired route for usb headsets
+f9bb75d3a    blunden              Control dialer's incoming call proximity sensor check via an overlay
+a5babfabe    Xiao-Long Chen       Re-add dialer lookup.
+6b70e4aa4    Danny Baumann        Re-add call statistics.
+440f2195b    Danny Baumann        Allow per-call account selection.
+0d6d2e931    Danny Baumann        Re-add call recording.
+project packages/apps/Settings/
+fd39bbd277   Michael Bestas       Settings: Forward port pattern visibility settings (2/2)
+e19cceee65   Michael Bestas       Settings: Forward port lock pattern grid size (2/2)
+e619d024a3   Asher Simonds        Settings: adaptive icon
+project packages/inputmethods/LatinIME/
+5f114b542    Tom Marshall         LatinIME: Move keyboard height setting from debug to advanced
+e61d82e50    Michael W            LatinIME: Fix back-arrow finishing activity
+daf7a6d29    Michael W            LatinIME: Remove dividers everywhere
+1c93833c0    Michael W            LatinIME: Do we really still want Holo?
+dc2883288    Michael W            LatinIME: Add setting for theme to follow system setting
+bd7380ec1    Arekusu Rin          LatinIME: Update key_styles_currency euro lists.
+cf99f7545    Michel Weimerskirch  LatinIME: Add Luxembourgish keyboard & spellchecking dictionary
+68ae07e7e    Michael Bestas       LatinIME: Add support for Australian English
+f9d379ca5    Julien "_FrnchFrgg_" RIVAUD Add support for Bépo keyboard layout
+2c247e7f2    dh-harald            LatinIME: Add Hungarian QWERTY, enable predictive dictionary
+ed8f246be    Tamás Tóth           LatinIME: HU enable predictive dictionary and remove unused letters
+5e42b6e03    blunden              LatinIME: Enable spellchecker for additional languages
+1e11ff936    Michael Bestas       LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists
+ae3ae93ce    Vasyl Gello          LatinIME: Set proper keyboard for Georgian script
+820950d2d    Vasyl Gello          LatinIME: Add new type for Bulgarian script
+10967114f    Steve Kondik         LatinIME: Add "more" keys to ALL the keys
+6dbb0cc21    Janet Sun            LatinIME: Add shortcuts support
+c29d051e8    Danny Baumann        Don't interrupt active gesture input by modifier key presses.
+15a72bb8c    Steve Kondik         LatinIME: Add fallback loader for JNI lib
+0db9fe050    Joey Rizzoli         LatinIME: Update emojis
+project packages/providers/TelephonyProvider/
+b5e35bc      Michael W            Telephony: Upgrade: Also migrate empty strings
+a52c849      Asher Simonds        TelephonyProvider: adaptive icon
+33d48be      Michael Bestas       Fix MmsSmsDatabaseHelper onUpgrade always destroying the database
+project packages/services/Telecomm/
+3ed9d743     Asher Simonds        Telecomm: adaptive icon
+e0c2ae45     Michael W            CallLog: Get rid of warning
+project vendor/lineage/
+1b4ecdcb     Alessandro Astone    soong: Export bootloader_message_offset to dependencies
+5412f813     Abhijeet Kaur        Remove notifications from bugreport generation using combo keys
+0ca69006     Bruno Martins        soong: Set a default for TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS
+project vendor/oneplus/
+7cb8bbd      Timi                 dumpling: remove inexistent calib blob
+2d94cd5      Timi                 Add dumpling blobs
+project vendor/qcom/opensource/fm-commonsys/
+c27bb3a      Erfan Abdi           FM: Add backward compatiblity support for oreo FM configs
+b5ca4f8      Asher Simonds        FM: adaptive icon
+7599235      Konsta               FM: Revamp notifications
+08fc577      Michael W            FM: Fix KHz->kHz
+3af7421      Michael Bestas       FM: Convert regional band arrays to string references
+6fbf5e2      Danesh M             FM: Update India bands
+c2fe961      Ed Falk              FM: Fix headphone icon
+73316ce      Ed Falk              FM: Fix settings UI bugs
+2b39598      Ed Falk              FM: Localization of band types
+d224a8d      Ed Falk              FM: improved band selection
+fc44ba0      Ed Falk              FM: Select band based on country
+bd58b3b      Danesh M             FM: Keep track of scanned frequencies in service
+6dfdf22      Danesh M             FM: Ensure scan state is kept in sync
+2596173      lijun.xie            FM: The collect channel disappear when quit FM
+c0239cd      Martin Brabham       FM: Fix status text to reflect when FM is enabled.
+98a147e      Danesh M             FM: Launch station list automatically after scan
+17938dd      Edward Wang          FM: reenable radio text visibility after station info updated
+6c8fca3      Edward Wang          FM: Store tag num/value in sequence
+709f77a      Edward Wang          FM: retune last frequency when resume after call
+79fb3e0      linuxx               FM: materialize
+898c467      Raj Yengisetty       FM: add Indonesia
+d69df84      Michael Bestas       FM: Cleanup resources
+c34c9fa      Brinly Taylor        FM: Add property to force use internal antenna
+f7e95b8      Danesh M             FM: Switch file extension to aac
+dc30ce8      Danesh M             FM: Call unregister in onPause
+d4609a9      Raj Yengisetty       FM: Scanned frequencies are saved in ascending ordering
+45e74f2      Danesh M             FM: Re-add RDS fields to UI
+39f5cc2      Danesh M             FM: Make default country an overlay
+6d40c63      Danesh M             FM: Restore seek arrows
+3aca572      Danesh M             FM: Re-vamp UI
+144c04e      LuK1337              fm_hci/helium: Exclude from OSS builds
+72f569d      LuK1337              FM: Fix include paths
+01e4a61      Ricardo Cerqueira    FM: Break bootclasspath dependency
+6e9ae80      Ricardo Cerqueira    Allow library to be used by apps directly
+8358bd7      LuK1337              FM: Drop dependency on libbtconfigstore
