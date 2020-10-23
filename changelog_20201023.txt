@@ -1,0 +1,39 @@
+
+project bootable/recovery/
+c6a23b96     Brint E. Kriebel     init: update recovery when enabled in settings
+project device/oneplus/cheeseburger/
+b073c9e      LuK1337              cheeseburger: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+project device/oneplus/dumpling/
+07fa76f      LuK1337              dumpling: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+project device/oneplus/msm8998-common/
+9df707c6     dianlujitao          msm8998-common: Enable QC framework value-adds
+77f99b39     Lokesh Gidra         msm8998-common: Use 6GB dalvik-heap config
+f96ce851     Kevin Chyn           msm8998-common: Add fingerprint configuration to overlay
+17fde919     Ryan Mitchell        msm8998-common: Use component-override to configure Bluetooth
+project frameworks/base/
+5ba607b6071  xiamengsen           Check UID's process state before restricting its network.
+86fe6a373f6  Ethan Chen           PackageManager: Add configuration to specify vendor platform signatures
+5cbf91cf387  Michael Bestas       Forward port CM Screen Security settings (1/2)
+2328b51faa1  Prerna Kalla         LockSettingsService : Restrict access to getpassword API
+1fb41e59c84  Justin DeMartino     Fix Build Credentials refactored to use byte[]
+0cdb87b9fc9  AnilKumar Chimata    frameworks: base: Port password retention feature
+project frameworks/opt/telephony/
+24372cc4d    Sandeep Gutta        Allow injection jar to be located in system_ext folder
+project lineage/mirror/
+aa13622      Tim Schumacher       Updated aosp-minimal to 22-Oct-2020 12:01 UTC
+project lineage/wiki/
+1dec518      Alessandro Astone    wiki: Simplify adding a PATH variable on Windows 10
+962776d      Dhina17              wiki: gapps: Update opengapps links with https
+98fc44e      Dhina17              wiki: gapps: 10 > 10.0
+e335c80      Bruno Martins        devices: pro1: Fix kernel repo name
+1255a3f      Bruno Martins        devices: pro1: Add hardware keyboard to the list of peripherals
+project packages/apps/Settings/
+fd39bbd277   Michael Bestas       Settings: Forward port pattern visibility settings (2/2)
+e19cceee65   Michael Bestas       Settings: Forward port lock pattern grid size (2/2)
+project tools/repohooks/
+239625c      Liz Kammer           Add support for automatic fixups to gofmt.
+project vendor/lineage/
+8f652be8     Aayush Gupta         lineage: Drop lineage charger
+9a376cf0     razorloves           Revert "overlay/common: Unlock swipe gesture nav bar"
+445136f1     Aayush Gupta         fixup! soong: Add lineage soong config variables
+a461d322     DarkJoker360         config: Build NavigationBarMode2ButtonOverlay
