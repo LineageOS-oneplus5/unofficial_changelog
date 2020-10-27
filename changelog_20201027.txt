@@ -1,0 +1,40 @@
+
+project bootable/recovery/
+5069cbbd     Brint E. Kriebel     init: update recovery when enabled in settings
+project device/oneplus/cheeseburger/
+ab76256      Timi                 cheeseburger: remove libhwbinder, libhidltransport dependencies
+802214b      LuK1337              cheeseburger: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+project device/oneplus/dumpling/
+9aa8e9a      LuK1337              dumpling: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+project device/oneplus/msm8998-common/
+8cee0805     Timi                 msm8998-common: drop Lineage charger
+ee5c2d54     Manoj Basapathi      msm8998-common: ims: remove init.qti.ims.sh script
+3eee37d7     dianlujitao          msm8998-common: Enable QC framework value-adds
+30f11f04     Kevin Chyn           msm8998-common: Add fingerprint configuration to overlay
+336599da     Ryan Mitchell        msm8998-common: Use component-override to configure Bluetooth
+project frameworks/base/
+a2e9be73925  Sam Mortimer         fw/b torch: Let long press power turn torch off when screen is on.
+d70c2e59ced  Scott Warner         SystemUI: Fix showing duplicated charging status
+69e6349aa00  Arne Coucheron       SystemUI: Allow disabling BrightlineFalsingManager with config flag
+24283fe1dbc  dianlujitao          SystemUI: Don't sleep on double tap below status bar
+project hardware/qcom-caf/wlan/
+f912f6e      Michael Bestas       Make wcnss_service build with the VNDK.
+41656b8      Joel Stein           wlan-caf: wcnss_service: Remove invalid guard
+0567270      Steve Kondik         wifi-hal: Only try LOWI once
+project kernel/oneplus/msm8998/
+26e2138945be Martijn Coenen       defconfig: pro1: Set CONFIG_BLK_DEV_LOOP_MIN_COUNT to 16.
+project lineage-sdk/
+88daa87a     Bruno Martins        ConstraintsHelper: Allow replacing multiple keys at once
+project lineage/mirror/
+cfed3c4      Tim Schumacher       Updated aosp-minimal to 24-Oct-2020 12:01 UTC
+aba51f3      Tim Schumacher       Updated aosp-minimal to 23-Oct-2020 12:01 UTC
+project lineage/wiki/
+51c0d43      Nolen Johnson        wiki: templates: device_upgrade: Enable ADB Root on <= 16.0 only
+b658a92      Nolen Johnson        Revert "wiki: Do not enable rooted debugging on upgrade"
+0649bed      Alessandro Astone    wiki: Do not enable rooted debugging on upgrade
+1dec518      Alessandro Astone    wiki: Simplify adding a PATH variable on Windows 10
+project packages/apps/Settings/
+4b2ee91b87   Bruno Martins        Settings: Hide AOD pref is device provides Doze settings
+f467b5892a   Arian                hardwareinfo: Hide hardware revision if empty
+project vendor/qcom/opensource/interfaces/
+ef6f871      Arian                interfaces: Regenerate {bluetooth_audio,btconfigstore,cryptfshw} blueprints
