@@ -1,0 +1,142 @@
+project android/
+d8fa214      Arne Coucheron       manifest: Track our broadcom libbt and nfc
+project bootable/recovery/
+c9d1ccc8     Kelvin Zhang         Return the correct action for PromptAndWait
+14c344bc     Brint E. Kriebel     applypatch: Update recovery only when enabled in Updater settings
+project build/make/
+11df9e637    LuK1337              check_boot_jars: Add QCOM WFD to whitelist
+f4227d926    LuK1337              Bring old CheckJar back and use for non-dex jars
+41ff82905    Paul Duffin          Switch boot jars package check to using dex jars
+7a7c06c5d    Michael Bestas       Stop including vendor specific clear_vars.mk
+project build/soong/
+898bff73     LuK1337              cleanbuild: Add `install` to installclean files
+project device/lineage/sepolicy/
+241ae7f      Nolen Johnson        updater_app: Grant additional permissions
+07e27d3      Bruno Martins        Let Updater set persist.vendor.recovery_update prop
+4355a20      Bruno Martins        Updater: Allow binder calls to gpu service
+project device/oneplus/cheeseburger/
+9d73bea      Timi                 cheeseburger: update fingerprint from OOS 10.0.1
+bc8b6b9      Timi                 Revert "cheeseburger: exclude lineage-sdk from RRO"
+project device/oneplus/dumpling/
+d30cb96      Timi                 dumpling: update fingerprint from OOS 10.0.1
+project device/oneplus/msm8998-common/
+81b0089d     Timi                 msm8998-common: add missing Qcom perf blobs
+8187d0ec     derfelot             msm8998-common: Add policy for new CNE apk
+0506c8cc     Timi                 msm8998-common: build libstagefright_enc_common for WFD
+865057cc     Jaekyun Seok         msm8998-common: Add 'vendor.' prefix to lights HAL service name
+b62166cc     Steven Moreland      msm8998-common: light: mark as shutdown critical
+1ac64e31     Timi                 msm8998-common: sepolicy: allow camera hal to read sensor debug props
+cffda231     Timi                 msm8998-common: sepolicy: don't audit dac_override for fsck & dashd
+3e3b81f5     Timi                 msm8998-common: sepolicy: address bt-mac-generator property denials
+8418bd73     Timi                 msm8998-common: allow vendor init to set, get some props
+794d4a8b     Steven Moreland      msm8998-common: Add interface specification for lights hal.
+972c0d6b     Timi                 msm8998-common: remove unused props
+d059c88b     Timi                 msm8998-common: polish proprietary files list
+6e70748b     Timi                 msm8998-common: update screen brightness overlays from Oxygen 10
+7ec3ab30     Georg Veichtlbauer   msm8998-common: Update power profile from Oxygen 10
+97179363     Timi                 msm8998-common: sepolicy: address qtidataservices denial
+0907698f     Timi                 msm8998-common: add missing camera blobs
+cf83c4a7     Timi                 msm8998-common: update vendor security patch level
+661d6529     Monika Singh         msm8998-common: Add qseecom hal 1.0 to manifest
+a8e10a46     Timi                 msm8998-common: remove unknown wigig interfaces
+97e7df2e     Lucchetto            msm8998-common: Adapt libinit to Android 11
+5c52a6e9     Roshan Pius          msm8998-common: TetheringOverlay: Change wifi tether regex
+2bfe19aa     LuK1337              msm8998-common: TetheringOverlay: Disable BPF
+87e156ac     Bruno Martins        msm8998-common: overlay-lineage: Update for moved biometrics hax overlays
+120435fb     Weilun Du            msm8998-common: Add TetheringOverlay
+96d47b65     Roshan Pius          msm8998-common: Add WifiOverlay
+5b320b41     Timi                 msm8998-common: don't exclude lineage-sdk from RRO
+e67df13f     Timi                 msm8998-common: drop Lineage charger
+9406bd15     dianlujitao          msm8998-common: Enable QC framework value-adds
+842c5d54     Kevin Chyn           msm8998-common: Add fingerprint configuration to overlay
+bd95704f     Ryan Mitchell        msm8998-common: Use component-override to configure Bluetooth
+ed05d676     Timi                 msm8998-common: drop QC blobs for sw effects
+7006448a     Ramjee Singh         msm8998-common: configs: Use AOSP implementation for sw effects
+449c4d8f     Timi                 msm8998-common: update mixer paths from OOS 10
+bcff26be     Michael Bestas       msm8998-common: sepolicy: Label fingerprint sensor properties
+18dd02fd     Pranav Vashi         msm8998-common: sepolicy: Address rild prop denials
+bf3e2c6a     Timi                 msm8998-common: sepolicy: address qtidataservices denials
+dabcf856     Timi                 msm8998-common: sepolicy: address camera prop denials
+0ca36ddc     Bruno Martins        msm8998-common: sepolicy: Address thermal-engine denials
+bedfe18b     Pranav Vashi         msm8998-common: sepolicy: Fix neverallows with property isolation enabled
+2cbcafa2     Timi                 msm8998-common: sepolicy: label /persist
+a5265db0     Felix                msm8998-common: Use BOARD_VENDOR_SEPOLICY_DIRS
+f85f39b5     Yifan Hong           msm8998-common: Replace BOARD_CHARGER_ENABLE_SUSPEND with ro.charger.enable_suspend
+adb51a89     Brad Ebinger         msm8998-common: overlay: Add translatable="false" tags to ims package overlays
+adec549e     Martin Stjernholm    msm8998-common: overlay: Update paths to the new ART APEX.
+370c835e     Nicolas Geoffray     msm8998-common: overlay: Update in pinned files.
+24bb6be6     Brad Ebinger         msm8998-common: overlay: Remove old configuration and use new config for MMTEL/RCS
+1e361c9c     Roshan Pius          msm8998-common: overlay: Remove wifi related internal overlays
+8c1d9957     Subhajeet Muhuri     msm8996-common: overlay: Update pinner list for new SystemUI location
+5cd2a3a4     Timi                 msm8998-common: update privapp-permissions-qti from LA.UM.8.4.r1-06000-8x98.0
+845543c4     Yingjie Wang         msm8998-common: Remove gnss hidl entries in manifest.xml
+f2fe7c44     Pavan Kumar M        msm8998-common: Add permissions for RCS service
+216c97b0     xyyx                 msm8998-common: Enable TARGET_USES_OLD_MNC_FORMAT
+afa88673     Timi                 msm8998-common: uprev NFC and build libchrome for NFC
+bf5d11f5     LuK1337              msm8998-common: Move PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE to common.mk
+917fe850     Timi                 msm8998-common: remove vndk-sp
+1f909125     Rashed Abdel-Tawab   msm8998-common: Enable vendor and system property isolation
+4febc8ab     shoudil              msm8998-common: Add framework detect modules to PRODUCT_PACKAGES
+848412d8     ix5                  msm8998-common: Add protobuf vendorcompat lib
+7314719f     Pranav Vashi         msm8998-common: Copy native public libraries
+6f1bc939     Michael Bestas       msm8998-common: Correct EGL symlink
+0a1c3e4f     Ethan Chen           msm8998-common: Move EGL link creation to real make target
+b5940d26     Pranav Vashi         msm8998-common: Update RFS symlinks
+cd612d5b     Timi                 msm8998-common: remove duplicated TimeService from seapp contexts
+bc974544     Timi                 msm8998-common: remove TimeService certificate
+82ca1ab9     Dante Russo          msm8998-common: gps: Remove libhidltransport & libhwbinder references
+5871fdff     Robert Shih          msm8998-common: Enable v1.3 clearkey drm plugin
+f420b73e     Mikhail Naganov      msm8998-common: Switch to Audio HAL V6
+4f8e396a     Arian                msm8998-common: Build new aidl qti power HAL
+790a157e     LuK1337              msm8998-common: Fix recovery extension build errors
+581e493c     P.Adarsh Reddy       msm8998-common: Add build broken flags in BoardConfig.mk
+88aaf6bc     Pranav Vashi         msm8998-common: Remove vintf entries that are now fragments
+81d2052c     Timi                 msm8998-common: update qcom/sepolicy inclusion
+1fcfd3fc     LuK1337              msm8998-common: Build libhidltransport/libhwbinder
+ea02e52b     Timi                 msm8998-common: remove libhwbinder & libhidltransport dependencies
+4ef0c6c5     LuK1337              msm8998-common: Remove usb entry from manifest
+a34bffd5     Purushottam Kushwaha msm8998-common: Removed Supplicant, Hostapd and wifi HALs.
+project external/exfatprogs/
+aaf0f99      Kevin F. Haggerty    exfatprogs: Set _FILE_OFFSET_BITS=64 for Android build
+project frameworks/av/
+e6d7b44f2b   Quallenauge          Camera: Handle 0 faces count in received metadata
+project frameworks/base/
+ba5aa5b4693  Danny Baumann        CameraServiceProxy: Loosen UID check conditionally
+6f1a8b35e6f  LuK1337              fixup! SystemUI: implement better partial screenshot
+project frameworks/opt/telephony/
+168e36071    Arne Coucheron       Telephony: Add option for using regular poll state for airplane mode
+project kernel/oneplus/msm8998/
+3085b8ce718d Peter Cai            drivers: qcacld: reverse fw-provided mac addr
+project lineage-sdk/
+e588c4aa     Jesse Chan           Implement click to take partial screenshot [3/3]
+project lineage/mirror/
+b55d019      Tim Schumacher       Updated to 14-Nov-2020 13:00 UTC
+3e29258      Tim Schumacher       Updated aosp-minimal to 12-Nov-2020 13:01 UTC
+cb5b49a      Tim Schumacher       Updated aosp-minimal to 10-Nov-2020 13:01 UTC
+project lineage/wiki/
+7e863a9      LuK1337              wiki: Clarify copy partitions step
+7c8c2f5      Timi                 wiki: update firmware download links for cheeseburger, dumpling
+project packages/apps/SetupWizard/
+48f4608      Arne Coucheron       Remove save/restore of button brightness timeouts
+project packages/apps/Updater/
+96626c2      Bruno Martins        Updater: Add setting for updating recovery
+project packages/apps/WallpaperPicker2/
+e245e56      Dmitry Valter        Fix NPE in BottomActionBar
+project system/vold/
+c4efe1a      LuK1337              Switch to exfatprogs compatible fsck parameter
+project vendor/lineage/
+571bed5e     Michael Bestas       Remove build/core/clear_vars.mk
+51db2e2b     althafvly            apns: Update APNs for Euskaltel
+project vendor/oneplus/
+c1ab4e0b     Timi                 msm8998-common: add missing Qcom perf blobs
+70284bd0     Timi                 msm8998-common: polish proprietary files
+808dc093     Timi                 msm8998-common: add missing camera blobs
+a89e57fa     Timi                 msm8998-common: update blobs from OOS 10.0.1
+d96d9b22     Timi                 msm8998-common: drop QC blobs for sw effects
+d34b9308     Timi                 msm8998-common: remove TimeService certificate
+4b0a73f9     Timi                 msm8998-common: Create module for gnss vintf xml
+414630e3     Timi                 msm8998-common: initial Android 11
+2bbc388e     Timi                 Import cheeseburger, dumpling from lineage-17.1
+e485a854     Nolen Johnson        Import bacon from lineage-17.1
+project vendor/qcom/opensource/data-ipa-cfg-mgr/
+c154465      Michael Adisumarta   ipacm: Add correct ihl_offset eq bitmap on MTU rules HW < IPA3.0
