@@ -1,0 +1,971 @@
+project android/
+58d9567      LuK1337              lineage: Enable sdm845 CAF HALs
+54e4d3f      Kevin F. Haggerty    manifest: Sync our chromium-webview
+d8fa214      Arne Coucheron       manifest: Track our broadcom libbt and nfc
+27376fc      Bruno Martins        lineage: Re-enable NQ NFC projects
+4ce4508      Michael Bestas       manifest: android-11.0.0_r4 -> android-11.0.0_r17
+b887732      Nolen Johnson        manifest: Re-enable QCOM thermal-engine
+2566eb4      Nolen Johnson        manifest: Re-enable QCOM VR HAL
+4f31619      Nolen Johnson        manifest: Re-enable apq8084 HALs
+9ead55d      Nolen Johnson        manifest: Re-enable msm8974 HALs
+035b57b      Nolen Johnson        manifest: Re-enable msm8960 HALs
+8278d75      Nolen Johnson        manifest: Re-enable device/lineage/atv
+a4797bf      Michael Bestas       lineage: Enable Backgrounds
+1d0fb6a      Michael Bestas       lineage: Sync Seedvault
+8f6c018      Davide Garberi       lineage: Track SetupWizard again
+1310865      Kevin F. Haggerty    manifest: Enable system/dtbtool
+23f8d5a      Kevin F. Haggerty    manifest: Track our own prebuilts/build-tools
+7d52b4e      althafvly            manifest: Use LineageOS forks of GCC target toolchains
+a053d41      razorloves           manifest: Switch to our sdm845-display aosp hal
+d703543      Aayush Gupta         android: Enable QCOM FM repository
+project bootable/recovery/
+c9d1ccc8     Kelvin Zhang         Return the correct action for PromptAndWait
+14c344bc     Brint E. Kriebel     applypatch: Update recovery only when enabled in Updater settings
+545adc16     Vitalii Kulikov      minui: Allow skipping EV_REL input devices.
+878cc2d2     Alessandro Astone    recovery: allow A/B updater to downgrade
+6fb8add9     Tom Marshall         recovery: Allow bypassing signature verification on non-release builds
+a5d8e638     Alessandro Astone    recovery: wipe bootloader message from index 0 when using custom offsets
+c9a3611b     Alessandro Astone    recovery: Allow custom bootloader msg offset in block misc
+84720dc1     LuK1337              recovery: Handle LINEAGE_VERSION_APPEND_TIME_OF_DAY in ver_date
+project build/make/
+3ea384c9b    Paul Duffin          Switch boot jars package check to use dexdump xml output
+eb812f224    LuK1337              Add $(PRODUCT_OUT)/install to INTERNAL_RECOVERYIMAGE_FILES
+11df9e637    LuK1337              check_boot_jars: Add QCOM WFD to whitelist
+f4227d926    LuK1337              Bring old CheckJar back and use for non-dex jars
+41ff82905    Paul Duffin          Switch boot jars package check to using dex jars
+7a7c06c5d    Michael Bestas       Stop including vendor specific clear_vars.mk
+0272fb8e0    Luca Stefani         Add build support for XZ ramdisks
+e10b74c4d    Arne Coucheron       Fix recovery image generation with LZ4 compressed ramdisk
+170f705b3    Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+6404b247f    Alessandro Astone    build: allow refreshmod with external out directory
+project build/soong/
+898bff73     LuK1337              cleanbuild: Add `install` to installclean files
+540a69eb     Dan Willemsen        Add support for macOS 11 SDK
+9d1dfd98     Alessandro Astone    soong: Add equivalent for LOCAL_EXPORT_CFLAGS
+39af6c07     Abhisek Devkota      Add dumpvars for WITH_SU and WITH_GMS
+636923c6     Rashed Abdel-Tawab   soong: Add LINEAGE_VERSION to dumpvars
+project device/lineage/sepolicy/
+241ae7f      Nolen Johnson        updater_app: Grant additional permissions
+07e27d3      Bruno Martins        Let Updater set persist.vendor.recovery_update prop
+4355a20      Bruno Martins        Updater: Allow binder calls to gpu service
+5569732      Han Wang             common: Remove deprecated init policy
+fe0dad6      Aayush Gupta         sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS
+project device/oneplus/cheeseburger/
+6976e00      Georg Veichtlbauer   cheeseburger: remove duplicated display calib files
+243c89d      Timi                 cheeseburger: update fingerprint from OOS 10.0.1
+bc8b6b9      Timi                 Revert "cheeseburger: exclude lineage-sdk from RRO"
+027740d      Timi                 cheeseburger: remove libhwbinder, libhidltransport dependencies
+8c31cf7      Timi                 cheeseburger: exclude lineage-sdk from RRO
+c9c044e      Pranav Vashi         cheeseburger: Move bdroid header to common tree
+5f30ec4      LuK1337              cheeseburger: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+45d6640      Timi                 cheeseburger: update fingerprint from OOS 10.0 hotfix 1
+6d5f044      Pranav Vashi         cheeseburger: Move in libmmcamera2_iface_modules
+490a710      Pranav Vashi         cheeseburger: Bring in few more cam libs
+cdb5909      Timi                 cheeseburger: update audio ACDB files
+project device/oneplus/dumpling/
+32d7b14      Timi                 dumpling: update fingerprint from OOS 10.0.1
+17eaa59      Timi                 Revert "dumpling: exclude lineage-sdk from RRO"
+95ec3ed      Timi                 dumpling: exclude lineage-sdk from RRO
+5bbd7e6      Pranav Vashi         dumpling: Move bdroid header to common tree
+40e548b      LuK1337              dumpling: Override PRODUCT_DEVICE instead of TARGET_DEVICE
+685985e      Timi                 dumpling: remove inexistent calib blob
+337ebaf      Timi                 dumpling: update fingerprint from OOS 10.0 hotfix 1
+7fddda4      Pranav Vashi         dumpling: Move in libmmcamera2_iface_modules
+a21609d      Pranav Vashi         dumpling: Bring in few more cam libs
+3ff89d6      Timi                 dumpling: update audio ACDB files
+02d35fb      Timi                 dumpling: require 10.0 hotfix 1 firmware
+project device/oneplus/msm8998-common/
+ff4dd16      Timi                 msm8998-common: label ro.build.expect. props
+73359d4      Timi                 msm8998-common: move system props to system.prop
+b35c811      Georg Veichtlbauer   msm8998-common: bring vibe patterns in line with stock, remove unused overlay
+3488a4f      derfelot             msm8998-common: Add policy for new CNE apk
+3a45819      Jaekyun Seok         msm8998-common: Add 'vendor.' prefix to lights HAL service name
+39d9880      Steven Moreland      msm8998-common: light: mark as shutdown critical
+50afad3      Timi                 msm8998-common: sepolicy: allow camera hal to read sensor debug props
+2c106ce      Timi                 msm8998-common: sepolicy: silence fsck & dashd denials
+e555198      Timi                 msm8998-common: sepolicy: address bt-mac-generator property denials
+4e8433e      Steven Moreland      msm8998-common: Add interface specification for lights hal.
+a7b51c9      Timi                 msm8998-common: remove unused props
+41b1c4f      Timi                 msm8998-common: update screen brightness overlays from Oxygen 10
+367074d      Timi                 msm8998-common: add missing Qcom perf blobs
+134e06e      Timi                 msm8998-common: polish proprietary files list
+06d7582      Georg Veichtlbauer   msm8998-common: Update power profile from Oxygen 10
+e6606a0      Timi                 msm8998-common: sepolicy: address qtidataservices denial
+60977ea      Timi                 msm8998-common: add missing camera blobs
+1d2dfe4      Timi                 msm8998-common: update vendor security patch level
+661d652      Monika Singh         msm8998-common: Add qseecom hal 1.0 to manifest
+a8e10a4      Timi                 msm8998-common: remove unknown wigig interfaces
+97e7df2      Lucchetto            msm8998-common: Adapt libinit to Android 11
+5c52a6e      Roshan Pius          msm8998-common: TetheringOverlay: Change wifi tether regex
+2bfe19a      LuK1337              msm8998-common: TetheringOverlay: Disable BPF
+87e156a      Bruno Martins        msm8998-common: overlay-lineage: Update for moved biometrics hax overlays
+120435f      Weilun Du            msm8998-common: Add TetheringOverlay
+96d47b6      Roshan Pius          msm8998-common: Add WifiOverlay
+5b320b4      Timi                 msm8998-common: don't exclude lineage-sdk from RRO
+e67df13      Timi                 msm8998-common: drop Lineage charger
+9406bd1      dianlujitao          msm8998-common: Enable QC framework value-adds
+842c5d5      Kevin Chyn           msm8998-common: Add fingerprint configuration to overlay
+bd95704      Ryan Mitchell        msm8998-common: Use component-override to configure Bluetooth
+ed05d67      Timi                 msm8998-common: drop QC blobs for sw effects
+7006448      Ramjee Singh         msm8998-common: configs: Use AOSP implementation for sw effects
+449c4d8      Timi                 msm8998-common: update mixer paths from OOS 10
+bcff26b      Michael Bestas       msm8998-common: sepolicy: Label fingerprint sensor properties
+18dd02f      Pranav Vashi         msm8998-common: sepolicy: Address rild prop denials
+bf3e2c6      Timi                 msm8998-common: sepolicy: address qtidataservices denials
+dabcf85      Timi                 msm8998-common: sepolicy: address camera prop denials
+0ca36dd      Bruno Martins        msm8998-common: sepolicy: Address thermal-engine denials
+bedfe18      Pranav Vashi         msm8998-common: sepolicy: Fix neverallows with property isolation enabled
+2cbcafa      Timi                 msm8998-common: sepolicy: label /persist
+a5265db      Felix                msm8998-common: Use BOARD_VENDOR_SEPOLICY_DIRS
+f85f39b      Yifan Hong           msm8998-common: Replace BOARD_CHARGER_ENABLE_SUSPEND with ro.charger.enable_suspend
+adb51a8      Brad Ebinger         msm8998-common: overlay: Add translatable="false" tags to ims package overlays
+adec549      Martin Stjernholm    msm8998-common: overlay: Update paths to the new ART APEX.
+370c835      Nicolas Geoffray     msm8998-common: overlay: Update in pinned files.
+24bb6be      Brad Ebinger         msm8998-common: overlay: Remove old configuration and use new config for MMTEL/RCS
+1e361c9      Roshan Pius          msm8998-common: overlay: Remove wifi related internal overlays
+8c1d995      Subhajeet Muhuri     msm8996-common: overlay: Update pinner list for new SystemUI location
+5cd2a3a      Timi                 msm8998-common: update privapp-permissions-qti from LA.UM.8.4.r1-06000-8x98.0
+845543c      Yingjie Wang         msm8998-common: Remove gnss hidl entries in manifest.xml
+f2fe7c4      Pavan Kumar M        msm8998-common: Add permissions for RCS service
+216c97b      xyyx                 msm8998-common: Enable TARGET_USES_OLD_MNC_FORMAT
+afa8867      Timi                 msm8998-common: uprev NFC and build libchrome for NFC
+bf5d11f      LuK1337              msm8998-common: Move PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE to common.mk
+917fe85      Timi                 msm8998-common: remove vndk-sp
+1f90912      Rashed Abdel-Tawab   msm8998-common: Enable vendor and system property isolation
+4febc8a      shoudil              msm8998-common: Add framework detect modules to PRODUCT_PACKAGES
+848412d      ix5                  msm8998-common: Add protobuf vendorcompat lib
+7314719      Pranav Vashi         msm8998-common: Copy native public libraries
+6f1bc93      Michael Bestas       msm8998-common: Correct EGL symlink
+0a1c3e4      Ethan Chen           msm8998-common: Move EGL link creation to real make target
+b5940d2      Pranav Vashi         msm8998-common: Update RFS symlinks
+cd612d5      Timi                 msm8998-common: remove duplicated TimeService from seapp contexts
+bc97454      Timi                 msm8998-common: remove TimeService certificate
+82ca1ab      Dante Russo          msm8998-common: gps: Remove libhidltransport & libhwbinder references
+5871fdf      Robert Shih          msm8998-common: Enable v1.3 clearkey drm plugin
+f420b73      Mikhail Naganov      msm8998-common: Switch to Audio HAL V6
+4f8e396      Arian                msm8998-common: Build new aidl qti power HAL
+790a157      LuK1337              msm8998-common: Fix recovery extension build errors
+581e493      P.Adarsh Reddy       msm8998-common: Add build broken flags in BoardConfig.mk
+88aaf6b      Pranav Vashi         msm8998-common: Remove vintf entries that are now fragments
+81d2052      Timi                 msm8998-common: update qcom/sepolicy inclusion
+1fcfd3f      LuK1337              msm8998-common: Build libhidltransport/libhwbinder
+ea02e52      Timi                 msm8998-common: remove libhwbinder & libhidltransport dependencies
+4ef0c6c      LuK1337              msm8998-common: Remove usb entry from manifest
+a34bffd      Purushottam Kushwaha msm8998-common: Removed Supplicant, Hostapd and wifi HALs.
+37e17f6      Pranav Vashi         msm8998-common: Create module for gnss vintf xml
+328690d      Timi                 msm8998-common: build kernel with Clang
+a08cd3c      sjllls               msm8998-common: Fix the dataqti service
+7a8eee3      Timi                 msm8998-common: drop unused location blobs & overlay
+2eb21ab      Timi                 msm8998-common: remove missed .rc for time daemon
+8dafc09      dianlujitao          msm8998-common: Nuke BOARD_USES_QC_TIME_SERVICES flag
+d5621a1      Mohit Aggarwal       msm8998-common: sec_config: Add net_raw permissions for time_daemon service
+a573b35      Timi                 msm8998-common: remove unneeded BoardConfig flags
+366d100      maxwen               msm8998-common: Hide sRGB toggle in developer options
+3415693      LuK1337              msm8998-common: bluetooth: Push×pop PROPERTY_VALUE_MAX in buildcfg header
+9f1006f      Nolen Johnson        msm8998-common: Remove deprecated TARGET_USES_OVERLAY
+bcc3d8b      Cosme Domínguez Díaz msm8998-common: Drop TARGET_USES_NEW_ION_API flag
+9df57f4      Michael W            msm8998-common: Don't attempt to build copybit
+c78b0bf      Dan Pasanen          msm8998-common: Turn down debugging on wpa_supplicant
+5986374      Ethan Chen           msm8998-common: Remove cnss_diag
+5ce6d43      Timi                 msm8998-common: overlay: pin SystemUI & surfaceflinger
+b823609      Pranav Vashi         msm8998-common: Add unified bdroid header
+3daa50e      Sujin Panicker       msm8998-common: audio: Add voip_tx profile to policy conf
+9e08005      Timi                 msm8998-common: overlay: clean up, enforce RRO
+e0631af      Michael Bestas       msm8998-common: Enable AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
+4da3f3d      Volodymyr Zhdanov    msm8998-common: remove compile time feature flags
+88d5c53      Michael Bestas       msm8998-common: Disable unsupported audio features
+ae4b0ad      Sujin Panicker       msm8998-common: enable compress voip prop
+cd4fed7      Weiyin Jiang         msm8998-common: add voice multi session property
+8d97ba8      Volodymyr Zhdanov    msm8998-common: disable ssr runtime features
+b980bbb      vivek mehta          msm8998-common: enable runtime feature flags
+e47e866      Michael Bestas       msm8998-common: Disable DPM features
+d36c9ee      Lokesh Gidra         msm8998-common: Use 6GB dalvik-heap config
+e3ab614      Mohit Aggarwal       msm8998-common: Change uid/gid of time_daemon
+ed3f72d      Jaekyun Seok         msm8998-common: rootdir: Add 'vendor.' prefix to a vendor HAL  service name
+c5e85a1      Ethan Chen           msm8998-common: Add AOSP RCS packages
+cf16750      Ethan Chen           msm8998-common: Remove dead RCS packages
+a330f77      Pranav Vashi         msm8998-common: Update vendor security patch level
+789451a      Timi                 msm8998-common: fix NFC crashes
+4623e09      Timi                 msm8998-common: remove unneeded blobs
+cc36830      Timi                 msm8998-common: update ims.apk and qti-telephony-common from daisy
+e38a831      Pranav Vashi         msm8998-common: Uprev RIL/IMS HALs
+f182efc      Timi                 msm8998-common: enable Bluetooth audio
+acf1c16      Pranav Vashi         msm8998-common: Add missing 64-bit interfaces required for IMS
+5214a2a      Rudra Venkatesh(Temp) msm8998-common: media: Performance tuning for msm8998
+a7916f1      Sanjay Singh         msm8998-common: media: Video performacne tuning for msm8998
+e800ca0      Pranav Vashi         msm8998-common: fresh start proprietary files list
+ff94976      Karthi Kandasamy     msm8998-common: Update display config to version 1.9
+5454872      mike dooley          msm8998-common: Enabling sound trigger V2_2 for msm8998 targets
+6c08c37      Timi                 Revert "msm8998-common: Shim for camera"
+94f5f45      Adhitya Mohan        msm8998-common: Sync Audio config files with OOS Q
+9c0c446      Michael Bestas       msm8998-common: Remove android.hidl.base@1.0 shims
+0b0bbf3      Ram Chandrasekar     msm8998-common: Add AID_VENDOR_THERMAL for thermal-engine
+3c8344d      Baili Feng           msm8998-common: Add fqname 1.0::IGnss/gnss_vendor
+c306eb0      Timi                 msm8998-common: update Wifi configs from OOS 10.0
+255c20c      Timi                 msm8998-common: update GPS blobs
+project device/qcom/sepolicy-legacy-um/
+e91f7c55     Aayush Gupta         sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS
+ac7ded2c     Aayush Gupta         legacy-um: qva: Label dpmd in /system/product/ again
+9b426600     Aayush Gupta         common: Generate contexts for rtc
+project device/qcom/sepolicy_vndr/
+1221db76     Aayush Gupta         sepolicy: Switch to BOARD_VENDOR_SEPOLICY_DIRS
+project external/chromium-webview/
+0d47ba6      Kevin F. Haggerty    Update Chromium Webview to 86.0.4240.198
+project external/exfatprogs/
+aaf0f99      Kevin F. Haggerty    exfatprogs: Set _FILE_OFFSET_BITS=64 for Android build
+project external/nano/
+67ac008c     LuK1337              input: Disable bracketed paste properly
+f9d314de     LuK1337              Revert "input: read in an external paste in one go, to allow undoing with one M-U"
+project frameworks/av/
+e6d7b44f2b   Quallenauge          Camera: Handle 0 faces count in received metadata
+project frameworks/base/
+c695ead3ceb  Pawit Pornkitprasan  PackageManager: allow build-time disabling of components
+c5542dc7f8a  flintman             sensors: Create bool to select what timestamp to use
+ba5aa5b4693  Danny Baumann        CameraServiceProxy: Loosen UID check conditionally
+6f1a8b35e6f  LuK1337              fixup! SystemUI: implement better partial screenshot
+41a85e9153e  Jesse Chan           Implement click to take partial screenshot [1/3]
+0a0f6179b38  Demon000             SystemUI: implement better partial screenshot
+648ae865250  Michael Bestas       frameworks: Power menu customizations
+ed9032476b3  LuK1337              Sharesheet: Set max ranked items to 8
+9e6178470bc  LuK1337              fixup! fixup! Allow lineage resources package to be overlayed by RRO packages
+c54a97ba061  Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+f944d159d3b  LuK1337              SystemUI: Reset horizontal panel position when on keyguard
+53d33241c05  LuK1337              SystemUI: Handle profiles with disabled lockscreen
+d9eaddbe6fd  Kevin F. Haggerty    fixup! Resolve duplicate definition of ledValues
+0a7dbc34907  Adrian DC            fw/b: Resolve black forced lights with notifications channels
+e0fe7dd5ab5  LuK1337              fixup! Add support for runtime toggle of navbar
+9e997d4bd14  codingkerensa        Pad ime_switcher same as navbar buttons
+1a0ced142fd  LuK1337              fixup! Allow lineage resources package to be overlayed by RRO packages
+41414973d8b  Bruno Martins        fwb: Re-introduce keyboard backlight brightness control
+6c8a5ea387c  LuK1337              Allow lineage resources package to be overlayed by RRO packages
+46c746d9ee5  David Overton        Only play sound effects if stream is not muted.
+fb0e6d96fe4  Jesse Chan           SystemUI: Implement hide gestural navigation hint bar [1/5]
+32244a3d020  Jesse Chan           Skip screen on animation when wake and unlock via biometrics
+a2e9be73925  Sam Mortimer         fw/b torch: Let long press power turn torch off when screen is on.
+d70c2e59ced  Scott Warner         SystemUI: Fix showing duplicated charging status
+69e6349aa00  Arne Coucheron       SystemUI: Allow disabling BrightlineFalsingManager with config flag
+24283fe1dbc  dianlujitao          SystemUI: Don't sleep on double tap below status bar
+5ba607b6071  xiamengsen           Check UID's process state before restricting its network.
+86fe6a373f6  Ethan Chen           PackageManager: Add configuration to specify vendor platform signatures
+5cbf91cf387  Michael Bestas       Forward port CM Screen Security settings (1/2)
+2328b51faa1  Prerna Kalla         LockSettingsService : Restrict access to getpassword API
+1fb41e59c84  Justin DeMartino     Fix Build Credentials refactored to use byte[]
+0cdb87b9fc9  AnilKumar Chimata    frameworks: base: Port password retention feature
+47af45a47ef  HrX03                SystemUI: Bring back expanded volume panel
+2f09bacae02  Ashwin R C           SystemUI: Adapt screenshot sound to ringer modes
+53eea7ece9b  Dave Daynard         Remove DUN requirement for tethering
+3cfdccaf877  Danesh M             Camera: allow camera to use power key as shutter
+e31f210618c  Chen Xu              Fix WebView vulnerability by disallowing file access
+8d1bef4679a  Dan Sandler          Sanitize Bluetooth device names without regex
+9c76118b0e3  xuejianbao           Fix color mismatch of pointers
+c2a245f27bd  Oasis Feng           Fix CDM.requestNotificationAccess() in profile.
+d7bde7e3915  TheScarastic         Don't start fingerprint for FOD devices early
+42bf6752d96  Peter Cai            Squashed import of in-display fingerprint sensors related changes
+project frameworks/native/
+528a06eba    Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+b1b3489cb    Pierre-Hugues Husson surfaceflinger: Add support for extension lib
+project frameworks/opt/telephony/
+168e36071    Arne Coucheron       Telephony: Add option for using regular poll state for airplane mode
+3afcb0226    Arne Coucheron       2G wants proper signal strength too
+819e58fd0    Bruno Martins        Avoid SubscriptionManager#getUriForSubscriptionId calls with invalid subIds
+71d4f01cd    Bruno Martins        Remove setIsoCountryProperty method along with partially dead code
+c20af5166    Bruno Martins        telephony: Squashed support for simactivation feature
+24372cc4d    Sandeep Gutta        Allow injection jar to be located in system_ext folder
+c4fc8b46d    rongmei.li           Failed to show hold call when user click swap and merge simultaneously
+project hardware/broadcom/libbt/
+d83924e      Nagarjuna Kristam    correct WBS config VSC params
+45b0586      z3DD3r               libbt: configure audio codec right after firmware
+df6ca18      Steve Kondik         libbt: Add support for using two stop bits
+1d2f3fa      Steve Kondik         libbt: Add btlock support
+f03ee23      Steve Kondik         libbt: Add prepatch support
+project hardware/broadcom/nfc/
+5e07a5b      Steven Moreland      nfc: Remove libhwbinder/libhidltransport deps
+project hardware/libhardware/
+b2b10521     Pig                  audio_amplifier: Add new hook for setting amp feedback
+project hardware/lineage/interfaces/
+5c43ee9      Peter Kalauskas      Add new lazy wifi HAL target
+29d5153      Nate Jiang           Fix NAN validate interface existence
+43ee608      Nate Jiang           IWifi: Validate dedicated NAN discovery interface.
+c1c8494      Ahmed ElArabawy      Wifi: Optionally avoid interface down/up when doing setMacAddress
+e455f9b      Roshan Pius          Allow tethering name config
+c751f7c      Roshan Pius          wifi_sta_iface: Deprecate setScanningMacOui
+a7fab35      Veerendranath Jakkam Synchronize on_ring_buffer_data_callback and writeRingbufferFiles
+1170b5c      Roshan Pius          Use additional interface for the WiFi Aware Discovery operations.
+be81d9d      Daniel Norman        Adds IWifi 1.3 and 1.4 as interfaces provided by vendor.wifi_hal_legacy.
+071195e      Ahmed ElArabawy      Wifi: Add support for mapping DSCP to Wifi AC
+d5afbac      Sunil Ravi           wifi: Add provision to create/delete dynamic interface(s)
+c0ae2b3      Kyounghan Lee        wifi(implementation): Clear wifi event callback objects while stopping
+874215c      Kumar Anand          wifi: thermal hal api
+293334a      Kumar Anand          wifi: Legacy HAL Thermal API stub
+c412bfc      Ahmed ElArabawy      Wifi: Fix VTS tests
+2a59e95      Roshan Pius          hal(wifi): Set HAL logd severity based on ringbuffer verbosity
+d374162      Patrik Fimml         Wifi AP: Remove HAL-level MAC randomization
+3e64379      Patrik Fimml         Add IWifiApIface@1.4 (configurable MAC address)
+ad4fd3d      Arne Coucheron       Revert "wifi: Disable softAP MAC randomization by default"
+f49a844      Ahmed ElArabawy      Wifi: Handle invalid error values from vendor HAL
+c7f7d91      Peter Kalauskas      wifi: Convert LazyServiceRegistrar usage to singleton
+e4334a0      Nate(Qiang) Jiang    Fix 6GHz support for NAN
+5dac852      Ahmed ElArabawy      Remove 6GHz capability query through HAL
+edb7ee4      Ahmed ElArabawy      Wifi: Add 6GHz band to NAN structures and methods
+4154003      Ahmed ElArabawy      Wifi: Add 6GHz bands to WifiBand
+e291e12      Ahmed ElArabawy      Wifi: Support check on device capability for 6GHZ
+8a771e2      Ahmed ElArabawy      Wifi: Add 802.11ax support to RTT
+38335da      Ahmed ElArabawy      Wifi: Uprev Wifi HAL to 1.4
+69e1998      Roman Kiryanov       Add vintf_fragments to android.hardware.usb@1.0-service.basic
+project hardware/qcom-caf/msm8960/audio/
+295382d1b    Arne Coucheron       audio: Include media headers
+1bc948a00    Arne Coucheron       audio: Add audio headers lib
+project hardware/qcom-caf/msm8960/display/
+51325414d    Arne Coucheron       display: Add display headers lib
+332435150    Christopher Wiley    libvirtual should depend on libmedia
+project hardware/qcom-caf/msm8960/media/
+5a3dde48b    Arne Coucheron       media: Include display headers
+2532f4367    Arne Coucheron       media: Add media headers lib
+project hardware/qcom-caf/sdm845/audio/
+d6b721bd7    Steven Moreland      hal: Remove libhwbinder/libhidltransport deps
+project hardware/qcom-caf/sdm845/display/
+118f53f62    LuK1337              fixup! sdm: Implement SetDisplayBrightness, GetDisplayBrightness
+03ad8658d    Ramakant Singh       sdm: Fix invalid string memory access
+f40dd2a4f    Ramakant Singh       sdm: Implement SetDisplayBrightness, GetDisplayBrightness
+d12f9bfc6    Ramakant Singh       display: Remove C++ standard flags
+bc7500e6c    Steven Moreland      hwc2,libdisplayconfig: Remove libhwbinder/libhidltransport deps
+project hardware/qcom-caf/sdm845/media/
+efcabc24e    LuK1337              Revert "media: Exclude libplatformconfig from OSS builds"
+project hardware/qcom-caf/wlan/
+53e2e8d      Tim Kryger           Reading the serialno property is forbidden
+53ddcf2      Steve Kondik         wcnss_service: Deal with mdm-detect too
+541edca      Ethan Chen           wcnss: Build and dlopen wcnss_qmi_client as a shared library
+5368beb      Steve Kondik         wcnss-service: Additional format support
+f912f6e      Michael Bestas       Make wcnss_service build with the VNDK.
+41656b8      Joel Stein           wlan-caf: wcnss_service: Remove invalid guard
+0567270      Steve Kondik         wifi-hal: Only try LOWI once
+project hardware/qcom/sdm845/display/
+ef50e288     LuK1337              Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+e2db9c49     razorloves           display: Fix path to vendor/qcom/opensource
+project kernel/oneplus/msm8998/
+3085b8ce718d Peter Cai            drivers: qcacld: reverse fw-provided mac addr
+373c0943a637 Pranav Vashi         Revert "msm: camera: reset atomic variable"
+027ce0362103 Pranav Vashi         Revert "mm-camera2:isp2: Notify dual cam drop"
+2ecefda32447 Pranav Vashi         nl80211: remove enum ieee80211_band
+2d39e829a873 Timi                 Makefile: remove unsupported flag
+f1491f7c5a22 Timi                 Merge branch 'kernel.lnx.4.4.r39-rel' of https://github.com/android-linux-stable/msm-4.4 into op8998-ten
+2752a1a6684b Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' into op8998-ten
+fbc44fa5af3e LuK1337              Revert "msm: kgsl: Mark the scratch buffer as privileged"
+66c70cd2c2d8 Timi                 Merge tag 'LA.UM.8.4.r1-05900-8x98.0' into op8998-ten
+e695fccbbb95 Timi                 Merge tag 'LA.UM.8.4.r1-05800-8x98.0' into op8998-ten
+2bb1d649bdbd Timi                 Merge tag 'LA.UM.8.4.r1-05700-8x98.0' into op8998-ten
+1adfaeda7752 Timi                 Merge tag 'LA.UM.8.4.r1-05500-8x98.0' into op8998-ten
+4be7c4753394 Timi                 Merge tag 'LA.UM.8.4.r1-05400-8x98.0' into op8998-ten
+653ed5621bf4 Timi                 Merge tag 'LA.UM.8.4.r1-05300-8x98.0' into op8998-ten
+e4559a1f4920 Park Ju Hyung        qcacld: initialize variables to avoid errors during compilation
+dad3dbc8600e Park Ju Hyung        qcacld: nuke Kconfig-based configuration entirely
+5ae2fbbb1954 Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into op8998-ten
+d7cb6c3b2d59 Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into op8998-ten
+d83ca09e249f Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into op8998-ten
+050a2ee4bb68 Martijn Coenen       oneplus5: Set CONFIG_BLK_DEV_LOOP_MIN_COUNT to 16.
+a2e49c9aec53 Pranav Vashi         staging: Add qcacld to Kconfig and Makefile
+140eb257df9f codeworkx            oneplus5: leds: enable rgb sync
+37aaa795f616 Pranav Vashi         oneplus5: Do not enable verity
+695902883992 Wei Wang             thermal: Fix deadlock in thermal thermal_zone_device_check
+f87321c32980 Thierry Strudel      Revert "scripts: gcc-wrapper: Use wrapper to check compiler warnings"
+9808483dd961 Wei Wang             oneplus5: set default readahead to 2048KB
+e06f88dda248 codeworkx            oneplus5: build qcacld 3.0
+3e28ec88496b Thierry Strudel      oneplus5: remove various debug configs
+7abe4ae3f745 Demon Singur         oneplus5: remove remaining unused configs
+25a03e0c5b46 Adrian Salido        oneplus5: disable mdss xlog debug
+35365f1e4838 John Dias            oneplus5: disable SCHED_AUTOGROUP
+cf62e8498bb6 Sultan Alsawaf       oneplus5: disable cgroup debugging
+e2fc24d04203 Patrick Tjin         oneplus5: enable various HID drivers
+3e66c13fdee7 joshuous             oneplus5: enable JUMP_LABEL
+6fb3b5e671d3 Demon Singur         oneplus5: disable suspend sync
+5daa8ccee006 Demon Singur         oneplus5: enable power efficient wq
+61e51c99ecc6 Timi                 oneplus5: enable BFQ by default
+3d82702ef0ba codeworkx            oneplus5: add initial defconfig
+8e36918c934a Timi                 power: remove unused function
+d61666b28cec Yaroslav Furman      ASoC: msm: qdsp6v2: Make version checking no-op
+4965057248ae Jaegeuk Kim          scsi: ufs: disable auto hibern8
+8fdbf3e1bf5a Scott Mertz          pwm: qpnp-pwm: add api for synchronous enable of pwms
+5d242f188c83 Mohammed Javid       msm: ipa3: Return if RT table size is 0
+3eac51aed030 Vikram Mulukutla     sched: hmp: Reduce number of load reports in a window
+6287a52e7ff7 Vikram Mulukutla     sched: cpufreq: HMP load reporting changes
+8e9bb544e49d Peter Collingbourne  FROMLIST: arm64: Build vDSO with -ffixed-x18
+43ea846c3760 Mark Salyzyn         ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x
+a2f97f39f4f4 Nathan Chancellor    FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH
+bd13db460726 Mark Salyzyn         ANDROID: arm64: vdso32: fix CC=clang build
+72224b1d53d8 Mark Salyzyn         ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO
+17ce16eaf082 Kevin Brodsky        FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO
+41493e0ee45a Kevin Brodsky        FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup
+4dff882d69bc Kevin Brodsky        FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO
+1760f58203f8 Kevin Brodsky        FROMLIST: [PATCH 3/6] arm64: Refactor vDSO init/setup
+60b04bd94e6f Kevin Brodsky        FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes
+20acef7a5320 Kevin Brodsky        FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available
+dbff68322725 Mark Salyzyn         FROMLIST: lib: vdso: add support for time
+71c155499d5b Kevin Brodsky        FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes
+4a02fe25d552 Mark Salyzyn         FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer
+f663db2e2482 Mark Salyzyn         FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME
+b9c53b6ff89b Mark Salyzyn         FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C
+e5016f919d5d Mark Salyzyn         FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/
+64dd0c6e7966 Mark Salyzyn         FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK
+c790ebbe6046 Mark Salyzyn         FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling
+eb1f240a107f Mark Salyzyn         FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres
+d1fe361d48de Mark Salyzyn         FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW
+73974dec7158 Mark Salyzyn         FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops
+661b6c4a47c2 Mark Salyzyn         FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h
+9811bf8e6092 Mark Salyzyn         FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()
+d88f1e0d411b Mark Salyzyn         FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables
+15be94510292 Kevin Brodsky        FROMLIST: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS
+5458cba42d31 Kevin Brodsky        FROMLIST: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)
+cf2d3b54d360 Kevin Brodsky        FROMLIST: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)
+fa65c420dd0a Chris Fries          posix_cpu_timer: check return on cpu_timer_sample_group
+815e2d819068 Park Ju Hyung        msm_thermal: initialize later than arch drivers
+8ebd4ae3ecd7 Wei Wang             dts: msm8998: disable hotplug in BCL mitigation
+311a604bcdb6 Daniel Vetter        net/sch_generic: Shut up noise
+ac8f8f75ce0e Wei Wang             do not call trace_printk on non-debug build
+9b90e8fb825d Thierry Strudel      remove calls to trace_printk
+d239dc3a52f9 Sultanxda            devfreq: Don't force compilation of userspace governor
+b72e7db9671f Jean Delvare         cpuidle: Don't enable all governors by default
+c2403431f728 Wei Wang             ANDROID: mm: add config for default readahead size
+4d8bcbb48bbf Eric Biggers         security: pfk: fix build when ecryptfs is disabled
+384480646f6f Neeraj Soni          scsi: ufs: Increase crypto thread priority
+3b4f0ff0e039 Jerry Zhang          Revert "f_fs: set maxburst to one before enabling endpoints"
+59d01673eabb Jerry Zhang          ANDROID: usb: gadget: f_accessory: Also zero out rx_req on unbind
+53d85374b85b Jerry Zhang          ANDROID: usb: gadget: f_accessory: Fix double-free
+4b0f74a70ef2 Jerry Zhang          ANDROID: usb: gadget: f_accessory: Increase buffer size and max burst
+f63401986732 Baolin Wang          usb: gadget: f_fs: Fix possibe deadlock
+73729b05ee35 Petri Gynther        Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"
+b132a588b402 Tim Murray           Revert "Revert "select: use freezable blocking call""
+782f48975ed9 Thierry Strudel      Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"
+daa6b3cc4a77 Badhri Jagan Sridharan BACKPORT: usb: host: plat: Enable xHCI plat runtime PM
+9aec9c9e10e2 Banajit Goswami      ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade
+927bce4ae900 jonghyun26.kim       power_supply: Fix unbalanced the power supplies
+91730df4a876 Siqi Lin             ANDROID: pstore: Use vmalloc for large allocations due to ramoops size
+efa8cfb2531d Siqi Lin             ANDROID: fs/pstore/ramoops: Use vmalloc() for old buffer
+c89c88db03d5 Bulbul Dabi          serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement
+fb6fbd329a88 Philip Cuadra        tty:  check before stopping kthread
+5459b384f2b8 Philip Cuadra        msm_serial_hs: make the Bluetooth tty thread RT
+0e265e15624d Philip Cuadra        tty: add tty_port_set_policy function
+126edd914110 Philip Cuadra        tty: move tty_port workqueue to be a kthread
+d98e5d2d5f6f Philip Cuadra        Make msm_serial_hs RT to improve bluetooth performance
+88bda1d53c15 Michael Bestas       thermal: tsens: Disable tsens_poll_check for msm8998
+0745c42f8d1d Stephen Boyd         smp: Wake up all idle CPUs when suspending to idle
+510802be8fa9 Uladzislau 2 Rezki   sched: set loop_max after rq lock is taken
+3e419e234e5b Jens Axboe           workqueue: add cancel_work()
+e0a33f5957c9 Ram Chandrasekar     drivers: thermal: Use deferrable work and power efficient workqueue
+078101498586 Ram Chandrasekar     drivers: thermal: Use high priority work queue for thermal processing
+cf92dd0ca94a Tim Murray           BACKPORT: mm: fix pageblock heuristic
+fccb6e80ab96 Park Ju Hyung        trace: add CONFIG_DISABLE_TRACE_PRINTK option
+a92a3ba12caa Greg Kroah-Hartman   Revert "USB: core: only clean up what we allocated"
+dfce62a9019e Srinivas Ramana      pinctrl: qcom: Add irq_enable callback for msm gpio
+74725f66141b Trevor Bunker        drivers: pinctrl: mask non-wakeup interrupts in suspend path
+cfcb62c9e5a1 Michael Bestas       slimbus: Add missing brackets in slim_change_existing_chans
+e44e3d4cee2f Subhash Jadavani     scsi: ufs: synchronize between rls handler and clock scaling
+33f0ce8ba876 Subhash Jadavani     scsi: ufs: change the clock scaling polling period and up threshold
+c5e11ae58dd5 Sayali Lokhande      scsi: ufs: Avoid deadlock in suspend and eeh_work
+0172172434a4 Essential kernel team Fix bugs about step-chg-jeita
+7ba162b3aec4 Michael Bestas       ASoC: msm-cpe: Fix msm_cpe_lsm_ioctl_compat error handling
+4c5f56392d12 Nick Desaulniers     Silences WLAN, PCIe, and CPU suspend state kernel messages
+bbaf781af5fa Michael Bestas       PM / devfreq: bw_hwmon: Add missing mutex unlock
+1e6da862cb82 Saravana Kannan      PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads
+76ed2e927d4c Maria Yu             PM / devfreq: bw_hwmon: use unsigned parameter for bytes_to_mbps
+ccb2777821ea Maulik Shah          drivers: cpuidle: lpm-levels: Reset suspend wake time
+fbd35805c83c Maulik Shah          cpuidle: lpm-levels: Do not predict LPM for isolated cpus
+c8e2fdb19115 Srinivas Rao L       lpm_levels: Return true for CPU WFI mode allow check
+5ddfb5777c7f Sultanxda            cpu: Silence log spam when a CPU is brought up
+8c7501882bab Ritesh Harjani       cfq: Give a chance to arm slice idle timer in case of group_idle
+948a50ab1318 Prakash Gupta        ion: ion_system_heap: update supported page-orders for ion pool
+32a2876cf9e1 Alex Naidis          msm: kgsl: Increase priority of RT thread
+9740ce8c7637 Suren Baghdasaryan   msm: kgsl: Stop slab shrinker when no more pages can be reclaimed
+e06f77fa89ee Deepak Kumar         Revert "msm: kgsl: Do not memset pages to zero while adding to pool"
+84526e8406d6 Kyle Piefer          Revert "msm: kgsl: Disallow L2PC during wake up from SLUMBER"
+a6778e201068 Johannes Berg        BACKPORT: cfg80211: remove enum ieee80211_band
+3137062face9 Pranav Vashi         scsi: Fix size arguement clang error
+c5eab0c59b45 Nathan Chancellor    codecs: tfa9891: Hide self assign Clang warnings
+2bd5927b3b26 Pranav Vashi         project_info: Fix size arguement clang error
+bb336fb77e6a Nathan Chancellor    soc: qcom: qpnp-haptic_oem: Fix self assign Clang warnings
+4d2289554a4d Nathan Chancellor    nfc: pn5xx: Fix enum-conversion warnings
+8d44bd476fe8 Nathan Chancellor    net: lan78xx: Avoid unnecessary self assignment
+0f1db4c5934a Nathan Chancellor    touchscreen: fw_update_v7: Fix constant logical operand warning
+1687df2690e4 Nathan Chancellor    project_info: Fix a section warning
+d5995fde1628 Jean-Baptiste Théou  ASoC: codecs: tfa9891: add error translation routine
+c3f9f6c48b94 Pavankumar Kondeti   core_ctl: Consider high irq loaded CPU as busy
+6b791ecbcdf8 Sultan Alsawaf       treewide: Fix code issues detected using GCC 8.2.0
+7d9b389db302 Pranav Vashi         drivers: Fix up disabling CONFIG_OEM_FORCE_DUMP
+a3f1ecf78af8 Dan Pasanen          power: don't ever reboot to verity red
+0ed91aca255f Michael Bestas       power: reset: Move in_panic handling out of dload mode
+89190bd929cd Paolo Valente        block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
+9ffe929d8aff Daniel Micay         add toggle for disabling newly added USB devices
+97e80dde8b43 Alex Naidis          binder: Disable debug mask
+62f386dc2342 Corey Tabaka         ANDROID: binder: Switch binder_deferred_lock to a spinlock.
+f6188b64ec51 kote                 Improve binder stability
+890f9ea2b884 Sultan Alsawaf       staging: sync: Don't copy fence names by default
+8860a743e96e David Lin            mfd: wcd9xxx: disable slimbus register access for debugfs
+9643278ce2b7 David Lin            msm: mdss: fix inconsistent mutex_lock
+c56f56a251c0 David Lin            msm: memshare: relaese mutex if req client id is not found
+f0e5b9bd6fc8 David Lin            thermal: qpnp-adc-tm: release lock upon disable_chan_meas failure
+77e86943a68c David Lin            qcom: qmi: release mutex upon qmi_svc_event_notifier_register error
+5c514682739f David Lin            i2c-msm-v2: allow i2c_adapter to retry on arbitration lost
+985ceb51d2a0 David Lin            msm_rng: fix issue with unbalanced clk_put
+07eeabe65540 David Lin            msm: qdsp6v2: fix inconsistent spin_lock
+6ee920eb1b11 David Lin            msm_cci: fix inconsistent mutex_lock
+ae6964b9c501 David Lin            msm: mdss: fix inconsistent mutex_lock
+453bcffbe8b4 David Lin            slimbus: fix inconsistent mutex_lock
+c1803f5a4809 David Lin            qdsp6v2: fix inconsistent mutex_lock
+0dd44ad37ef4 David Lin            wcd9335: fix inconsistent mutex_lock
+8d60c35371d9 David Lin            msm: mdss: fix inconsistent mutex_lock
+2bcba058dc70 Josh Choo            block: Fix BFQ not being built
+a0a1aaa6a22f Johannes Berg        ipv4: add option to drop gratuitous ARP packets
+78e0262c6080 Pranav Vashi         cpufreq: deoneplusify and remove PM QOS changes
+26f644693544 Johannes Berg        ipv6: add option to drop unsolicited neighbor advertisements
+d525209aa066 Johannes Berg        ipv6: add option to drop unicast encapsulated in L2 multicast
+03d929b812ff Johannes Berg        ipv4: add option to drop unicast encapsulated in L2 multicast
+86a07298eb4f codeworkx            smb: enable otg feature on driver init and based on dash status
+be9413251462 codeworkx            mdss: use lower case letters for adobe_rgb, dcip3 and srgb to be consistent
+845fe1efff87 codeworkx            tri-state-key: send proper input when updating keycodes from userspace
+0a1f43c27f6c codeworkx            tri_state_key: bring inline with lineage-15.1
+fdf7a2555a12 codeworkx            synaptics S3320: bring inline with lineage-15.1
+0757f942ea3c codeworkx            fpc1020: bring inline with lineage-15.1
+213e1377abd8 Sam Mortimer         msm8998: Add proximity_state sysfs support to goodix driver
+cdf0459d0e7d Tim Murray           cpuidle: don't disable cpuidle when entering suspend
+ecdefa727940 Alex Naidis          DTS: Reduce msm-core polling rate to 100ms
+16a635bba744 Sultanxda            power: msm-core: Fix mutex not getting unlocked in error path
+4c632e266f16 Alexander Martinz    block, bfq: fix build breakage
+ce9425e7cb90 Alexander Martinz    block, bfq: update to latest bfq-v8-v4.4 state
+1e27de9cd630 Mauro Andreolini     block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0
+ec0889a9418b Paolo Valente        block: introduce the BFQ-v7r11 I/O sched for 4.4.0
+3ea001b8c4e7 codeworkx            leds-qpnp: revert changes made by op
+eedaf8524599 Pranav Vashi         drivers: Allow disabling OEM debug support
+a8f858b90805 Srinivas Girigowda   cfg80211: Support backport of removing ieee80211
+f9dd83f04a22 Scott Mertz          leds: leds-qpnp: add synchronized rgb control
+20e091c857ef yanyh2               pwm-qpnp: fix the uninitialized pwm mode issue
+c3b7b440aafa Scott Mertz          pwm: qpnp-pwm: add api for synchronous enable of pwms
+33152bb4c758 Daniel Rosenberg     ANDROID: sdcardfs: Change current->fs under lock
+e25ce14ec1be Tejaswi Tanikella    pppolac: pull udp header before sock enqueue
+7a51a8d49bef Hardik Arya          soc: qcom: Remove smp2p test support
+58d4b3e3dc4c Isaac J. Manjarres   soc: qcom: service-locator: Free PD list after client use
+aa90e21aeef1 Sean Tranchetti      xfrm: validate template mode
+015a6c37e11f Amit Kushwaha        msm: kgsl: create sysfs entries to expose memory usage
+22ba5bda0242 Nathan Chancellor    Merge 4.4.241 into kernel.lnx.4.4.r39-rel
+8dfc31cb1f53 Greg Kroah-Hartman   Linux 4.4.241
+cef1fbb746bc Oliver Neukum        USB: cdc-wdm: Make wdm_flush() interruptible and add wdm_fsync().
+c8ec46147a8d Vincent Mailhol      usb: cdc-acm: add quirk to blacklist ETAS ES58X devices
+39c5ebcd8143 Valentin Vidic       net: korina: cast KSEG0 address to pointer in kfree
+083e298477de Zekun Shen           ath10k: check idx validity in __ath10k_htt_rx_ring_fill_n()
+f087334c7ec6 Eli Billauer         usb: core: Solve race condition in anchor cleanup functions
+b0cc323c74a2 Wang Yufen           brcm80211: fix possible memleak in brcmf_proto_msgbuf_attach
+52f5b7387dc0 Jan Kara             reiserfs: Fix memory leak in reiserfs_parse_options()
+e006d8ed7261 Peilin Ye            ipvs: Fix uninit-value in do_ip_vs_set_ctl()
+90ea33cdee3f Tong Zhang           tty: ipwireless: fix error handling
+d0c18f883f6a Doug Horn            Fix use after free in get_capset_info callback.
+a8270abd5a59 Chris Chiu           rtl8xxxu: prevent potential memory leak
+b36b70f750f1 Keita Suzuki         brcmsmac: fix memory leak in wlc_phy_attach_lcnphy
+e2f267aef777 Jing Xiangfeng       scsi: ibmvfc: Fix error return in ibmvfc_probe()
+d1a172f3d4c7 Abhishek Pandit-Subedi Bluetooth: Only mark socket zapped after unlocking
+1464fc00ee26 Hamish Martin        usb: ohci: Default to per-port over-current protection
+d21b5cc65904 Darrick J. Wong      xfs: make sure the rt allocator doesn't run off the end
+54900edfcb18 Eric Biggers         reiserfs: only call unlock_new_inode() if I_NEW
+e2a3c02399ba Keita Suzuki         misc: rtsx: Fix memory leak in rtsx_pci_probe
+b92e116ae36f Brooke Basile        ath9k: hif_usb: fix race condition between usb_get_urb() and usb_kill_anchored_urbs()
+31fbb2cb5d67 Jan Kara             udf: Avoid accessing uninitialized data on failed inode read
+00422c03a1b2 Jan Kara             udf: Limit sparing table size
+25c95c6bd4dc Zqiang               usb: gadget: function: printer: fix use-after-free in __lock_acquire
+a8e132b4eb5a Roman Bolshakov      scsi: target: core: Add CONTROL field for trace events
+63a0d643073d Jing Xiangfeng       scsi: mvumi: Fix error return in mvumi_io_attach()
+5198b6fff9a0 Christoph Hellwig    PM: hibernate: remove the bogus call to get_gendisk() in software_resume()
+76e94ac0d60d Rustam Kovhaev       ntfs: add check for mft record size in superblock
+137571eab26b Mauro Carvalho Chehab media: saa7134: avoid a shift overflow
+d14221529f06 Pali Rohár           mmc: sdio: Check for CISTPL_VERS_1 buffer size
+56434ec03f8f Adam Goode           media: uvcvideo: Ensure all probed info is returned to v4l2
+b72a84acf994 Xiaolong Huang       media: media/pci: prevent memory leak in bttv_probe
+e0bf93c45083 Dinghao Liu          media: bdisp: Fix runtime PM imbalance on error
+144e4b3bc1a2 Qiushi Wu            media: exynos4-is: Fix a reference count leak
+f3a485299517 Qiushi Wu            media: exynos4-is: Fix a reference count leak due to pm_runtime_get_sync
+2306e29e8813 Qiushi Wu            media: exynos4-is: Fix several reference count leaks due to pm_runtime_get_sync
+b7c67c12d9e6 Oliver Neukum        media: ati_remote: sanity check for both endpoints
+d81a307bab7d Pavel Machek         media: firewire: fix memory leak
+217f139551c0 Vasant Hegde         powerpc/powernv/dump: Fix race while processing OPAL dump
+b8c1ace6f47e Michal Simek         arm64: dts: zynqmp: Remove additional compatible string for i2c IPs
+0137bb476d4a Krzysztof Kozlowski  memory: fsl-corenet-cf: Fix handling of platform_get_irq() error
+4b2c1ec1c92c Dan Carpenter        memory: omap-gpmc: Fix a couple off by ones
+0062678e8de3 Robert Hoo           KVM: x86: emulating RDPID failure shall return #UD rather than #GP
+a1335da6745e Krzysztof Kozlowski  Input: sun4i-ps2 - fix handling of platform_get_irq() error
+af23ef714853 Krzysztof Kozlowski  Input: omap4-keypad - fix handling of platform_get_irq() error
+7129eca0d528 Krzysztof Kozlowski  Input: ep93xx_keypad - fix handling of platform_get_irq() error
+0c791d9f76fd Dan Carpenter        Input: imx6ul_tsc - clean up some errors in imx6ul_tsc_resume()
+07851a08d881 Alex Williamson      vfio/pci: Clear token on bypass registration failure
+1a978f44688d Tobias Jordan        lib/crc32.c: fix trivial typo in preprocessor condition
+61481347b69e Srikar Dronamraju    cpufreq: powernv: Fix frame-size-overflow in powernv_cpufreq_reboot_notifier
+5ceacf9a5688 Kajol Jain           powerpc/perf/hv-gpci: Fix starting index value
+a7c1b557e687 Daniel Thompson      kdb: Fix pager search for multi-line strings
+4d1df9a290fe Adrian Hunter        perf intel-pt: Fix "context_switch event has no tid" error
+0da0e2437c49 Finn Thain           powerpc/tau: Disable TAU between measurements
+1cd4be90cff1 Finn Thain           powerpc/tau: Remove duplicated set_thresholds() call
+271d5a05732a Finn Thain           powerpc/tau: Use appropriate temperature sample interval
+f7093cbc3792 Guillaume Tucker     ARM: 9007/1: l2c: fix prefetch bits init in L2X0_AUX_CTRL using DT values
+c521b149da52 Mark Tomlinson       mtd: mtdoops: Don't write panic data twice
+6d7fc05f8862 Arnd Bergmann        mtd: lpddr: fix excessive stack usage with clang
+8015c658f167 Nicholas Mc Guire    powerpc/icp-hv: Fix missing of_node_put() in success path
+ac3d24dee8e6 Nicholas Mc Guire    powerpc/pseries: Fix missing of_node_put() in rng_init()
+de0034fdfd84 Håkon Bugge          IB/mlx4: Adjust delayed work when a dup is observed
+1c9d72c7710c Valentin Vidic       net: korina: fix kfree of rx/tx descriptor array
+3e4d4f2a0a8a Tom Rix              mwifiex: fix double free
+a7f13679b087 Johannes Berg        nl80211: fix non-split wiphy information
+7374679c684f Lorenzo Colitti      usb: gadget: u_ether: enable qmult on SuperSpeed Plus as well
+afad395152d2 Dan Carpenter        mfd: sm501: Fix leaks in probe()
+8b71a17ba4c5 Thomas Gleixner      net: enic: Cure the enic api locking trainwreck
+41d4df6ff148 Eric Dumazet         quota: clear padding in v2r1_mem2diskdqb()
+92e9a5ca2c6c Takashi Iwai         ALSA: seq: oss: Avoid mutex lock for a long-time ioctl
+b50a0adaf4bb Souptick Joarder     misc: mic: scif: Fix error handling path
+86891e5934fe Dan Carpenter        ath6kl: wmi: prevent a shift wrapping bug in ath6kl_wmi_delete_pstream_cmd()
+4e3cd56bf188 Dan Carpenter        HID: roccat: add bounds checking in kone_sysfs_write_settings()
+353ed733f143 Tom Rix              video: fbdev: sis: fix null ptr dereference
+2ea7bdfae5d3 Colin Ian King       video: fbdev: vga16fb: fix setting of pixclock because a pass-by-value error
+c0562d558144 Souptick Joarder     drivers/virt/fsl_hypervisor: Fix error handling path
+8908ffa7742c Artem Savkov         pty: do tty_flip_buffer_push without port->lock in pty_write
+32561de8c5df Tyrel Datwyler       tty: hvcs: Don't NULL tty->driver_data until hvcs_cleanup()
+547f4baf67b7 Tong Zhang           tty: serial: earlycon dependency
+8fe65dbd5e49 Alex Dewar           VMCI: check return value of get_user_pages_fast() for errors
+d22e0f8d72ed dinghao.liu@zju.edu.cn backlight: sky81452-backlight: Fix refcount imbalance on error
+397e425911c4 Tianjia Zhang        scsi: csiostor: Fix wrong return value in csio_hw_prep_fw()
+fd8d9c367304 Christophe JAILLET   scsi: qla4xxx: Fix an error handling path in 'qla4xxx_get_host_stats()'
+b129b6d7e18b Tom Rix              drm/gma500: fix error check
+acaf6a96220d Christophe JAILLET   mwifiex: Do not use GFP_KERNEL in atomic context
+00cc1e83b923 Bryan O'Donoghue     wcn36xx: Fix reported 802.11n rx_highest rate wcn3660/wcn3680
+a7937ef66b18 Dan Carpenter        ath9k: Fix potential out of bounds in ath9k_htc_txcompletion_cb()
+cf3627c600cf Dan Carpenter        ath6kl: prevent potential array overflow in ath6kl_add_new_sta()
+0d35b8ae3006 Qiushi Wu            media: ti-vpe: Fix a missing check and reference count leak
+a138371ca26b Tom Rix              media: tc358743: initialize variable
+734a5b5bc1c6 Tero Kristo          crypto: omap-sham - fix digcnt register handling with export/import
+52f39ca0467c Dinghao Liu          media: omap3isp: Fix memleak in isp_probe
+e1c798aebcb8 Tom Rix              media: m5mols: Check function pointer in m5mols_sensor_power
+f6af2c161ba4 Sylwester Nawrocki   media: Revert "media: exynos4-is: Add missed check for pinctrl_lookup_state()"
+2c35a3655c36 Christophe JAILLET   crypto: ixp4xx - Fix the size used in a 'dma_free_coherent()' call
+4531206532c6 Dinghao Liu          EDAC/i5100: Fix error handling order in i5100_init_one()
+5dfe2066b813 Roberto Sassu        ima: Don't ignore errors from crypto_shash_update()
+fb0a8e982498 Dan Carpenter        cifs: remove bogus debug code
+a9d0ba6aa748 Eric Dumazet         icmp: randomize the global rate limiter
+94b7768760e9 Neal Cardwell        tcp: fix to update snd_wl1 in bulk receiver fast path
+4d82bb11ec5a Defang Bo            nfc: Ensure presence of NFC_ATTR_FIRMWARE_NAME attribute in nfc_genl_fw_download()
+9479c3031f4f Xie He               net: hdlc_raw_eth: Clear the IFF_TX_SKB_SHARING flag after calling ether_setup
+767dfe0b0f3f Xie He               net: hdlc: In hdlc_rcv, check to make sure dev is an HDLC device
+68222f9e8ff1 Andrey Ryabinin      x86/mm/ptdump: Fix soft lockup in page table walker
+a3eedd10c0c7 Andrey Ryabinin      lib/strscpy: Shut up KASAN false-positives in strscpy()
+203ba216f29b Andrey Ryabinin      compiler.h: Add read_word_at_a_time() function.
+36bd2ae6cc18 Andrey Ryabinin      compiler.h, kasan: Avoid duplicating __read_once_size_nocheck()
+047d711a7a3e Andrey Ryabinin      mm/kasan: add API to check memory regions
+cb641c4d462e Andrey Ryabinin      mm/kasan: print name of mem[set,cpy,move]() caller in report
+879c8163da5f Dan Carpenter        ALSA: bebob: potential info leak in hwdep_read()
+607da73902fe Heiner Kallweit      r8169: fix data corruption issue on RTL8402
+57ccecd8d6c0 Maciej Żenczykowski  net/ipv4: always honour route mtu during forwarding
+77cffe70bcd9 Cong Wang            tipc: fix the skb_unshare() in tipc_buf_append()
+88fd84fb83b2 David Wilder         ibmveth: Identify ingress large send packets.
+d93ff0f16583 Nathan Chancellor    Merge 4.4.240 into kernel.lnx.4.4.r39-rel
+project lineage-sdk/
+e588c4aa     Jesse Chan           Implement click to take partial screenshot [3/3]
+f90b8133     ezio84               LineageButtons: Add support for skipping tracks with remote control
+d8742f07     LuK1337              sdk: Deprecate POWER_MENU_ACTIONS
+1f93089a     Bruno Martins        sdk: Allow support for keyboard lights toggle mode only
+13069beb     Bruno Martins        sdk: Move to new button and keyboard brightness configs
+88daa87a     Bruno Martins        ConstraintsHelper: Allow replacing multiple keys at once
+project lineage/charter/
+c6252b9      Ryan Grachek         charter: Remove exception from hardware codecs for Tegra devices
+project lineage/hudson/
+b77308d      Joshua Blanchard     hudson: Add beckham to Moto sdm660 crew
+4f11545      Nolen Johnson        hudson: klteactivexx builds don't support the AT&T variant
+3e5eeff      Timi                 hudson: Promote Oneplus 5 & 5T
+e5a5973      Daniel Köster        hudson: Add FP3
+d2259b6      Bruno Martins        Welcome Galaxy Tab S5e LTE
+fd64905      Nolen Johnson        hudson: Slide-out keyboards are still cool
+project lineage/mirror/
+0e0550c      Tim Schumacher       Updated aosp-minimal to 18-Nov-2020 13:01 UTC
+913a89b      Tim Schumacher       Updated aosp-minimal to 17-Nov-2020 13:01 UTC
+504413f      Kevin F. Haggerty    Updated to 17-Nov-2020 05:18 UTC
+813c501      Kevin F. Haggerty    Updated to 14-Nov-2020 18:09 UTC
+cb58489      Kevin F. Haggerty    Updated to 14-Nov-2020 18:01 UTC
+b55d019      Tim Schumacher       Updated to 14-Nov-2020 13:00 UTC
+3e29258      Tim Schumacher       Updated aosp-minimal to 12-Nov-2020 13:01 UTC
+cb5b49a      Tim Schumacher       Updated aosp-minimal to 10-Nov-2020 13:01 UTC
+e5a84ec      Kevin F. Haggerty    Updated to 07-Nov-2020 18:56 UTC
+194f954      Kevin F. Haggerty    Updated to 07-Nov-2020 18:46 UTC
+66ed475      Kevin F. Haggerty    Updated to 07-Nov-2020 17:32 UTC
+7f79b79      Tim Schumacher       Updated aosp-minimal to 05-Nov-2020 13:01 UTC
+2d639ec      Tim Schumacher       Updated aosp-minimal to 04-Nov-2020 13:01 UTC
+e7fa4ba      Kevin F. Haggerty    Updated to 31-Oct-2020 13:37 UTC
+f7aca17      Tim Schumacher       Updated lineage-minimal to 31-Oct-2020 13:01 UTC
+13c7694      Tim Schumacher       Updated aosp-minimal to 30-Oct-2020 13:01 UTC
+d1a08f9      Tim Schumacher       Updated aosp-minimal to 29-Oct-2020 13:01 UTC
+da7fb54      Kevin F. Haggerty    Updated to 28-Oct-2020 02:40 UTC
+b28bb2d      Kevin F. Haggerty    Updated to 28-Oct-2020 02:02 UTC
+cfed3c4      Tim Schumacher       Updated aosp-minimal to 24-Oct-2020 12:01 UTC
+aba51f3      Tim Schumacher       Updated aosp-minimal to 23-Oct-2020 12:01 UTC
+aa13622      Tim Schumacher       Updated aosp-minimal to 22-Oct-2020 12:01 UTC
+project lineage/scripts/
+8ae1e87      Kevin F. Haggerty    Update default webview to 86.0.4240.198
+9104e52      Kevin F. Haggerty    Update default webview to 86.0.4240.185
+60d69a7      Kevin F. Haggerty    Update default webview to 86.0.4240.114
+project lineage/website/
+b021a76      Harry Youd           Set code tag font size to 100%
+project lineage/wiki/
+786a28a      Joshua Blanchard     wiki: devices: Add Moto Z3 Play (beckham)
+3388bdc      Eamon Powell         wiki: Add me as a floral maintainer
+a56f567      LuK1337              wiki: Change FP3 `name` to FP3
+44e2ffe      Nolen Johnson        wiki: devices: Add aleasto as a maintainer of LGE-8996
+f9ac12a      LuK1337              wiki: Don't hardcode codename for gts4lv vbmeta download link
+7e863a9      LuK1337              wiki: Clarify copy partitions step
+7c8c2f5      Timi                 wiki: update firmware download links for cheeseburger, dumpling
+721b32a      Nolen Johnson        wiki: devices: klteactivexx builds don't support the AT&T variant
+4b8798a      Timi                 devices: dumpling: Promote to 17.1
+cd8ce59      Timi                 devices: cheeseburger: Promote to 17.1
+0e1bac9      Daniel Köster        FP3: Remove claim that we support FP3+
+c66606d      Daniel Koester       wiki: devices: Add FP3
+aa37ba3      Bruno Martins        devices: Add Galaxy Tab S5e LTE
+449cb49      Nolen Johnson        devices: pro1: Promote to 17.1
+a0680d6      Michael W            wiki: Alerts: Restructure
+1f8b604      Michael W            wiki: Add "Back" possibility for a few pages
+83566e4      Michael W            wiki: Guides: Fix a few spacing issues
+fb99a59      Michael W            wiki: Add the recovery app warning text to the upgrades pages
+b76fb29      Francescodario Cuzzocrea devices: s3ve3g{jv,xx,ds}: fix bootloader requirements
+c42fe5d      Kevin F. Haggerty    wiki: contributors: Update Trusted reviewers list
+51c0d43      Nolen Johnson        wiki: templates: device_upgrade: Enable ADB Root on <= 16.0 only
+b658a92      Nolen Johnson        Revert "wiki: Do not enable rooted debugging on upgrade"
+0649bed      Alessandro Astone    wiki: Do not enable rooted debugging on upgrade
+1dec518      Alessandro Astone    wiki: Simplify adding a PATH variable on Windows 10
+962776d      Dhina17              wiki: gapps: Update opengapps links with https
+98fc44e      Dhina17              wiki: gapps: 10 > 10.0
+e335c80      Bruno Martins        devices: pro1: Fix kernel repo name
+1255a3f      Bruno Martins        devices: pro1: Add hardware keyboard to the list of peripherals
+project packages/apps/Bluetooth/
+9849056d8    Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project packages/apps/Contacts/
+706971dfe    Scott Warner         Contacts: Make the launch screen follow the system theme
+4ff0602b7    Jesse Chan           Contacts: manually configure dark theme for list
+205f07ba6    Jesse Chan           Contacts: allow framework to do dark theming automatically
+251f8edc0    Joey                 Contacts: use white nav bar
+a037ca0aa    Danny Baumann        Allow calling contacts via specific phone accounts.
+5a3270fcf    yuichiro fujiwara    Place EmergencyInfo shortcut on drawer
+925c67872    yuichiro fujiwara    Place MyInfo shortcut on drawer
+e0e07c2f0    Asher Simonds        Contacts: adaptive icon
+project packages/apps/Dialer/
+f59c19f59    Sungjae              Fix theme for PostCallActivity
+9b18e8b26    Danny Baumann        Fix translation of 'contacts' tab title and main menu.
+9badc8603    rongmei.li            Failed to show hold call when user click swap and merge simultaneously
+0d40bb8b0    Scott Warner         Dialer: Use a DayNight launch theme
+20b2a9701    Jesse Chan           Dialer: allow framework to do dark theming automatically
+d8bcc22af    Raman Tenneti        Updated target SDK from 28 to 29.
+114f24f8f    codeworkx            Dialer: AudioModeProvider: use wired route for usb headsets
+f9bb75d3a    blunden              Control dialer's incoming call proximity sensor check via an overlay
+a5babfabe    Xiao-Long Chen       Re-add dialer lookup.
+6b70e4aa4    Danny Baumann        Re-add call statistics.
+440f2195b    Danny Baumann        Allow per-call account selection.
+0d6d2e931    Danny Baumann        Re-add call recording.
+project packages/apps/LineageParts/
+591109a      Kevin F. Haggerty    Regenerate contributors cloud
+ee1a288      Jesse Chan           Implement click to take partial screenshot [2/3]
+753f774      Bruno Martins        ButtonSettings: Add future-proof checks for empty preference categories
+056ba8c      Bruno Martins        ButtonSettings: Remove power button preference category if empty
+cfe5229      LuK1337              LineageParts: Drop power menu actions settings
+ec491e4      Bruno Martins        ButtonSettings: Implement support for keyboard lights toggle mode only
+project packages/apps/Nfc/
+47c2eabb     Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project packages/apps/Seedvault/
+7694eb3      Torsten Grote        Move to different versioning scheme and show version in About dialog
+81cd672      Torsten Grote        Show backup status of select system apps
+a1b68df      Torsten Grote        Merge pull request #151 from grote/ui-fixes
+e9f3c08      Torsten Grote        Make MANAGE_DOCUMENTS permission optional
+a69794a      Torsten Grote        Add script to turn on verbose logging for backup related tags
+f5e9c30      Torsten Grote        Also check internet access when determining whether backup storage is available
+82048f2      Torsten Grote        Don't mess with backup system settings as they can't be used to reliably prevent automatic updates anyway
+e2f0d19      Torsten Grote        Pretend to make successful @pm@ backup when no backup is possible
+141fe75      Torsten Grote        Check also availability of internet access when using online storage
+0a2131e      Torsten Grote        Check availability of storage on IO thread
+7401ead      Torsten Grote        Request backoff when asked to backup to network storage while no internet available
+f356f56      Torsten Grote        Demote hard name checks to IOExceptions
+2aa3a1b      Torsten Grote        When opening app status from notification, ensure the settings are below
+df788ba      Torsten Grote        Don't assume backup is running when success or error notifications are shown
+ef443f7      Torsten Grote        Merge pull request #140 from grote/66-contacts-backup
+0272a09      Torsten Grote        Add backup of local contacts as an extra APK
+50f9dd6      Torsten Grote        Merge pull request #145 from grote/91-app-bundles-re-install
+2cde417      Torsten Grote        Add config option to re-install apps with feature modules only on same device
+e672309      Torsten Grote        Android Studio 4.1 and changes to test files
+a833df2      Torsten Grote        Show dialog explaining auto-restore after a restore failed due to not all apps being installed
+project packages/apps/Settings/
+cff90fdc26   Steve Kondik         Settings: Add rotation settings
+69ddaf5ef0   Chirayu Desai        One does not simply become a Developer
+9a341234d7   Steve Kondik         Settings: Add advanced restart switch
+78c1a977f1   Torsten Grote        Allow the user to change the BackupTransport
+c1bab3e31c   inthewaves           Fix resultCodes from WifiPickerActivity
+17427d3eba   Rashed Abdel-Tawab   Settings: Only show gesture navigation if device has a software nav bar
+ba28d5dcd8   Wang Han             Settings: Hide unsupported USB modes automatically
+54f609a25d   LuK1337              Settings: Set preference controller for all VideoPreference widget usages
+e9c99b9029   Bruno Martins        BasebandVersionPreferenceController: Trim baseband if needed
+e1ed0c43b5   Jesse Chan           Settings: Implement hide gestural navigation hint bar [2/5]
+4b2ee91b87   Bruno Martins        Settings: Hide AOD pref is device provides Doze settings
+f467b5892a   Arian                hardwareinfo: Hide hardware revision if empty
+fd39bbd277   Michael Bestas       Settings: Forward port pattern visibility settings (2/2)
+e19cceee65   Michael Bestas       Settings: Forward port lock pattern grid size (2/2)
+e619d024a3   Asher Simonds        Settings: adaptive icon
+project packages/apps/SetupWizard/
+48f4608      Arne Coucheron       Remove save/restore of button brightness timeouts
+64dd898      razorloves           suw: Update wizard scripts for R
+4027def      Renlord              Update api usage for android 11
+c2b6a18      Daniel Micay         Use system captive portal URL
+f1bfe7e      LineageOS Builder    Automatic translation import
+fc026fc      Torsten Grote        Add an activity for launching a restore from backup
+project packages/apps/Stk/
+a765781      Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project packages/apps/Trebuchet/
+6e40eeced    zhaoguomanong        Trebuchet: optimization of searching apps in Chinese
+42292384a    Michael Bestas       Trebuchet: Add extra privapp permissions xml
+3b9832560    LuK1337              Trebuchet: Allow enabling icon labels for landscape mode
+53d684384    Joey                 Trebuchet: allow disabling workspace edit
+03bf6c0e5    Joey                 Trebuchet: implement hidden & protected apps
+92406ab45    Joey                 Trebuchet: add toggle for desktop and drawer labels
+82d22663d    LuK1337              Don't discard custom grid on config changes
+fd8efacda    Luca Stefani         Specify the component name to start the picker
+56ad61f7b    Luca Stefani         Specify the wallpaper picker package
+3badf5e9c    Luca Stefani         Properly expose GridOptionsProvider
+7976352a3    Bruno Martins        Globally disable debug logging
+b0dc8ec85    Chris Crump          Launcher3: Retrieve the searchbar padding from device profile
+7005fae35    Edward Cross         QSB: request round search bar
+dcb0d080a    Arne Coucheron       Disable QSB on first screen by default
+146236dc0    Arne Coucheron       Change icon drawable padding
+47c72f745    dwardo               Trebuchet: Add 5x6, 5x7 and 6x6 default workspaces
+a2fc470f1    Arne Coucheron       Replace 4x4 grid option with a 4x5 one
+be3a09be7    Bruno Martins        Trebuchet: Update default workspace
+a15b4b934    Asher Simonds        Trebuchet: adaptive icon
+589bcaedf    Joey                 Change app name to Trebuchet
+project packages/apps/Updater/
+a3c6c19      Nolen Johnson        Updater: Clarify explanation for why A/B can't disable recovery update
+96626c2      Bruno Martins        Updater: Add setting for updating recovery
+project packages/apps/WallpaperPicker2/
+e245e56      Dmitry Valter        Fix NPE in BottomActionBar
+3889387      Dmitry Valter        Fix NPE in PreviewFragment
+6b1b341      LuK1337              Return valid wallpaper id for PartnerWallpaperInfo
+project packages/inputmethods/LatinIME/
+5f114b542    Tom Marshall         LatinIME: Move keyboard height setting from debug to advanced
+e61d82e50    Michael W            LatinIME: Fix back-arrow finishing activity
+daf7a6d29    Michael W            LatinIME: Remove dividers everywhere
+1c93833c0    Michael W            LatinIME: Do we really still want Holo?
+dc2883288    Michael W            LatinIME: Add setting for theme to follow system setting
+bd7380ec1    Arekusu Rin          LatinIME: Update key_styles_currency euro lists.
+cf99f7545    Michel Weimerskirch  LatinIME: Add Luxembourgish keyboard & spellchecking dictionary
+68ae07e7e    Michael Bestas       LatinIME: Add support for Australian English
+f9d379ca5    Julien "_FrnchFrgg_" RIVAUD Add support for Bépo keyboard layout
+2c247e7f2    dh-harald            LatinIME: Add Hungarian QWERTY, enable predictive dictionary
+ed8f246be    Tamás Tóth           LatinIME: HU enable predictive dictionary and remove unused letters
+5e42b6e03    blunden              LatinIME: Enable spellchecker for additional languages
+1e11ff936    Michael Bestas       LatinIME: Add Bulgarian, Georgian and Ukrainian wordlists
+ae3ae93ce    Vasyl Gello          LatinIME: Set proper keyboard for Georgian script
+820950d2d    Vasyl Gello          LatinIME: Add new type for Bulgarian script
+10967114f    Steve Kondik         LatinIME: Add "more" keys to ALL the keys
+6dbb0cc21    Janet Sun            LatinIME: Add shortcuts support
+c29d051e8    Danny Baumann        Don't interrupt active gesture input by modifier key presses.
+15a72bb8c    Steve Kondik         LatinIME: Add fallback loader for JNI lib
+0db9fe050    Joey Rizzoli         LatinIME: Update emojis
+project packages/providers/MediaProvider/
+08a931df     Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project packages/providers/TelephonyProvider/
+b5e35bc      Michael W            Telephony: Upgrade: Also migrate empty strings
+a52c849      Asher Simonds        TelephonyProvider: adaptive icon
+33d48be      Michael Bestas       Fix MmsSmsDatabaseHelper onUpgrade always destroying the database
+project packages/resources/devicesettings/
+2fc8419      Arian                Add strings for wake on gesture
+dd1873e      LineageOS Builder    Automatic translation import
+project packages/services/Telecomm/
+58c23eca     Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+e80b6e74     Bruno Martins        Telecomm: Squashed phone_type switch support
+3ed9d743     Asher Simonds        Telecomm: adaptive icon
+e0c2ae45     Michael W            CallLog: Get rid of warning
+project packages/services/Telephony/
+a6c34549c    Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project prebuilts/build-tools/
+0daebdd      Kevin F. Haggerty    prebuilts: Update xz to non-broken version
+project prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9/
+6299a11      althafvly            gcc-4.9: Restore GCC
+project prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9/
+781bda0      althafvly            gcc-4.9: Restore GCC
+project prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9/
+f0e41cb      althafvly            gcc-4.9: Restore GCC
+project prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
+033f349      Josh Fox (XlxFoXxlX) gcc-4.9: Restore GCC
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+5daf5ed      Josh Fox (XlxFoXxlX) gcc-4.9: Restore GCC
+project prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9/
+f4df0f8      althafvly            gcc-4.9: Restore GCC
+project prebuilts/tools-lineage/
+a82d85a      Kevin F. Haggerty    tools-lineage: Add cpio 2.13
+project system/bt/
+641f00dac    Michael Bestas       Merge tag 'android-11.0.0_r17' into staging/lineage-18.0_merge-android-11.0.0_r17
+project system/tools/dtbtool/
+ffd4bcb      Alessandro Astone    dtbtool: Convert to Android.bp
+project system/vold/
+c4efe1a      LuK1337              Switch to exfatprogs compatible fsck parameter
+project tools/repohooks/
+2f5ba44      Nick Anthony         Add checking for unescaped quotes in a Relnote tag
+737bf27      Mike Frysinger       sixish: delete Python 2/3 compat module
+239625c      Liz Kammer           Add support for automatic fixups to gofmt.
+project vendor/lineage/
+571bed5e     Michael Bestas       Remove build/core/clear_vars.mk
+51db2e2b     althafvly            apns: Update APNs for Euskaltel
+fecc8e81     Michael Bestas       Add Settings overlays to enable backup transport selector
+3cf43fe2     Michael Bestas       config: Build Seedvault
+d3040f2c     Michael Bestas       config: Build IconShapeSquareOverlay
+f16c3829     Michael Bestas       config: Remove LockClock build target
+0b4e4107     Han Wang             config: Remove weather related targets
+beb10414     LuK1337              lineage: Add data-ipa-cfg-mgr to soong namespace in BoardConfigQcom
+692b1af1     Han Wang             prebuilt: Remove lineage-livedisplay.rc
+6d21e6a7     Danny Lin            config: Add conversation notification allowlist for older apps
+48d0111d     Aayush Gupta         lineage: Don't enforce specifying image name on prebuilt kernel
+23591a85     razorloves           Declare vendor/qcom/opensource/data-ipa-cfg-mgr as soong namespace
+8f652be8     Aayush Gupta         lineage: Drop lineage charger
+9a376cf0     razorloves           Revert "overlay/common: Unlock swipe gesture nav bar"
+445136f1     Aayush Gupta         fixup! soong: Add lineage soong config variables
+a461d322     DarkJoker360         config: Build NavigationBarMode2ButtonOverlay
+1b4ecdcb     Alessandro Astone    soong: Export bootloader_message_offset to dependencies
+5412f813     Abhijeet Kaur        Remove notifications from bugreport generation using combo keys
+project vendor/nxp/opensource/pn5xx/halimpl/
+fbea2d0f     Michael Bestas       Fix include and copy file paths
+project vendor/nxp/opensource/sn100x/halimpl/
+8fd9e24f     Demon000             sn100x: halimpl: ignore autonomous mode writes if the feature is disabled
+a673eea3     Michael Bestas       Fix include and copy file paths
+project vendor/qcom/opensource/data-ipa-cfg-mgr/
+c154465      Michael Adisumarta   ipacm: Add correct ihl_offset eq bitmap on MTU rules HW < IPA3.0
+c709217      razorloves           data-ipa-cfg-mgr: Define soong namespace
+project vendor/qcom/opensource/fm-commonsys/
+c27bb3a      Erfan Abdi           FM: Add backward compatiblity support for oreo FM configs
+b5ca4f8      Asher Simonds        FM: adaptive icon
+7599235      Konsta               FM: Revamp notifications
+08fc577      Michael W            FM: Fix KHz->kHz
+3af7421      Michael Bestas       FM: Convert regional band arrays to string references
+6fbf5e2      Danesh M             FM: Update India bands
+c2fe961      Ed Falk              FM: Fix headphone icon
+73316ce      Ed Falk              FM: Fix settings UI bugs
+2b39598      Ed Falk              FM: Localization of band types
+d224a8d      Ed Falk              FM: improved band selection
+fc44ba0      Ed Falk              FM: Select band based on country
+bd58b3b      Danesh M             FM: Keep track of scanned frequencies in service
+6dfdf22      Danesh M             FM: Ensure scan state is kept in sync
+2596173      lijun.xie            FM: The collect channel disappear when quit FM
+c0239cd      Martin Brabham       FM: Fix status text to reflect when FM is enabled.
+98a147e      Danesh M             FM: Launch station list automatically after scan
+17938dd      Edward Wang          FM: reenable radio text visibility after station info updated
+6c8fca3      Edward Wang          FM: Store tag num/value in sequence
+709f77a      Edward Wang          FM: retune last frequency when resume after call
+79fb3e0      linuxx               FM: materialize
+898c467      Raj Yengisetty       FM: add Indonesia
+d69df84      Michael Bestas       FM: Cleanup resources
+c34c9fa      Brinly Taylor        FM: Add property to force use internal antenna
+f7e95b8      Danesh M             FM: Switch file extension to aac
+dc30ce8      Danesh M             FM: Call unregister in onPause
+d4609a9      Raj Yengisetty       FM: Scanned frequencies are saved in ascending ordering
+45e74f2      Danesh M             FM: Re-add RDS fields to UI
+39f5cc2      Danesh M             FM: Make default country an overlay
+6d40c63      Danesh M             FM: Restore seek arrows
+3aca572      Danesh M             FM: Re-vamp UI
+144c04e      LuK1337              fm_hci/helium: Exclude from OSS builds
+72f569d      LuK1337              FM: Fix include paths
+01e4a61      Ricardo Cerqueira    FM: Break bootclasspath dependency
+6e9ae80      Ricardo Cerqueira    Allow library to be used by apps directly
+8358bd7      LuK1337              FM: Drop dependency on libbtconfigstore
+project vendor/qcom/opensource/interfaces/
+9c90546      Alexander Koskovich  interfaces: Introduce vendor.qti.hardware.capabilityconfigstore@1.0 HAL
+ef6f871      Arian                interfaces: Regenerate {bluetooth_audio,btconfigstore,cryptfshw} blueprints
