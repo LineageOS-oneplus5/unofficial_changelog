@@ -1,0 +1,146 @@
+project android/
+31d9a62      Michael Bestas       manifest: Switch to our e2fsprogs fork
+677a4a8      Michael Bestas       manifest: Switch to our gptfdisk fork
+76f6c50      PIPIPIG233666        lineage: Re-enable sm8150 CAF HALs
+6735915      Michael Bestas       lineage: Enable legacy qcom sepolicy
+1131de3      Michael Bestas       lineage: Reenable AOSP FM app and add QCOM libfmjni
+58d9567      LuK1337              lineage: Enable sdm845 CAF HALs
+54e4d3f      Kevin F. Haggerty    manifest: Sync our chromium-webview
+project build/make/
+3ea384c9b    Paul Duffin          Switch boot jars package check to use dexdump xml output
+project device/oneplus/msm8998-common/
+8212d691     Aayush Gupta         msm8998-common: Address init denials regarding socket_device
+3fc41d22     LuK1337              msm8998-common: Use libcutils-v29.so for libdpmframework.so
+dc97d2d7     Timi                 msm8998-common: enable Fast Dormancy for DPM
+f5d3ae07     Timi                 msm8998-common: add DPM vendor blobs
+47884a0c     LuK1337              msm8998-common: Don't advertise vorbis offloading support
+d8838b10     Michael Bestas       msm8998-common: Update system side DPM from jasmine
+8433da64     Georg Veichtlbauer   msm8998-common: fix brightness scaling
+1343084e     Georg Veichtlbauer   msm8998-common: revert cpu idle names back to what they were
+ff4dd160     Timi                 msm8998-common: label ro.build.expect. props
+73359d46     Timi                 msm8998-common: move system props to system.prop
+b35c8113     Georg Veichtlbauer   msm8998-common: bring vibe patterns in line with stock, remove unused overlay
+3488a4f6     derfelot             msm8998-common: Add policy for new CNE apk
+3a458197     Jaekyun Seok         msm8998-common: Add 'vendor.' prefix to lights HAL service name
+39d9880c     Steven Moreland      msm8998-common: light: mark as shutdown critical
+50afad3d     Timi                 msm8998-common: sepolicy: allow camera hal to read sensor debug props
+2c106cef     Timi                 msm8998-common: sepolicy: silence fsck & dashd denials
+e5551984     Timi                 msm8998-common: sepolicy: address bt-mac-generator property denials
+4e8433e8     Steven Moreland      msm8998-common: Add interface specification for lights hal.
+a7b51c99     Timi                 msm8998-common: remove unused props
+41b1c4f0     Timi                 msm8998-common: update screen brightness overlays from Oxygen 10
+367074d2     Timi                 msm8998-common: add missing Qcom perf blobs
+project frameworks/base/
+59b14ef302f  Li Sun               WifiDisplayController: handle preexisting p2p connection status
+828744778f6  Indranil Chakraborty Merge changes for launching wifidisplay from system settings
+5ae53f89b34  LuK1337              PowerManagerService: Add nullptr checks around button/keyboard lights
+68d9459775d  Nico                 Implement edge long swipe gesture [1/3]
+c695ead3ceb  Pawit Pornkitprasan  PackageManager: allow build-time disabling of components
+project hardware/lineage/interfaces/
+9a78a4b      LuK1337              Regenerate HIDL blueprints
+project hardware/qcom-caf/sdm845/display/
+118f53f62    LuK1337              fixup! sdm: Implement SetDisplayBrightness, GetDisplayBrightness
+project hardware/qcom-caf/sdm845/media/
+efcabc24e    LuK1337              Revert "media: Exclude libplatformconfig from OSS builds"
+project hardware/qcom-caf/sm8150/audio/
+1e0885b51    LuK1337              audio: adsprpcd: Drop dependency on proprietary headers and fix build errors
+project kernel/oneplus/msm8998/
+4e6c6e008513 Greg Kroah-Hartman   Merge 4.4.244 into android-4.4-p
+b71e57af961f Greg Kroah-Hartman   Linux 4.4.244
+4000c1b82008 Boris Protopopov     Convert trailing spaces and periods in path components
+428f824e9df4 Eric Biggers         ext4: fix leaking sysfs kobject after failed mount
+0b2a9f794fea Matteo Croce         reboot: fix overflow parsing reboot cpu number
+a48b733bf4a7 Matteo Croce         Revert "kernel/reboot.c: convert simple_strtoul to kstrtoint"
+17b235e6cc9d Jiri Olsa            perf/core: Fix race in the perf_mmap_close() function
+ea31e9d93204 Juergen Gross        xen/events: block rogue events for some time
+732d4f2eb416 Juergen Gross        xen/events: defer eoi in case of excessive number of events
+26a6cbe30a2b Juergen Gross        xen/events: use a common cpu hotplug hook for event channels
+957a6b5f628b Juergen Gross        xen/events: switch user event channels to lateeoi model
+fc1f51b7ab49 Juergen Gross        xen/pciback: use lateeoi irq binding
+deac27752388 Juergen Gross        xen/scsiback: use lateeoi irq binding
+fffc1ca5ed0e Juergen Gross        xen/netback: use lateeoi irq binding
+a0eff570f98e Juergen Gross        xen/blkback: use lateeoi irq binding
+1d762cb6676b Juergen Gross        xen/events: add a new "late EOI" evtchn framework
+2e76c99ffbf9 Juergen Gross        xen/events: fix race in evtchn_fifo_unmask()
+33f38ccfe479 Juergen Gross        xen/events: add a proper barrier to 2-level uevent unmasking
+c0e77192829a Juergen Gross        xen/events: avoid removing an event channel while handling it
+dd55e75a4d39 Anand K Mistry       x86/speculation: Allow IBPB to be conditionally enabled on CPUs with always-on STIBP
+09f5820cfdda George Spelvin       random32: make prandom_u32() output unpredictable
+36d7b99b7a7d Mao Wenan            net: Update window_clamp if SOCK_RCVBUF is set
+8c6a13c26902 Martin Schiller      net/x25: Fix null-ptr-deref in x25_connect
+480c6b7c69fd Ursula Braun         net/af_iucv: fix null pointer dereference on shutdown
+c22894e51dec Oliver Herms         IPv6: Set SIT tunnel hard_header_len to zero
+18bfc9ef8b93 Stefano Stabellini   swiotlb: fix "x86: Don't panic if can not alloc buffer for swiotlb"
+cd02ef5ba7a7 Coiby Xu             pinctrl: amd: fix incorrect way to disable debounce filter
+9ba5d0977edd Coiby Xu             pinctrl: amd: use higher precision for 512 RtcClk
+15b58f637512 Thomas Zimmermann    drm/gma500: Fix out-of-bounds access to struct drm_device.vblank[]
+55c181227c19 Al Viro              don't dump the threads that had been already exiting when zapped.
+79de2e8400e9 Wengang Wang         ocfs2: initialize ip_next_orphan
+c9d1594f0fbc Alexander Usyskin    mei: protect mei_cl_mtu from null dereference
+e6c6322e1ce0 Chris Brandt         usb: cdc-acm: Add DISABLE_ECHO for Renesas USB Download mode
+9fbacd44844c Joseph Qi            ext4: unlock xattr_sem properly in ext4_inline_data_truncate()
+28f2350893a0 Kaixu Xia            ext4: correctly report "not supported" for {usr,grp}jquota when !CONFIG_QUOTA
+57f9654bde66 Peter Zijlstra       perf: Fix get_recursion_context()
+3c9d5cf886fa Wang Hai             cosa: Add missing kfree in error path of cosa_write
+2e4d9fac404b Evan Nimmo           of/address: Fix of_node memory leak in of_dma_is_coherent
+bf19a74c7e33 Christoph Hellwig    xfs: fix a missing unlock on error in xfs_fs_map_blocks
+37081c901206 Suravee Suthikulpanit iommu/amd: Increase interrupt remapping table limit to 512 entries
+82c5a4fd2044 Ye Bin               cfg80211: regulatory: Fix inconsistent format argument
+03ca13c58060 Johannes Berg        mac80211: fix use of skb payload instead of header
+05b8a031aa8f Evan Quan            drm/amdgpu: perform srbm soft reset always on SDMA resume
+09537f7f0cd1 Bob Peterson         gfs2: check for live vs. read-only file system in gfs2_fitrim
+89d2da2495f0 Bob Peterson         gfs2: Free rd_bits later in gfs2_clear_rgrpd to fix use-after-free
+71e893cf15d2 Evgeny Novikov       usb: gadget: goku_udc: fix potential crashes in probe
+b05de537d423 Masashi Honma        ath9k_htc: Use appropriate rs_datalen type
+e98bcb652998 Mark Gray            geneve: add transport ports in route lookup for geneve
+78b5c1e88af9 Martyna Szapar       i40e: Fix of memory leak and integer truncation in i40e_virtchnl.c
+0f60ed1afff4 Grzegorz Siwik       i40e: Wrong truncation from u16 to u8
+03f69244302d Will Deacon          pinctrl: devicetree: Avoid taking direct reference to device name string
+b8b68014bfe6 Filipe Manana        Btrfs: fix missing error return if writeback for extent buffer never started
+a17fd24a24bd Stephane Grosjean    can: peak_usb: peak_usb_get_ts_time(): fix timestamp wrapping
+261202518ab6 Dan Carpenter        can: peak_usb: add range checking in decode operations
+1164646e69d9 Oleksij Rempel       can: can_create_echo_skb(): fix echo skb generation: always use skb_clone()
+0b7578675c2a Oliver Hartkopp      can: dev: __can_get_echo_skb(): fix real payload length return value for RTR frames
+248b71ce92d4 Vincent Mailhol      can: dev: can_get_echo_skb(): prevent call to kfree_skb() in hard IRQ context
+f1a6e0d012c9 Dan Carpenter        ALSA: hda: prevent undefined shift in snd_hdac_ext_bus_get_link()
+d990e768f7c2 Jiri Olsa            perf tools: Add missing swap for ino_generation
+c81542e3308f zhuoliang zhang      net: xfrm: fix a race condition during allocing spi
+9ce097a4ed94 Johannes Thumshirn   btrfs: reschedule when cloning lots of extents
+9cddbb8787ef Zeng Tao             time: Prevent undefined behaviour in timespec64_to_ns()
+45b52deae851 Shijie Luo           mm: mempolicy: fix potential pte_unmap_unlock pte error
+78933fded91d Alexander Aring      gfs2: Wake up when sd_glock_disposal becomes zero
+47f1d1fe0cfa Steven Rostedt (VMware) ring-buffer: Fix recursion protection transitions between interrupt context
+project lineage-sdk/
+56e1fbec     LuK1337              LineageSettingsProvider: Make lockscreen visualizer off by default
+project lineage/mirror/
+cfda217      Tim Schumacher       Updated aosp-minimal to 20-Nov-2020 13:01 UTC
+4f8c6a2      Tim Schumacher       Updated aosp-minimal to 19-Nov-2020 13:01 UTC
+0e0550c      Tim Schumacher       Updated aosp-minimal to 18-Nov-2020 13:01 UTC
+913a89b      Tim Schumacher       Updated aosp-minimal to 17-Nov-2020 13:01 UTC
+project lineage/wiki/
+733f95f      Jarl-Penguin         wiki: Use generic needs_specific_android_fw template for a5y17lte, a7y17lte, beckham, evert, and payton
+22e242c      LuK1337              wiki: Drop `phablet` type
+786a28a      Joshua Blanchard     wiki: devices: Add Moto Z3 Play (beckham)
+project packages/apps/Camera2/
+01de52edf    doc HD               Camera2: Fix missing permissions failure on boot
+36fc8db3c    LuK1337              Camera2: Move to /system_ext
+project packages/apps/Dialer/
+06a730400    Michael Bestas       Dialer: handle database downgrade from lineage-16.0
+project packages/apps/Eleven/
+f4e3d55      Chirayu Desai        Set SDK_VERSION to current
+project packages/apps/LineageParts/
+591109a      Kevin F. Haggerty    Regenerate contributors cloud
+project packages/apps/Settings/
+deac40cfb9   Luca Stefani         Settings: Check if we have any color modes declared in overlay
+8bc845f36e   Michael Bestas       Backup: Don't hardcode ignored backup transports
+project packages/apps/SetupWizard/
+7423d88      Michael Bestas       SetupWizard: Add seedvault restore page in GMS flow
+project packages/inputmethods/LatinIME/
+79174974f    Iliya Bazlyankov     Include Bulgarian Extended Keyboard Layout
+project system/core/
+07c02388b    Dan Pasanen          fs_mgr: autodetect filesystem type
+project tools/repohooks/
+fc3ee95      Nick Anthony         Fix issue with triple quoted relnotes
+project vendor/lineage/
+0463e4fe     Michael Bestas       apn: Update Greek APN list
+9f130529     Michael Bestas       overlay: Add ignored backup transport overlay for Settings
