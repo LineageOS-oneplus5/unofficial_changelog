@@ -1,0 +1,41 @@
+project android/
+7e98735      Bruno Martins        Switch to our fork of hardware/qcom/keymaster
+project device/qcom/sepolicy-legacy/
+006ec9dd     Kevin F. Haggerty    sepolicy: Complete the removal of uce service definitions
+project external/e2fsprogs/
+b3e6ac35     Bruno Martins        resize: Make a target for standalone resize2fs_static binary
+project frameworks/base/
+99e5a73c086  Danny Lin            SystemUI: Allow privileged system apps to access screenshot service
+2ca9b626d45  Danny Lin            core: Expose method to start assistant through Binder
+project hardware/qcom-caf/msm8996/audio/
+13e39bb47    Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8996/display/
+bc83fe53a    Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8996/media/
+0f04f3c6a    Arne Coucheron       media: Switch to display_headers lib include
+921034c99    Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8998/audio/
+ed65f58e7    Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8998/display/
+a7f8fc8b8    Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8998/media/
+c31b59174    Arne Coucheron       media: Switch to display_headers lib include
+57a128f71    Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sdm845/audio/
+3b1daa1de    Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sdm845/display/
+81bffd168    Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sdm845/media/
+1bdf4586f    Arne Coucheron       media: Switch to display_headers lib include
+61321c7e0    Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project lineage/mirror/
+d38ac9e      Tim Schumacher       Updated lineage-minimal to 23-Nov-2020 13:01 UTC
+project packages/apps/Settings/
+d52cc4ac06   LuK1337              Settings: Add preference for KEY_MIN_REFRESH_RATE
+project packages/apps/Updater/
+9689a6b      Alessandro Astone    Updater: Retrieve recovery update setting using the prop itself
+project vendor/lineage/
+0cf494c3     115ek                apn: Add netzclub
+63f921ed     115ek                apn: Add MEDIONmobile
+cf8d90fd     Aaron Kling          atv: Remove AppDrawer
+a574c010     LuK1337              repopick: Use project revision if available
