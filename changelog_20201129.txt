@@ -1,0 +1,176 @@
+
+project bionic/
+e80e029ff    Tom Marshall         bionic: Support wildcards in cached hosts file
+6bedb2575    Tom Marshall         bionic: Sort and cache hosts file data for fast lookup
+project device/oneplus/msm8998-common/
+25ef0406c    Timi                 msm8998-common: update firmware if outdated
+ae582648b    Pranav Vashi         msm8998-common: Update sound trigger proprietary files
+a545f7378    Bruno Martins        msm8998-common: Remove unused jars and 32-bit radio libs
+12bc57d1f    Yifan Hong           msm8998-common: Add netutils-wrapper to device compatibility matrix.
+4e6aaa880    Bruno Martins        msm8998-common: Drop ims-ext-common hack
+a682be34b    LuK1337              msm8998-common: Enable vendor.qti.iwlan and force enable WFC while at it
+8417ea27d    Bruno Martins        msm8998-common: Unset BUILD_BROKEN_USES_BUILD_COPY_HEADERS flag
+69357d55c    Pranav Vashi         msm8998-common: audio: Use i2s path for speaker
+1b619cf38    kunleiz              msm8998-common: audio: Add speaker and bt-sco combo device
+d903f32f0    Pranav Vashi         msm8998-common: audio: Update mixer paths from OOS 10.0.0
+7d76c0adc    Nolen Johnson        msm8998-common: Cleanup dead targets
+a011ede52    LuK1337              msm8998-common: Drop android.hardware.thermal HAL
+project frameworks/av/
+e4f6a8b83c   Arne Coucheron       Enable legacy adaptive playback for QCOM_BSP_LEGACY
+efa070a3a3   Arne Coucheron       stagefright: omx: Rename legacy defaults to match lineage soong variable
+91e4c65ea2   Pig                  camera: Allow devices to load custom CameraParameter code
+a9243a0ddb   Priyanka Gujjula     libstagefright: Fix memory leak due to lock timeout
+a251debadc   Milos Ratkovic       Camera: check metadata type before releasing frame
+9a850914f7   Simon Shields        camera/media: Support legacy HALv1 camera in mediaserver
+ef1429d46e   Bruno Martins        camera: include: Don't override possible overlayed header
+78e9a85cb7   Milos Ratkovic       libstagefright: use 64-bit usage for native_window_set_usage
+2ccaceb78c   Manikanta Kanamarlapudi libstagefright: Free buffers on observer died
+552a9bdfad   Adrian DC            stagefright: ACodec: Resolve empty vendor parameters usage
+662ab67faf   Arne Coucheron       stagefright: omx: Don't signal dataspace change on legacy QCOM
+247553481f   Ethan Chen           libstagefright: Support YVU420SemiPlanar camera format
+bea60239ce   Steve Kondik         camera: Don't segfault if we get a NULL parameter
+6cc7a9a5bf   Steve Kondik         nuplayer: Avoid crash when codec fails to load
+project frameworks/base/
+2515b73300b  Dil3mm4              SystemUI: Don't shift KeyguardSecurityContainer when FOD isn't available
+469589860c8  Dil3mm4              FODCircleView: various improvements.
+project hardware/lineage/interfaces/
+0150945      Jason Macnak         interfaces: camera: Implement lockYCbCr stub for Mapper 4.0
+be81ba7      George Burgess IV    interfaces: camera: fix two potential null pointer uses
+8e8ac9b      Marissa Wall         interfaces: Camera: add IAllocator/IMapper 4.0 to camera HIDL
+project kernel/oneplus/msm8998/
+2f33c6faded1 Pranav Vashi         project_info: Fix size arguement clang error
+40992e24666a Nathan Chancellor    touchscreen: fw_update_v7: Fix constant logical operand warning
+b9c6a0b32346 Nathan Chancellor    project_info: Fix a section warning
+066f1e097784 neobuddy89           kernel: Fix Oneplus poor coding standard
+537584d14203 Nathan Chancellor    input: touchscreen: st: Don't redefine u8, u16, and u32
+667c5fc37395 Jean-Baptiste Théou  ASoC: codecs: tfa9891: add error translation routine
+e6a46d277f27 Nathan Chancellor    codecs: tfa9891: Hide self assign Clang warnings
+dbf89a2e92b5 Nathan Chancellor    nfc: pn5xx: Fix enum-conversion warnings
+f6625feba560 Nathan Chancellor    net: lan78xx: Avoid unnecessary self assignment
+84fb5662fd2a Pranav Vashi         scsi: Fix size arguement clang error
+4486bb74d474 Nathan Chancellor    soc: qcom: qpnp-haptic_oem: Fix self assign Clang warnings
+b7f75fdea4ac Nathan Chancellor    sched/sysctl: Fix one more attribute on extern declaration
+82c28a81e427 Pranav Vashi         nl80211: remove enum ieee80211_band
+b73e487eb90f Prasad Sodagudi      Makefile: Use cc-option to disable Qualcomm defined features
+52ffc8241af3 Park Ju Hyung        qcacld: initialize variables to avoid errors during compilation
+de8ee384b5a1 Park Ju Hyung        qcacld: nuke Kconfig-based configuration entirely
+1828895b90fe Peter Cai            drivers: qcacld: reverse fw-provided mac addr
+7519926c3f51 Timi                 drivers: staging: Import fw-api from LA.UM.8.4.r1-06200-8x98.0
+d692ceb01e77 Timi                 drivers: staging: import qca-wifi-host-cmn from LA.UM.8.4.r1-06200-8x98.0
+c0671852a091 Timi                 drivers: staging: import qcacld-3.0 from LA.UM.8.4.r1-06200-8x98.0
+a2679fe06135 Georg Veichtlbauer   oneplus5: remove idle gov ladder
+45bcf63de61b Georg Veichtlbauer   oneplus5: disable coresight
+42b8603757e1 Georg Veichtlbauer   oneplus5: disable ext2/ext3
+da3e861d8d3c Georg Veichtlbauer   oneplus5: disable remote debug interface
+c3ccdd105d11 Georg Veichtlbauer   oneplus5: increase jiffy to 30ms
+101fd39f855a Georg Veichtlbauer   oneplus5: remove some debugging options
+15d8816f1fe1 Georg Veichtlbauer   oneplus5: defconfig-ify kernel config
+95db65b940c2 Patrick Tjin         oneplus5: clean up configs
+b3981be89301 Timi                 oneplus5: enable CONFIG_COMPAT_VDSO
+a2aa33837594 Timi                 oneplus5: enable some USB adapters
+9ca338c2f70b Timi                 oneplus5: disable unsupported NFC drivers
+272ddd712ada Timi                 oneplus5: disable CONFIG_IOSCHED_TEST
+17c87cc12bc1 Martijn Coenen       oneplus5: Set CONFIG_BLK_DEV_LOOP_MIN_COUNT to 16.
+2b2c70292210 Pranav Vashi         staging: Add qcacld to Kconfig and Makefile
+a144ba219a7d codeworkx            oneplus5: leds: enable rgb sync
+606c0e3fdea9 Pranav Vashi         oneplus5: Do not enable verity
+0cda01a99bb4 Wei Wang             oneplus5: set default readahead to 2048KB
+a82e6203139a codeworkx            oneplus5: build qcacld 3.0
+9f4528597b3d Thierry Strudel      oneplus5: remove various debug configs
+d77ee7ae6641 Demon Singur         oneplus5: remove remaining unused configs
+dc35e52e6513 Adrian Salido        oneplus5: disable mdss xlog debug
+0db01232401f John Dias            oneplus5: disable SCHED_AUTOGROUP
+8628fc141b46 Sultan Alsawaf       oneplus5: disable cgroup debugging
+53f088e1f99b Patrick Tjin         oneplus5: enable various HID drivers
+632e70b7e937 joshuous             oneplus5: enable JUMP_LABEL
+9f20652e73b3 Demon Singur         oneplus5: disable suspend sync
+9558551eeb85 Demon Singur         oneplus5: enable power efficient wq
+3fe6bddae0d3 Timi                 oneplus5: enable BFQ by default
+934d49d96629 codeworkx            oneplus5: add initial defconfig
+6741d4b35371 Scott Mertz          pwm: qpnp-pwm: add api for synchronous enable of pwms
+c47d6008b134 Peter Collingbourne  FROMLIST: arm64: Build vDSO with -ffixed-x18
+aa8512edd627 Mark Salyzyn         ANDROID: clock_gettime(CLOCK_BOOTTIME,) slows down >20x
+77b52134372d Nathan Chancellor    FROMLIST: arm64: vdso32: Use full path to Clang instead of relying on PATH
+2150a8ff4cf0 Mark Salyzyn         ANDROID: arm64: vdso32: fix CC=clang build
+a896b325a158 Mark Salyzyn         ANDROID: CROSS_COMPILE_ARM32 must work if CONFIG_COMPAT_VDSO
+3c2a649ad433 Kevin Brodsky        FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO
+f8a4e0b3281a Kevin Brodsky        FROMLIST: BACKPORT: [PATCH 5/6] arm64: compat: 32-bit vDSO setup
+ed4c10bc9998 Kevin Brodsky        FROMLIST: [PATCH 4/6] arm64: compat: Add a 32-bit vDSO
+977128074767 Kevin Brodsky        FROMLIST: [PATCH 3/6] arm64: Refactor vDSO init/setup
+e5459acd8645 Kevin Brodsky        FROMLIST: [PATCH 2/6] arm64: elf: Set AT_SYSINFO_EHDR in compat processes
+9f962585b150 Kevin Brodsky        FROMLIST: [PATCH 1/6] arm64: compat: Use vDSO sigreturn trampolines if available
+cece47c4c4eb Mark Salyzyn         FROMLIST: lib: vdso: add support for time
+782cd0a31fc9 Kevin Brodsky        FROMLIST: [PATCH] arm64: compat: Expose offset to registers in sigframes
+e945ae9bc049 Mark Salyzyn         FROMLIST: [PATCH v5 12/12] lib: vdso: do not expose gettimeofday, if no arch supported timer
+311138c9bf25 Mark Salyzyn         FROMLIST: [PATCH v5 11/12] lib: vdso: Add support for CLOCK_BOOTTIME
+3ad46ff63bc8 Mark Salyzyn         FROMLIST: [PATCH v5 10/12] arm64: vdso: replace gettimeofday.S with global vgettimeofday.C
+a6d4890c432c Mark Salyzyn         FROMLIST: [PATCH v5 09/12] arm: vdso: move vgettimeofday.c to lib/vdso/
+47e5eb39168b Mark Salyzyn         FROMLIST: [PATCH v5 08/12] arm: vdso: Add ARCH_CLOCK_FIXED_MASK
+8e5b0f295fac Mark Salyzyn         FROMLIST: [PATCH v5 07/12] arm: vdso: disable profiling
+f91bd801bc1c Mark Salyzyn         FROMLIST: [PATCH v5 06/12] arm: vdso: add support for clock_getres
+8d0ae4bd8fb3 Mark Salyzyn         FROMLIST: [PATCH v6 05/12] arm: vdso: Add support for CLOCK_MONOTONIC_RAW
+b330c1cf9174 Mark Salyzyn         FROMLIST: [PATCH v5 04/12] arm: vdso: do calculations outside reader loops
+6187d2f33503 Mark Salyzyn         FROMLIST: [PATCH v5 03/12] arm: vdso: inline assembler operations to compiler.h
+19f551d3baff Mark Salyzyn         FROMLIST: [PATCH v5 02/12] arm: vdso: add include file defining __get_datapage()
+d52b355e3d56 Mark Salyzyn         FROMLIST: [PATCH v5 01/12] arm: vdso: rename vdso_datapage variables
+8e1b31597f40 Kevin Brodsky        FROMLIST: [PATCH v2 3/3] arm64: compat: Add CONFIG_KUSER_HELPERS
+f079b13b3c78 Kevin Brodsky        FROMLIST: [PATCH v2 2/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (assembler sources)
+c3ae7bac138c Kevin Brodsky        FROMLIST: [PATCH v2 1/3] arm64: compat: Split the sigreturn trampolines and kuser helpers (C sources)
+ffecb8b5ace9 Wei Wang             do not call trace_printk on non-debug build
+9c3ce7699f12 Thierry Strudel      remove calls to trace_printk
+e52ef1363d32 Sultanxda            devfreq: Don't force compilation of userspace governor
+e63f0bddb66a Jean Delvare         cpuidle: Don't enable all governors by default
+6b40c83c09aa Wei Wang             ANDROID: mm: add config for default readahead size
+28e39cf507bd Michael Bestas       thermal: tsens: Disable tsens_poll_check for msm8998
+a8365914b6cd Park Ju Hyung        trace: add CONFIG_DISABLE_TRACE_PRINTK option
+c79bd0fade64 Sultanxda            cpu: Silence log spam when a CPU is brought up
+605ec21a7ee0 Alex Naidis          msm: kgsl: Increase priority of RT thread
+e13dfa1d8d40 Johannes Berg        BACKPORT: cfg80211: remove enum ieee80211_band
+330c9e9cedc5 Pavankumar Kondeti   core_ctl: Consider high irq loaded CPU as busy
+e548017d57bd Sultan Alsawaf       treewide: Fix code issues detected using GCC 8.2.0
+c847c81978bf Pranav Vashi         drivers: Fix up disabling CONFIG_OEM_FORCE_DUMP
+ab6bba42c2b9 Dan Pasanen          power: don't ever reboot to verity red
+d29735447150 Michael Bestas       power: reset: Move in_panic handling out of dload mode
+e53cda662907 Paolo Valente        block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
+68f3139cd93a Daniel Micay         add toggle for disabling newly added USB devices
+ba20687f2ecf Alex Naidis          binder: Disable debug mask
+791c18c94100 kote                 Improve binder stability
+867771135a3b Sultan Alsawaf       staging: sync: Don't copy fence names by default
+1962039f0950 Josh Choo            block: Fix BFQ not being built
+7e539f19dbbf Johannes Berg        ipv4: add option to drop gratuitous ARP packets
+513fe2acfe48 Pranav Vashi         cpufreq: deoneplusify and remove PM QOS changes
+20a72d18473d Johannes Berg        ipv6: add option to drop unsolicited neighbor advertisements
+184c88eaf9b3 Johannes Berg        ipv6: add option to drop unicast encapsulated in L2 multicast
+d8c0a0764cfe Johannes Berg        ipv4: add option to drop unicast encapsulated in L2 multicast
+2210cf2f18a7 codeworkx            smb: enable otg feature on driver init and based on dash status
+89b196ebab8a codeworkx            mdss: use lower case letters for adobe_rgb, dcip3 and srgb to be consistent
+61d84547d258 codeworkx            tri-state-key: send proper input when updating keycodes from userspace
+c0b1a66b8bf7 codeworkx            tri_state_key: bring inline with lineage-15.1
+cd6f26baa033 codeworkx            synaptics S3320: bring inline with lineage-15.1
+8d67e937ab2b codeworkx            fpc1020: bring inline with lineage-15.1
+75ccdcdffb5e Sam Mortimer         msm8998: Add proximity_state sysfs support to goodix driver
+f4270498eebc Alex Naidis          DTS: Reduce msm-core polling rate to 100ms
+2ec1e3e4b8b3 Sultanxda            power: msm-core: Fix mutex not getting unlocked in error path
+36e59679755d Alexander Martinz    block, bfq: fix build breakage
+c2432e7f537d Alexander Martinz    block, bfq: update to latest bfq-v8-v4.4 state
+d1517bc97d50 Mauro Andreolini     block, bfq: add Early Queue Merge (EQM) to BFQ-v7r11 for 4.4.0
+5a64bbdcb92f Paolo Valente        block: introduce the BFQ-v7r11 I/O sched for 4.4.0
+c6c973b8342b codeworkx            leds-qpnp: revert changes made by op
+7aaa25d35463 Pranav Vashi         drivers: Allow disabling OEM debug support
+f68fd0b92697 Srinivas Girigowda   cfg80211: Support backport of removing ieee80211
+4ece0edc3bef Scott Mertz          leds: leds-qpnp: add synchronized rgb control
+c729a15fdfcb yanyh2               pwm-qpnp: fix the uninitialized pwm mode issue
+4962ad08c81c Scott Mertz          pwm: qpnp-pwm: add api for synchronous enable of pwms
+0851e5cdd7d1 Harshit Agarwal      Synchronize codes for Oneplus 5/5T OxygenOS 10.0.0
+28f93fa8d09a LuK1337              Revert "msm: kgsl: Mark the scratch buffer as privileged"
+f73e28bfe47a Pranav Vashi         Revert "mm-camera2:isp2: Notify dual cam drop"
+8b25acf5a1b2 Pranav Vashi         Revert "msm: camera: reset atomic variable"
+project lineage/wiki/
+c507fbe      althafvly            wiki: devices: motorola-msm8916: Add alert on latest firmware
+833a708      Nolen Johnson        fixup! wiki: contributors: Update hierarchy order
+98ff070      Nolen Johnson        wiki: contributors: Update hierarchy order
+project packages/apps/Settings/
+c67141ebb0   LuK1337              Settings: Pass Locale.US when formatting refresh rate string
+project vendor/lineage/
+a039a46b     Volodymyr Zhdanov    extract_utils: implement patchelf
+3db3630f     Michael Bestas       config: Remove non-existent/deprecated packages
