@@ -1,0 +1,194 @@
+project android/
+0a340db      Michael Bestas       manifest: Switch to our openssh fork
+3de0a6a      Michael Bestas       Switch to our forks of qcom audio/ipacfg-mgr
+9a22190      Michael Bestas       Switch to our fork of external/tinyalsa
+project bionic/
+759b354c7    Quallenauge          Add ability to build scudo-free 32-bit libc variant.
+project build/make/
+6c9266d18    Quallenauge          soong: Add ability to build scudo-free 32-bit libc variant.
+project build/soong/
+6695d73e     Quallenauge          Add ability to enable scudo-free 32-bit libc variant.
+project device/lineage/sepolicy/
+9c543b7      surblazer            qcom: add msm8960 and apq8084 into upstream list
+project device/oneplus/msm8998-common/
+00ef3d459    Ethan Chen           msm8998-common: Remove unnecessary property triggers
+acc1fada6    Ethan Chen           msm8998-common: Remove unnecessary ssr_setup service
+9528d9e15    Ethan Chen           msm8998-common: Remove unnecessary /data/vendor directories
+c5ec6defa    Ethan Chen           msm8998-common: Do not override ro.vendor.gpu.available_frequencies
+19953dd2b    Ethan Chen           msm8998-common: Do not override GLES version
+1d2e13861    Ethan Chen           msm8998-common: Remove unneccessary qbcharger service
+f8cefb91a    Ethan Chen           msm8998-common: Remove unnecessary wcnss-service start
+5a7b4000b    Ethan Chen           msm8998-common: Do not override rild.libpath
+81d0984ea    Ethan Chen           msm8998-common: Do not override ro.sf.lcd_density
+a85f6d072    Ethan Chen           msm8998-common: Remove unnecessary rmnet module loading
+6579d1102    Georg Veichtlbauer   msm8998-common: remove service starts for move_wifi|time_data
+77f06c04b    Ethan Chen           msm8998-common: Remove unnecessary netmgrd stop
+d6ff05cf3    Georg Veichtlbauer   msm8998-common: remove wcnss from configfs
+58f0d6be0    Ethan Chen           msm8998-common: Remove unnecessary dataqti service
+17f4c96db    Ethan Chen           msm8998-common: Remove unnecessary ftmd service
+99d737b48    Ethan Chen           msm8998-common: Remove unnecessary adpl service
+4e0027901    Ethan Chen           msm8998-common: Remove unnecessary kernel corefile debug setup
+02e78c9e4    Georg Veichtlbauer   msm8998-common: remove stray service dirs and start attempts
+4ff84da13    Ethan Chen           msm8998-common: Remove wigig service entries
+e52b8c60c    Ethan Chen           msm8998-common: Remove duplicate android.hardware.audio service entry
+d23c81085    Ethan Chen           msm8998-common: Remove unnecessary power_off_alarm service
+fecd74e7e    Ethan Chen           msm8998-common: Remove unnecessary hostapd service entries
+24eb1ba0d    Georg Veichtlbauer   msm8998-common: remove last dhcpcd remnant
+35d26b709    Ethan Chen           msm8998-common: Remove unused fstman entries
+2f77a11bc    Ethan Chen           msm8998-common: Remove subsystem_ramdump
+6134f9dbf    Ethan Chen           msm8998-common: Remove non-vendor IMS, FOTA folders
+ead89fc94    Ethan Chen           msm8998-common: Remove unnecessary QDMA dropbox directories
+d84650917    Georg Veichtlbauer   msm8998-common: re-order LED permissions
+8a22107d7    Ethan Chen           msm8998-common: Remove unnecessary panel0-backlight permission
+f95f8a2ae    Ethan Chen           msm8998-common: Remove unnecessary msm_sdcc permissions
+1f61bad08    Ethan Chen           msm8998-common: Remove deprecated persist/speccfg
+ef51ab118    Georg Veichtlbauer   msm8998-common: update more persist directories
+77e9697b1    Ethan Chen           msm8998-common: Remove unnecessary sensor permissions
+0b3fb0245    Ethan Chen           msm8998-common: Remove ramdump permissions
+6817bdeec    Ethan Chen           msm8998-common: Remove CCID permission
+27b9aaadf    Ethan Chen           msm8998-common: Remove deprecated msm_hsubs permission
+be0dcc6ee    Ethan Chen           msm8998-common: Remove deprecated persist directories
+c9defc321    Ethan Chen           msm8998-common: Remove invalid sysfs permissions
+560e3f5b8    Georg Veichtlbauer   msm8998-common: remove port-bridge service and directory
+fdb85ac7f    Ethan Chen           msm8998-common: Remove compat persist sensor directory config
+a29f2432c    Ethan Chen           msm8998-common: Remove unnecessary QTI logkit directories
+30b2edf73    Ethan Chen           msm8998-common: Remove swap configuration
+c34c56462    Ethan Chen           msm8998-common: Remove nonexistent block device readahead config
+15b27e14c    Ethan Chen           msm8998-common: Remove unused cgroup configuration
+201c4bcb0    Ethan Chen           msm8998-common: Remove duplicate debugfs tracing chmod
+3d0372147    Ethan Chen           msm8998-common: Remove nonexistent debugfs nodes
+4f09edad0    Georg Veichtlbauer   msm8998-common: move everything out of /prebuilt, explicitly copy files
+c53348741    Georg Veichtlbauer   msm8998-common: format init.qcom.rc
+aef8d6ea0    Georg Veichtlbauer   msm8998-common: merge init.oem.rc into init.qcom.rc
+43bedd428    Georg Veichtlbauer   msm8998-common: remove unused syspart_fixup and wifi scripts
+4c203e293    Georg Veichtlbauer   msm8998-common: Merge init.class_main.sh into init.qcom.rc
+a391de0f9    Georg Veichtlbauer   msm8998-common: Format init.qcom.post_boot.sh
+11ba5bc1b    Ethan Chen           msm8998-common: Remove unnecessary init.qcom.post_boot.sh configuration
+7987c77f9    Ethan Chen           msm8998-common: Remove unnecessary init.qcom.early_boot.sh configuration
+e097f6263    Ethan Chen           msm8998-common: Remove unnecessary init.qcom.usb.sh configuration
+ad0579d97    Ethan Chen           msm8998-common: Rename init.qcom.sh to init.radio.sh
+34a8d9255    Ethan Chen           msm8998-common: Remove unnecessary parts of init.qcom.sh
+bfb3a30f6    Georg Veichtlbauer   msm8998-common: merge init.lineage.rc into init.qcom.rc
+282dfd0ac    Georg Veichtlbauer   msm8998-common: merge init.target.performance.rc into init.qcom.rc
+9506c78f7    Georg Veichtlbauer   msm8998-common: merge init.target.rc into init.qcom.rc
+30d1281f7    Ethan Chen           msm8998-common: Remove hbtp components
+05aad1947    Georg Veichtlbauer   msm8998-common: Remove non-existant services
+da3be290c    Ethan Chen           msm8998-common: Use wait_for_prop to wait for qseecomd ready
+579bcc499    Ethan Chen           msm8998-common: Remove init.qcom.sensors scripting
+9034147b0    Ethan Chen           msm8998-common: Remove unused init.qcom.class_core script
+4d1470d21    Ethan Chen           msm8998-common: Remove unused init.qti.ims.sh
+d15833de7    Ethan Chen           msm8998-common: Remove factory testing init scripting
+4de40eee3    Ethan Chen           msm8998-common: Remove unused init.qti.fm.sh script
+61ed386f8    Ethan Chen           msm8998-common: Remove Qualcomm crashdata script
+18b6b14e3    Ethan Chen           msm8998-common: Remove unused init.qcom.efs.sync script
+197731ad4    Ethan Chen           msm8998-common: Remove unused init.qcom.coex script
+36d1ec89a    Ethan Chen           msm8998-common: Remove unused init.mdm script
+325b1b073    Ethan Chen           msm8998-common: Remove unused crda script
+4b11c6345    Ethan Chen           msm8998-common: Remove init.qcom.sdio script
+2dd7116fb    Ethan Chen           msm8998-common: Remove android.hardware.drm@1.1-service.widevine package
+326d0cc23    Ethan Chen           msm8998-common: Remove unused flags
+3e60fb02a    Ethan Chen           msm8998-common: Remove unnecessary TARGET_USES_INTERACTION_BOOST flag
+ef3620280    Ethan Chen           msm8998-common: Remove unnecessary android.hardware.radio entries
+305b07069    Ethan Chen           msm8998-common: Remove unnecessary netutils packages
+c20a5fa9e    Nolen Johnson        msm8998-common: overlay: Remove burn in protection support
+46d751239    Arne Coucheron       msm8998-common: overlay: Remove config_enabled_lte overlay
+647e15930    Nolen Johnson        msm8998-common: bluetooth: Disable clean turn on
+fbd208b05    Georg Veichtlbauer   msm8998-common: Clean-up deprecated/unneeded board flags
+c62c60635    Timi                 msm8998-common: update firmware if outdated
+493b1f042    Timi                 msm8998-common: sepolicy: address qcom system -daemon denials
+b04235466    Weiyin Jiang         msm8998-common: clean up stale audiosphere implementation
+ef3c5671f    Sujin Panicker       msm8998-common: Add 48khz sampling rate to spkr prot tx uc
+422770da7    Prakash Pabba        msm8998-common: Enable ipsec_tunnel feature
+a8e18993d    Volodymyr Zhdanov    msm8998-common: disable a2dp offload feature
+3e74fd6a8    Bruno Martins        msm8998-common: Fix diag driver access permission for IMS daemons
+23dbb8d80    Pranav Vashi         msm8998-common: Update sound trigger proprietary files
+12bc57d1f    Yifan Hong           msm8998-common: Add netutils-wrapper to device compatibility matrix.
+4e6aaa880    Bruno Martins        msm8998-common: Drop ims-ext-common hack
+a682be34b    LuK1337              msm8998-common: Enable vendor.qti.iwlan and force enable WFC while at it
+8417ea27d    Bruno Martins        msm8998-common: Unset BUILD_BROKEN_USES_BUILD_COPY_HEADERS flag
+69357d55c    Pranav Vashi         msm8998-common: audio: Use i2s path for speaker
+1b619cf38    kunleiz              msm8998-common: audio: Add speaker and bt-sco combo device
+d903f32f0    Pranav Vashi         msm8998-common: audio: Update mixer paths from OOS 10.0.0
+7d76c0adc    Nolen Johnson        msm8998-common: Cleanup dead targets
+project frameworks/av/
+8daab0a811   Paras Nagda          stagefright: add changes related to high-framerates in CameraSource
+f91fabf2a8   Luca Stefani         Adapt session API for newly added AudioPolicyService code
+fa41e25a10   Ryoichi Yasutake     Request to reset effect buffer in clearInputBuffer
+project frameworks/base/
+1f766503859  LuK1337              fixup! Add support for runtime toggle of navbar
+b2bfd919d20  Dan Sandler          Updates to various icons:
+dc5831fb44a  Demon000             ScreenshotSelector: handle rotation issues
+a92e8f7ba64  LuK1337              fixup! FODCircleView: various improvements.
+project frameworks/native/
+cc99a996c    Wang Wen             Correct PowerManager transaction IDs. These transaction IDs must be kept in sync with the method order from IPowerManager.aidl.
+project hardware/qcom-caf/msm8960/audio/
+7d62e7d4c    Arne Coucheron       Partial revert of "hal: update input source type during open input stream"
+483e4623c    Venkata Narendra Kumar Gutta hal: properly reset sample rate of VoIP data
+f647c4761    Kunlei Zhang         hal: Update pcm_open flag for compress voip tx
+project hardware/qcom-caf/msm8974/display/
+05538f83e    Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/wlan/
+33e1172      Michael Bestas       wcnss-service: Remove setup_wlan_driver_ath_prop()
+project lineage-sdk/
+c127bb2d     Bruno Martins        sdk: Set AOSP default behavior for app switch button long press action
+project lineage/mirror/
+d413190      Tim Schumacher       Updated aosp-minimal to 04-Dec-2020 13:01 UTC
+project lineage/wiki/
+1f64f9a      Thue                 devices: j{active,f,fve}lte*: Correct recovery mode key-combo
+ec3466d      Thue                 templates: {odin,heimdall}: Provide tip about no-reboot intricacies
+2c18241      Thue                 wiki: templates: device_install: Add tip about adb sideload 47% bug
+project packages/apps/DocumentsUI/
+00e52a00e    Michael Bestas       Remove unused string resources
+project packages/apps/Eleven/
+c31ddfd      Craig G              Eleven: Increase the height of the play queue slider.
+fa46b8b      Craig G              Eleven: Fix SettingsActivity crash
+06bbd2e      Craig G              Eleven: 'audio.id as _id' doesn't seem to make sense
+3b592f0      Craig G              Eleven: Fix album id column
+c161acb      Craig G              Eleven: Fix integer overflow
+20c2fe0      Bruno Martins        Eleven: Remove dead code
+project packages/apps/Settings/
+4df62dfa2a   inthewaves           get outer NFC preference to listen for changes
+82000e3292   Michael Bestas       Remove unused translations
+4e52f25f56   timhypeng            Set highest priority as default value to Bluetooth codec
+1d4c70e00f   changbetty           [Telephony settings] Settings crashes when rotate screen in Preferred network type
+90e1fca1d3   Avinash Nalluri      Fix for incorrect display of preferred network type on UI
+ecdd346d1d   Taesu Lee            Avoid unexpected state changes for enhanced preferences
+a000e45145   SongFerngWang        Fix NullPointerException, TelephonyManager.getServiceState is null
+83d8ecaf1a   Bonian Chen          [Settings] subscription UI should be closed when SIM is removed
+4df18fe401   Avinash Nalluri      Add NR network type to "Global" mode preference
+8e717f5dff   hoffc                Settings: Fix exception in about phone during SIM swap
+6bb4a0c5f8   Sneh Bansal          Prevent errors when updating operator pref summary
+8128854ffb   Chen Chen            BluetoothPairingRequest: Add null check for action
+8c01cea66e   Zoey Chen            Improve the performance of displaying preference - multithread.
+d17e37b112   joffenberg           Remove "storage type" preference from Settings
+f0804e13d9   Wei Huang            Fix mvno data field summary not update issue
+d99cecb108   Wang Han             Fix NPE if default supervisor is not defined
+b09041ee8c   Grace Jia            Disable 'Mobile data' selection after removing SIM
+0d7d529c74   Wang Han             Settings: Hide carrier settings version if empty
+1aeab8af6b   Wang Han             Preserve icon for "manage space"
+ec0c4653bc   Vince Leung          Use super method for Vibration preferences
+d9e6de8b5b   Pingzhi Wang         Button text for app space management is overwritten
+e4facd9c47   Xinli Zhang          Usb preference title changed when rotating
+3036c093cd   Mill Chen            RESTRICT AUTOMERGE Allow LockScreenPattern to be launched in the pinning screen
+734c110f66   Daniel Hunt          Fix NPE in PanelFragment
+fb8d6de801   Rafael Matias de Lima Fix for User edit info dialog during rotation
+project packages/apps/Trebuchet/
+03202a2e9    Edward Cross         QuickStep: Google Feed integration
+f8018b981    Bruno Martins        Trebuchet: Move Duo into Google folder as per GMS sample integration
+ef5776a5d    Bruno Martins        Trebuchet: Update GMS packages in the default workspaces
+2e506ab69    Bruno Martins        TrebuchetGo: Add Go specific default workspace
+13f1af33b    Danny Lin            Launcher3: Add 2x2 workspace grid option
+3dbae5953    Michael Bestas       Add missing default workspace changes in LauncherFiles
+project packages/inputmethods/LatinIME/
+d1a0d2c24    Michael Bestas       LatinIME: Update emojis
+project system/vold/
+f2d0661      Scott Mertz          vold: skip first disk change when converting MBR to GPT
+project tools/repohooks/
+8f1ceeb      Mike Frysinger       pre-upload: warn whenever a hook is too slow
+6c6f9ee      Mike Frysinger       drop file coding & print_function import
+project vendor/lineage/
+ab69681c     Thomas Karl Pietrowski apn: Ting: Adding missing flag to list of types
+ca94a979     Arne Coucheron       soong: Add flag for disabling postrender cleanup
+bcf6cd57     Bruno Martins        partner_gms: Add support for Android Go GMS
+f64ce284     Bruno Martins        lineage: Add Android Go specific configs
+1f0f73d5     Bruno Martins        common_mobile: Don't forcibly ship optional AOSP packages
