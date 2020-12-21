@@ -1,0 +1,66 @@
+project android/
+152615b      Michael Bestas       manifest: Switch to our Gallery2 fork
+5b29ae8      Nolen Johnson        fixup! manifest: Track soundtrigger and ipacfg-mgr for floral
+f376989      Nolen Johnson        manifest: Track soundtrigger and ipacfg-mgr for floral
+a09e0e6      Bruno Martins        Move hardware/libhardware_legacy back to AOSP remote
+project device/oneplus/msm8998-common/
+3fbd27b      Georg Veichtlbauer   msm8998-common: kill remaining trailing whitespaces
+077f4b9      Georg Veichtlbauer   msm8998-common: remove Qualcomm QDMA service
+c35bede      Georg Veichtlbauer   msm8998-common: remove Qualcommm SSG services
+project frameworks/base/
+e7701b94157  yangyankai1          AutoBrightness: Remove handler's messages before send.
+aa6dd79c0d3  Zhuying Li           Unregistering PackageMonitor only when has registered it
+dbdea981d0e  Jaegeuk Kim          IdleMaint: run IdleMaint if battery is charging
+0084a33b598  maxwen               SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod
+8d288d143c2  Danny Lin            SystemUI: Fix uneven volume icon padding in status bar
+bed7b35b56a  Danny Lin            SystemUI: Restore analog and bubble clock styles
+f6232ffcfcf  Danny Lin            Revert "Disable ClockOptionsProvider"
+c4df634ecb0  Danny Lin            overlays: Fix icon pack target packages for AOSP
+6cb4f79dad9  Danny Lin            QS: Opportunistically show 3 rows with media player
+project frameworks/native/
+7e654fcc2    Steve Kondik         input: Adjust priority
+project hardware/knowles/athletico/sound_trigger_hal/
+c66811b      Chirayu Desai        Use generated kernel headers
+project hardware/qcom-caf/msm8916/media/
+bf62f596b    Arne Coucheron       media: Add media headers lib
+5c9137073    Arne Coucheron       media: Include display headers
+8381e4fa1    Manikanta Kanamarlapudi media: change way of accessing aosp project headers
+2bf6e2e8b    Arne Coucheron       media: Use generated kernel headers
+project hardware/qcom-caf/wlan/
+bb71c38      Michael Bestas       wcnss-service: Opt-in to disable copying WCNSS_qcom_cfg.ini to userdata
+project hardware/qcom/sm8150/data/ipacfg-mgr/
+3cbf948      Chirayu Desai        Use generated kernel headers
+4efc7c0      arnav_s              Kernel Header Changes
+project lineage/mirror/
+0aab4ae      Tim Schumacher       Updated lineage-minimal to 20-Dec-2020 13:01 UTC
+c4533eb      Kevin F. Haggerty    Updated to 18-Dec-2020 14:09 UTC
+4c9a5a4      Tim Schumacher       Updated aosp-minimal to 18-Dec-2020 13:01 UTC
+4e89d82      Tim Schumacher       Updated aosp-minimal to 17-Dec-2020 13:01 UTC
+b421d0f      Tim Schumacher       Updated aosp-minimal to 16-Dec-2020 13:01 UTC
+6f597a9      Kevin F. Haggerty    Updated to 15-Dec-2020 13:11 UTC
+9240572      Tim Schumacher       Updated lineage-minimal to 15-Dec-2020 13:02 UTC
+cfcbbb1      Tim Schumacher       Updated to 15-Dec-2020 13:01 UTC
+project lineage/wiki/
+45041be      Michael W            wiki: Move how-tos to a better url scheme
+b4e3df4      Phyks (Lucas Verney) State that Gerrit username is case-sensitive
+77a8c73      Phyks (Lucas Verney) Make local bundle/vendor install of Jekyll easier
+project packages/apps/Backgrounds/
+44344d3      Michael Bestas       Backgrounds: Move to /product
+d2ff9ab      LuK1337              Backgrounds: Update resource name to match AOSP changes in WallpaperPicker2
+project packages/apps/ExactCalculator/
+c3602a5      Michael Bestas       ExactCalculator: Move to /product
+64fe55a      Michael Bestas       ExactCalculator: Convert to Android.bp
+project packages/apps/Updater/
+ffe5b52      Pavel Salomatov      UpdatesDbHelper: Move identical code into helper method
+project packages/services/BuiltInPrintService/
+4c6694b      Glade Diviney        use RGB when delivering images to printers
+project system/core/
+4b05abc08    Wei Wang             Boost init priority before main loop
+project system/netd/
+a3947bd2     Lukas0610            netd: Allow devices to force-add directly-connected routes
+project vendor/lineage/
+4562fe4e     Han Wang             prebuilt: Remove content-types.properties
+0adb3e0b     Danny Lin            ThemePicker: Define clocks stub package
+d02c3140     Danny Lin            SystemUI: Whitelist QuickAccessWallet plugin
+7a31b36b     Danny Lin            config: Build QuickAccessWallet plugin for SystemUI
+46b6e3a4     Alessandro Astone    extract_utils: generate_prop_list: Ignore vdex/odex files too
