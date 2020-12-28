@@ -1,0 +1,157 @@
+project android/
+f315bb7      Kevin F. Haggerty    manifest: Track our own tzdata-related repos
+fa215b0      Pig                  lineage: Re-sync QTI BT repos
+13cb0cf      althafvly            lineage: Track our Snap Camera
+f32e528      Michael Bestas       lineage: Sync SimpleDeviceConfig
+project bootable/recovery/
+c4b3e646     Alessandro Astone    recovery: Allow going back in rescue party menu
+project device/oneplus/msm8998-common/
+5301d23d     Steven Moreland      msm8998-common: Only include bitness of hal impls that is used.
+a9846e67     Timi                 msm8998-common: add missing libqdma_file_agent for xtra-daemon
+dd58fab2     Volodymyr Zhdanov    msm8998-common: update aptX blobs from walleye QP1A.190711.020
+631d0cdf     Georg Veichtlbauer   msm8998-common: use full usb 1.0 hal, not basic
+234f9c91     Georg Veichtlbauer   msm8998-common: clean up init.qcom.usb
+a7a5443d     Georg Veichtlbauer   msm8998-common: clean up kernel commandline
+d39183fd     Georg Veichtlbauer   msm8998-common: remove usb vendor properties
+7a0909c1     Georg Veichtlbauer   msm8998-common: remove "audio dynamic feature flags"
+c54fb9e9     Timi                 msm8998-common: light: remove inexistent backlight paths
+a4006020     Bruno Martins        msm8998-common: Clean out BT related cruft
+28a1481a     Bruno Martins        msm8998-common: bluetooth: Undef BLUETOOTH_QTI_SW
+50a431dc     Timi                 msm8998-common: livedisplay: set proper permissions
+3a016eaa     Timi                 msm8998-common: livedisplay: inline with Oneplus sm8150-common
+e62de699     LuK1337              msm8998-common: livedisplay: Drop unnecessary nullptr checks
+6e4e79c6     dianlujitao          msm8998-common: livedisplay: Use modules from common implementation
+project device/qcom/sepolicy_vndr/
+0a4f9ef6     Bruno Martins        legacy: Allow writing WLAN driver/fw version into property
+2f7337d4     Bruno Martins        common: Address BT denials
+project external/chromium-webview/
+c780a2e      Kevin F. Haggerty    webview: Hard no to persistent histograms
+project external/cldr/
+bca0ad9      Neil Fuller          RESTRICT AUTOMERGE CLDR-14225 tz database 2020b updates [R]
+1b1fe92      Neil Fuller          RESTRICT AUTOMERGE CLDR-13739 Changed some tzdata files to rear-guard version. (#445)
+project external/icu/
+56b88bcb4    Neil Fuller          RESTRICT AUTOMERGE Update Android to tzdb 2020d [R]
+e0583f372    Neil Fuller          RESTRICT AUTOMERGE Update Android to tzdb 2020c [R]
+394ae3d56    Neil Fuller          RESTRICT AUTOMERGE Update Android to tzdb 2020b [R]
+project frameworks/base/
+a31439f6faf  Volodymyr Zhdanov    SystemUI: Fix size of icon of vibrate ringer mode for additional icon packs
+f72364cac88  pramod kotreshappa   Add LC3 codec type.
+d78d862731d  Manisha Agarwal      Audio: Add support for lc3 codec.
+d620f883882  Kiran Kelageri       Bluetooth: Add APTX-Adaptive and APTX-TWS+ entries.
+77aa0644fbf  Mingbo Zhang         Add callback onA2dpCodecConfigChanged
+10a98858ecb  Gurpreet Ghai        Audio: Do not disconnect profiles till Bluetooth Off
+3518d608618  Zhou Song            Audio: use cached BT codec info during disconnecting
+de3689c863f  Manisha Agarwal      Audio: Update current active bt device of mApmConnectedDevices.
+9a44270f368  Sagar Verma          BT-Audio: Keep track of Active TWS+ EB device in BTHelper
+3d08aec2bcb  Sravan Voleti        BLE: Fix NPE during start advertising
+42ca62db7d7  Scott Lobdell        Fix build errors
+0f9e029326f  Subramanian Srinivasan Fix BLE transport discovery scan filter
+ca935c9a8a1  dianlujitao          BT: Relocate A2DP codec strings for translation
+0218bfb65db  Naval saini          Enable codec change request when mode changes in aptX-adaptive
+70f4132be56  Satheesh Kumar Pallemoni Keep a null check before accessing the BluetoothA2dpWrapper APIs.
+371694c1575  pramod kotreshappa   Bluetooth: Fix for out of bound exception
+75b80d18a62  Gurpreet Ghai        BT Dev: Increase array size for codec selection in Dev Op
+73da27f32db  Diego Wilson         Keep the BluetoothHeadset finalize() method protected
+fc7ce01f62b  Bandari Ramesh       Bluetooth: Fix for Global reference table overflow issue[1/2]
+c2d32c09fbf  Gurpreet Ghai        BT: Add new intent to broadcast IOT device details
+79e027d87b9  Gurpreet Ghai        BT_Audio: Updated Check for TWS+ switch
+8f2448812b9  pramod kotreshappa   TWS_A2DP: Handle active device change between TWS+ earbuds
+f9167b3b7c0  Dhananjay Kumar      audio: Add support for APTX TWSP audio codec
+6e6110f66b0  Naresh Tanniru       audio: Add support for audio extended codecs
+143de070621  Diego Wilson         Use BluetoothUtils instead of Utils
+282ac82aef7  Venkata Jagadeesh Garaga GAP: Handle the race condition cases in auto connect logic
+408ffd13c35  Sravan Kumar V       Obex: Squashed commit of the following
+64067a1567c  Subramanian Srinivasan Add scan filter for Transport Discovery data
+8ce3d8de6d9  Mingbo Zhang         Support CALLBACK_TYPE_SENSOR_ROUTING
+d72d3aa39c6  Subramanian Srinivasan Add support for Transport discovery AD type (1/2)
+6c0ca70f9a4  Bhakthavatsala Raghavendra Bluetooth: TWSP: Support Battery Status information display
+624f769a585  Sumit Bajpai         BT: Send info if call is CS type from telecomm service to BT apps.
+b28fd0bbc68  Venkata Jagadeesh Garaga GAP: Reset bondingInitiatedLocally flag(1/3)
+be64cbb491d  Kiran Kelageri       Bluetooth-TWS: Disable outgoing connection to 2nd earbud
+82f0609c0c2  Kiran Kelageri       Bluetooth-TWS: Disable outgoing connection for 2nd earbud.
+9289829344e  Safoorah Banu Shaik  Bluetooth: Rename bluetooth property to support new P Treble rules
+37661a43cae  Kiran Kelageri       Bluetooth: Unpair both earbuds on unpair.
+86eb709f655  Bandari Ramesh       Bluetooth: Add SDK API support for TWS feature (2)
+948cad4a97a  Samyak Jain          Revert the change: AudioService: remove dead BT code.
+0a5e399c9dc  pramod kotreshappa   TWS-A2DP: Add TWS+ codec to DevUI support
+7ddab60492c  Gurpreet Ghai        BT: Adding aptX-Adaptive codec entry to Framework
+3511ebdc59b  Mingbo Zhang         Add BluetoothQualityReport class(1/2)
+1e19a67067b  Paul Keith           UserRestrictionUtils: Return null Bundle if there are no restrictions
+1108fc364cf  Steve Kondik         Keyguard: Allow disabling fingerprint wake-and-unlock
+5d5e5e2c87a  Danny Lin            SystemUI: Increase icon padding in QS privacy chip
+969918bf7b3  Sam Mortimer         fw/b: Add capability to allow tethering to use VPN upstreams
+project kernel/oneplus/msm8998/
+b17de113b018 Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+02cc365cfda5 neobuddy89           kernel: Fix Oneplus poor coding standard
+4692465e797d Eric Biggers         security: pfk: fix build when ecryptfs is disabled
+40b76c54564a Peter Cai            drivers: qcacld: reverse fw-provided mac addr
+7330a3cce1e8 Park Ju Hyung        qcacld: initialize variables to avoid errors during compilation
+7e4cd6e0d589 Park Ju Hyung        qcacld: nuke Kconfig-based configuration entirely
+79d2b03f66e8 Pranav Vashi         staging: Add qcacld to Kconfig and Makefile
+395094b2a349 Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/fw-api into HEAD
+e02595eeb43e Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn into HEAD
+94d7180fe436 Timi                 Merge tag 'LA.UM.8.4.r1-06000-8x98.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0 into HEAD
+project lineage-sdk/
+89f20377     Sam Mortimer         lineage-sdk: Create minimal lineagesettings library for apex use
+project lineage/hudson/
+d28011c      Michael Bestas       Revert "Drop kuntao"
+93e132a      Michael Bestas       Drop kuntao
+project lineage/mirror/
+b85f1a0      Tim Schumacher       Updated to 28-Dec-2020 13:00 UTC
+86ecd60      Tim Schumacher       Updated aosp-minimal to 24-Dec-2020 13:01 UTC
+f229d03      Kevin F. Haggerty    Updated to 23-Dec-2020 13:46 UTC
+b4080c5      Tim Schumacher       Updated lineage-minimal to 23-Dec-2020 13:01 UTC
+project lineage/wiki/
+25d9aaf      Timi                 wiki: cheeseburger,dumpling: firmware is not handleded by user
+b7f3120      Harry Youd           wiki: Fix up gta4xlwifi data
+716983e      Tim Zimmermann       wiki: add Galaxy Tab S6 Lite Wi-Fi (gta4xlwifi)
+project packages/apps/Contacts/
+44961747d    Toha                 Contacts: Enable support for device contact.
+project packages/apps/Etar/
+a4cced11     LuK1337              Etar: Add local com.google.android.material_material prebuilt
+8a5a01f1     LuK1337              Hardcode `locationIconRounded` corner size
+3c8850d7     Gitsaibot            Add accidentally deleted code (#820)
+c70e0672     Gitsaibot            Release version 1.0.24 (#817)
+f779d0d5     Jochen Sprickerhof   Update submodules (#819)
+735feb5d     Gitsaibot            Let widget respect app theme colors (#816)
+ffa837ad     Gitsaibot            Improve location drop box (#815)
+3cf0c4da     Gitsaibot            Set api21 as minsdk
+project packages/apps/Settings/
+f7178f562d   Satheesh Kumar Pallemoni A2dpSrc: Bluetooth codec Dev-UI support for QVA codecs
+7a6c634f44   Steven Laver         bluetooth: update SavedBluetoothTwsDeviceUpdater for superclass ctor signature change
+594ac09d57   Justin DeMartino     Implement abstract method getPreferenceKey in SavedBluetoothTwsDeviceUpdater
+941dd0d66a   dianlujitao          BT: Use translated a2dp codec strings
+683fd8d269   Satheesh Kumar Pallemoni A2dpSrc: DEV-UI support for Blutooth Audio codec.
+e320a8b385   zhenchao             Bluetooth-TWS: UI updates based on Filter matched
+51b12838be   Kiran Kelageri       Bluetooth-TWS: UI updates based on profile connection.
+bb7abeebcc   Jiyong Park          Fix build error
+7092980b54   Kiran Kelageri       Bluetooth-TWS: Filter TWS devices
+6372a3aeef   Kiran Kelageri       Bluetooth: Create new catogory for earbuds
+59fe5d0e07   Chirayu Desai        Add translations for face unlock strings
+b46d1f7315   Chirayu Desai        Add strings for face unlock feature
+9423d76498   Michael Bestas       Revert "Remove permission bar chart in Privacy setting"
+project packages/apps/SetupWizard/
+648c83d      Timi                 SetupWizard: update recovery after setup
+project packages/apps/Snap/
+a3fddbc8a    Paul Keith           {Capture,MultiCamera}UI: Match video stop icon to API1 mode
+d08c78d80    Paul Keith           Snap: chmod 0644
+05e1f3f51    Paul Keith           Snap: dos2unix
+600377cfe    Paul Keith           CaptureModule: Only look for ssm capture results if ssm is enabled
+7c2678a3b    Paul Keith           CaptureModule: Fix init sequence
+dc83fd78a    xianming wang        SnapdragonCamera: Correct the mBackCameraId and mFrontCameraId
+c9d8fe692    Michael Bestas       Snap: Port all string improvements from lineage-17.1
+991dec3a8    Arne Coucheron       Snap: Fix swipe right to open menu
+project packages/apps/Updater/
+29ca6e5      chrmhoffmann         update push script: remove bashisms
+project packages/providers/ContactsProvider/
+78f2b528     Toha                 ContactsProvider: Prevent device contact being deleted.
+project system/core/
+8a68cd2cb    Scott Mertz          healthd: allow custom charger images
+project system/timezone/
+16a8d2a      Neil Fuller          RESTRICT AUTOMERGE Update Android from 2020c to 2020d [R]
+927672e      Neil Fuller          RESTRICT AUTOMERGE Update Android from 2020b to 2020c [R]
+5c9bf9b      Neil Fuller          RESTRICT AUTOMERGE Update Android from 2020a to 2020b [R]
+project vendor/lineage/
+f85f7e80     Pig                  config: Setup soong namespaces for TARGET_USE_QTI_BT_STACK
+85359e5b     Sebastiano Barezzi   fixup! extract_utils: implement patchelf
+fe8a057a     Danny Lin            config: Allow more legacy apps to use conversation notifications
