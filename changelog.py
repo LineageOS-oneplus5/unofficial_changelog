@@ -7,7 +7,7 @@ print("Changelog to file {}".format(CHANGELOG_FILENAME))
 
 # Write changelog
 changelog_file = open(CHANGELOG_FILENAME, "w+")
-log = subprocess.Popen("repo forall -pvc 'git log --after=\"2020-11-17\" --pretty=\"format:%<(12)%h %<(20)%an %s\"'", shell=True, cwd='./', stdout=subprocess.PIPE)
+log = subprocess.Popen("repo forall -pvc 'git log --after=\"2020-12-28\" --pretty=\"format:%<(12)%h %<(20)%an %s\"'", shell=True, cwd='./', stdout=subprocess.PIPE)
 output = log.stdout.read().decode('utf-8')
 if output != "":
     print(output)

@@ -1,0 +1,321 @@
+project android/
+efc9672      Bruno Martins        lineage: Enable legacy NXP repo
+3748528      Adrian DC            manifest: Track our own external toybox and boringssl repos
+cae0362      Michael Bestas       lineage: Sync standalone extract utils
+project art/
+fd08014668   Baligh Uddin         Use the non-debug apex for userdebug builds
+project build/soong/
+2bc83fb8     Jooyung Han          Check `base` property before using it
+project device/oneplus/msm8998-common/
+37bd8546     Michael Bestas       msm8998-common: Switch to standalone extract utils
+451a494f     Michael Bestas       msm8998-common: Remove android.hardware.graphics.composer@2.1-impl
+38d531f4     Michael Bestas       msm8998-common: Don't build tinymix
+befec126     Steven Moreland      msm8998-common: Only include bitness of hal impls that is used.
+dc140348     Volodymyr Zhdanov    msm8998-common: update aptX blobs from walleye QP1A.190711.020
+5d3f0522     Timi                 msm8998-common: add missing libqdma_file_agent for xtra-daemon
+project device/qcom/sepolicy-legacy-um/
+03dc6e79     Milap Gajjar         genfs_context: Enabling Vibrator for msm8998
+project external/toybox/
+48ba553a     Adrian DC            toybox: Restore support for toybox_static binary
+project frameworks/base/
+48fa9f4fa9c  Ezio Lacandia Bijelkic SystemUI: Hide lockscreen media art if media is not playing
+ec93ea4e4e3  LuK1337              audio: Discard QTI only codecs when AOSP BT stack is in use
+2373904f31e  Adrian DC            SystemUI: Resolve faulty keyguard clock logs outputs
+project kernel/oneplus/msm8998/
+1c01a8313205 Timi                 arm64: fix mismerge
+5c64431017cd Timi                 hrtimer: fix mismerge
+429b4817c443 Timi                 Revert "drivers: pinctrl: mask non-wakeup interrupts in suspend path"
+9fb3f6c2839b Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+d2eafeb0761e Nathan Chancellor    Revert "usb: dwc3: turn off VBUS when leaving host mode"
+e87091ff2c07 Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+392f357293fc Bruno Martins        oneplus5: Enable WireGuard support
+ba7728f53f1b Bruno Martins        drivers: net: Modify WireGuard for backward compat
+32c40d3fec48 Jason A. Donenfeld   UPSTREAM: wireguard: peerlookup: take lock before checking hash in replace operation
+54c33a08f8c1 Jason A. Donenfeld   UPSTREAM: wireguard: noise: take lock when removing handshake entry from table
+fd82aa2e174c Jason A. Donenfeld   UPSTREAM: wireguard: queueing: make use of ip_tunnel_parse_protocol
+00c91d66ac0c Jason A. Donenfeld   UPSTREAM: wireguard: receive: account for napi_gro_receive never returning GRO_DROP
+a7086ae8c90b Jason A. Donenfeld   UPSTREAM: wireguard: device: avoid circular netns references
+78957bf5480e Frank Werner-Krippendorf UPSTREAM: wireguard: noise: do not assign initiation time in if condition
+89c4a5d290b4 Jason A. Donenfeld   UPSTREAM: wireguard: noise: separate receive counter from send counter
+9ab32d30b4d3 Jason A. Donenfeld   UPSTREAM: wireguard: queueing: preserve flow hash across packet scrubbing
+e68bfdcf1b30 Jason A. Donenfeld   UPSTREAM: wireguard: noise: read preshared key while taking lock
+699b7efa4f7d Jason A. Donenfeld   UPSTREAM: wireguard: selftests: use newer iproute2 for gcc-10
+b15d53f01433 Jason A. Donenfeld   UPSTREAM: wireguard: send/receive: use explicit unlikely branch instead of implicit coalescing
+be1f1a6e121b Jason A. Donenfeld   UPSTREAM: wireguard: selftests: initalize ipv6 members to NULL to squelch clang warning
+343e03f13881 Jason A. Donenfeld   UPSTREAM: wireguard: send/receive: cond_resched() when processing worker ringbuffers
+64bce3d65a7b Jason A. Donenfeld   UPSTREAM: wireguard: socket: remove errant restriction on looping to self
+17724f82d05f Jason A. Donenfeld   UPSTREAM: wireguard: selftests: use normal kernel stack size on ppc64
+6ae400f70665 Toke Høiland-Jørgensen UPSTREAM: wireguard: receive: use tunnel helpers for decapsulating ECN markings
+b965f8ef8667 Jason A. Donenfeld   UPSTREAM: wireguard: queueing: cleanup ptr_ring in error path of packet_queue_init
+128b60848e3d Sultan Alsawaf       UPSTREAM: wireguard: send: remove errant newline from packet_encrypt_worker
+600ac004983e Jason A. Donenfeld   UPSTREAM: wireguard: noise: error out precomputed DH during handshake rather than config
+36167e4816e9 Jason A. Donenfeld   UPSTREAM: wireguard: receive: remove dead code from default packet type case
+b9108ef515f4 Jason A. Donenfeld   UPSTREAM: wireguard: queueing: account for skb->protocol==0
+5e64f03d671b YueHaibing           UPSTREAM: wireguard: selftests: remove duplicated include <sys/types.h>
+120ce929d552 Jason A. Donenfeld   UPSTREAM: wireguard: socket: remove extra call to synchronize_net
+802c8070be33 Jason A. Donenfeld   UPSTREAM: wireguard: send: account for mtu=0 devices
+b0e457eb5763 Jason A. Donenfeld   UPSTREAM: wireguard: receive: reset last_under_load to zero
+a06f26cb0c67 Jason A. Donenfeld   UPSTREAM: wireguard: selftests: reduce complexity and fix make races
+47abaf381ab1 Jason A. Donenfeld   UPSTREAM: wireguard: device: use icmp_ndo_send helper
+32940d25e803 Jason A. Donenfeld   UPSTREAM: wireguard: selftests: tie socket waiting to target pid
+f12e93b10b43 Jason A. Donenfeld   UPSTREAM: wireguard: selftests: ensure non-addition of peers with failed precomputation
+dc84814059b6 Jason A. Donenfeld   UPSTREAM: wireguard: noise: reject peers with low order public keys
+8f4bca2d041d Eric Dumazet         UPSTREAM: wireguard: allowedips: fix use-after-free in root_remove_peer_lists
+a237e088c875 Jason A. Donenfeld   UPSTREAM: net: skbuff: disambiguate argument and member for skb_list_walk_safe helper
+46dde6fcfc71 Jason A. Donenfeld   UPSTREAM: net: introduce skb_list_walk_safe for skb segment walking
+878c56d9b240 Jason A. Donenfeld   UPSTREAM: wireguard: socket: mark skbs as not on list when receiving via gro
+8c41f4f19743 Jason A. Donenfeld   UPSTREAM: wireguard: queueing: do not account for pfmemalloc when clearing skb header
+bb47d7a71205 Jason A. Donenfeld   UPSTREAM: wireguard: selftests: remove ancient kernel compatibility code
+3bb70940a3ba Wei Yongjun          UPSTREAM: wireguard: allowedips: use kfree_rcu() instead of call_rcu()
+c2ce25b5aa56 YueHaibing           UPSTREAM: wireguard: main: remove unused include <linux/version.h>
+3a8c296bafe1 Josh Soref           UPSTREAM: wireguard: global: fix spelling mistakes in comments
+f8c950db9a93 Jason A. Donenfeld   UPSTREAM: wireguard: Kconfig: select parent dependency for crypto
+bf26beee7b86 Jason A. Donenfeld   UPSTREAM: wireguard: selftests: import harness makefile for test suite
+9a2b0ae01033 Jason A. Donenfeld   UPSTREAM: net: WireGuard secure network tunnel
+35deaa7c5dba Scott Mertz          pwm: qpnp-pwm: add api for synchronous enable of pwms
+c4de145b6e14 matt_huang           pwm: qpnp: Fix qcom HW known issue
+153aa0cdce53 Thierry Strudel      Revert "USB: set hub's default autosuspend delay as 0"
+64614dac971d Nathan Chancellor    thermal: tsens: Avoid implicit enum conversions in th_state fields
+d699fc6b56fe Nathan Chancellor    sched/sysctl: Fix one more attribute on extern declaration
+610f66f2d9ff Peter Zijlstra       BACKPORT: sched/debug: Explicitly cast sched_feat() to bool
+777abad4a409 Jack Pham            usb: pd: qpnp-pdphy: Switch to hrtimer-based wait
+c676e341457c Randall Huang        mmc: cmdq: move to a SCHED_FIFO thread
+dfab40bcde0c Guru Das Srinagesh   power: power_supply: Add property for capping parallel FCC
+ed1741429a6a Ashay Jaiswal        power_supply: add POWER_SUPPLY_PROP_(BATFET_MODE/MIN_CIL) properties
+c5aa1e3264a1 Anmolpreet Kaur      qseecom: Fix clang compilation in qseecom driver
+29f1879a742a Masahiro Yamada      gen_compile_commands: lower the entry count threshold
+28e29392460b Tom Roeder           scripts: add a tool to produce a compile_commands.json file
+696a49b368af Ramprasad Katkam     audio-lnx: Correct mutex usage during error handling
+5671183e5010 Vijayavardhan Vennapusa dwc3: gadget: Stop active transfer pending on ep0 out/in during reset
+b2fd86aea69d Deepak Kushwah       msm: vidc: Increase minimum input buffer count for VP9 decode
+9366ea0a0061 Angga Satya Putra    msm: camera: ois: Prevent direct access to userspace memories
+1a86c3085ff5 zhaochen             msm: adsprpc: Add secure flag to justice if use secure_domain or not
+5ea3d160daa1 Mark Rutland         arm64: arch_timer: simplify accessors
+54da0d408067 Toru Komatsu         .gitignore: Add compilation database file
+7e86b7783c57 Chris Fries          kernel: Add CC_WERROR config to turn warnings into errors
+290289fca4f4 Jaegeuk Kim          scsi: ufs: disable auto hibern8
+8400c454670b Mohammed Javid       msm: ipa3: Return if RT table size is 0
+29caf923c04c Vikram Mulukutla     sched: hmp: Reduce number of load reports in a window
+29ca7df46fe5 Vikram Mulukutla     sched: cpufreq: HMP load reporting changes
+a00d001df881 Chris Fries          posix_cpu_timer: check return on cpu_timer_sample_group
+7026faa47cc0 Wei Wang             dts: msm8998: disable hotplug in BCL mitigation
+e9ca5ba07615 Daniel Vetter        net/sch_generic: Shut up noise
+66697260d064 Neeraj Soni          scsi: ufs: Increase crypto thread priority
+249e8875542c Jerry Zhang          Revert "f_fs: set maxburst to one before enabling endpoints"
+631c8c0536e8 Jerry Zhang          ANDROID: usb: gadget: f_accessory: Also zero out rx_req on unbind
+561d647e4d9b Jerry Zhang          ANDROID: usb: gadget: f_accessory: Fix double-free
+662e9e1de1d1 Jerry Zhang          ANDROID: usb: gadget: f_accessory: Increase buffer size and max burst
+ca011a8637ec Baolin Wang          usb: gadget: f_fs: Fix possibe deadlock
+ec44b4679b0f Petri Gynther        Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"
+b3d4a6241ae6 Tim Murray           Revert "Revert "select: use freezable blocking call""
+da40d096326f Thierry Strudel      Revert "usb: hub: Prevent hub autosuspend if usbcore.autosuspend is -1"
+83b2758ccd08 Badhri Jagan Sridharan BACKPORT: usb: host: plat: Enable xHCI plat runtime PM
+2aacd8e4e788 Banajit Goswami      ASoC: msm: q6dspv2: vote for Glink Rx thread priority upgrade
+1b3e0d718924 Kelly Rossmoyer      genirq: Add generic action name for chained IRQs
+4bc41ca180d5 jonghyun26.kim       power_supply: Fix unbalanced the power supplies
+1034aaa3572d John Dias            fs: add useful debug info to eventpoll string
+cd221fedad14 Siqi Lin             ANDROID: fs/pstore/ramoops: Use vmalloc() for old buffer
+7ca07215664e Philip Cuadra        tty:  check before stopping kthread
+486e47e9abc0 Philip Cuadra        msm_serial_hs: make the Bluetooth tty thread RT
+4b3684887b8c Philip Cuadra        tty: add tty_port_set_policy function
+8ee5c98419bc Philip Cuadra        tty: move tty_port workqueue to be a kthread
+e19b86b250d0 Philip Cuadra        Make msm_serial_hs RT to improve bluetooth performance
+fea8588776d7 Stephen Boyd         smp: Wake up all idle CPUs when suspending to idle
+de589058f698 Uladzislau 2 Rezki   sched: set loop_max after rq lock is taken
+7c7fb79c6bc7 Jens Axboe           workqueue: add cancel_work()
+5a18fa72a95e Ram Chandrasekar     drivers: thermal: Use deferrable work and power efficient workqueue
+e6dfd317ee7f Ram Chandrasekar     drivers: thermal: Use high priority work queue for thermal processing
+811b8512484b Tim Murray           BACKPORT: mm: fix pageblock heuristic
+5eb2a1f76e6a Greg Kroah-Hartman   Revert "USB: core: only clean up what we allocated"
+40bca088e825 Srinivas Ramana      pinctrl: qcom: Add irq_enable callback for msm gpio
+b1e3ea4b25da Trevor Bunker        drivers: pinctrl: mask non-wakeup interrupts in suspend path
+e26d40fc7829 Subhash Jadavani     scsi: ufs: synchronize between rls handler and clock scaling
+d6160efe28e3 Subhash Jadavani     scsi: ufs: change the clock scaling polling period and up threshold
+d46d30cd43a4 Essential kernel team Fix bugs about step-chg-jeita
+f98716de8c17 Nick Desaulniers     Silences WLAN, PCIe, and CPU suspend state kernel messages
+5f3130b09f47 Saravana Kannan      PM / devfreq: memlat: Don't ignore extremely latency sensitive workloads
+26510d23bc51 Maria Yu             PM / devfreq: bw_hwmon: use unsigned parameter for bytes_to_mbps
+09bbdb9b32f0 Maulik Shah          drivers: cpuidle: lpm-levels: Reset suspend wake time
+88a8469e9174 Maulik Shah          cpuidle: lpm-levels: Do not predict LPM for isolated cpus
+995c9004c612 Srinivas Rao L       lpm_levels: Return true for CPU WFI mode allow check
+874e86136a70 Ritesh Harjani       cfq: Give a chance to arm slice idle timer in case of group_idle
+89654f90144f Prakash Gupta        ion: ion_system_heap: update supported page-orders for ion pool
+3fa84b5e4048 Alex Naidis          msm: kgsl: Increase priority of RT thread
+9f4eaf745752 Suren Baghdasaryan   msm: kgsl: Stop slab shrinker when no more pages can be reclaimed
+7530c57d8629 Deepak Kumar         Revert "msm: kgsl: Do not memset pages to zero while adding to pool"
+49810df622ef Ethan Chen           power: reset: allow device to preserve memory on restart
+3d0f0b439812 Jonathan Liu         UPSTREAM: scripts/mkcompile_h: Remove trailing spaces from compiler version
+863c20c3e21a Ethan Chen           staging: qcacld-3.0: add sme_power_save_api.h include
+e443f0b39f46 dianlujitao          qcacld-3.0: Disable build tag for inline build
+1e591948b67c Greg Kroah-Hartman   Merge 4.4.249 into android-4.4-p
+c2fadcfca17b Greg Kroah-Hartman   Linux 4.4.249
+e40878b87158 Jubin Zhong          PCI: Fix pci_slot_release() NULL pointer dereference
+3c71d2f637c8 SeongJae Park        xenbus/xenbus_backend: Disallow pending watch messages
+df3367c1cb5e SeongJae Park        xen/xenbus: Count pending messages for each watch
+19cfeffce8ce SeongJae Park        xen/xenbus/xen_bus_type: Support will_handle watch callback
+aafb4352cba4 SeongJae Park        xen/xenbus: Add 'will_handle' callback support in xenbus_watch_path()
+de66402f45c0 SeongJae Park        xen/xenbus: Allow watches discard events before queueing
+d8b0d52e408c Jonathan Cameron     iio:pressure:mpl3115: Force alignment of buffer
+40a1f7a90236 Qinglang Miao        iio: adc: rockchip_saradc: fix missing clk_disable_unprepare() on error in rockchip_saradc_resume
+970756b8867b Sven Eckelmann       mtd: parser: cmdline: Fix parsing of part-names with colons
+3df91bdbba8d Lukas Wunner         spi: rb4xx: Don't leak SPI master in probe error path
+b01bec9ec3b1 Dave Kleikamp        jfs: Fix array index bounds check in dbAdjTree
+b644402f029b Zhe Li               jffs2: Fix GC exit abnormally
+89374c84459e Luis Henriques       ceph: fix race in concurrent __ceph_remove_cap invocations
+f4ce2117019f Chunguang Xu         ext4: fix a memory leak of ext4_free_data
+1e367e94fca4 Pavel Machek         btrfs: fix return value mixup in btrfs_get_extent
+04d83a8dde6b Filipe Manana        Btrfs: fix selftests failure due to uninitialized i_mode in test inodes
+f66faba5c720 Qu Wenruo            btrfs: scrub: Don't use inode page cache in scrub_handle_errored_block()
+f29bc1b7316d Qu Wenruo            btrfs: quota: Set rescan progress to (u64)-1 if we hit last leaf
+70ff6d07904c Johan Hovold         USB: serial: keyspan_pda: fix write unthrottling
+fe27d13c04ea Johan Hovold         USB: serial: keyspan_pda: fix tx-unthrottle use-after-free
+888e1aa6ccf7 Johan Hovold         USB: serial: keyspan_pda: fix write-wakeup use-after-free
+fc9c54145472 Johan Hovold         USB: serial: keyspan_pda: fix stalled writes
+6874c0d538d9 Johan Hovold         USB: serial: keyspan_pda: fix write deadlock
+195672c92c5b Johan Hovold         USB: serial: keyspan_pda: fix dropped unthrottle interrupts
+158806154b75 Johan Hovold         USB: serial: mos7720: fix parallel-port state restore
+72af4b7a6f34 Athira Rajeev        powerpc/perf: Exclude kernel samples while counting events in user space.
+672f2ad63af7 Ian Abbott           staging: comedi: mf6x4: Fix AI end-of-conversion detection
+f9c862c6cc0b Stefan Haberland     s390/dasd: fix list corruption of lcu list
+02de496d7aa3 Stefan Haberland     s390/dasd: fix list corruption of pavgroup group list
+adc009810399 Takashi Iwai         ALSA: pcm: oss: Fix a few more UBSAN fixes
+51d347d7a501 Hui Wang             ACPI: PNP: compare the string length in the matching_id()
+c30a0bd80e28 Daniel Scally        Revert "ACPI / resources: Use AE_CTRL_TERMINATE to terminate resources walks"
+a27ceb618752 Arnd Bergmann        Input: cyapa_gen6 - fix out-of-bounds stack access
+57d2cf5f63a6 Lukas Wunner         media: netup_unidvb: Don't leak SPI master in probe error path
+2dd0f2430257 Sean Young           media: sunxi-cir: ensure IR is handled when it is continuous
+0f852cb4d396 Alan Stern           media: gspca: Fix memory leak in probe
+12ac94388356 Simon Beginn         Input: goodix - add upside-down quirk for Teclast X98 Pro tablet
+6c4b9bedd319 Dmitry Torokhov      Input: cros_ec_keyb - send 'scancodes' in addition to key events
+ee23535838b2 Sara Sharon          cfg80211: initialize rekey_data
+819db9021e6d Christophe JAILLET   clk: s2mps11: Fix a resource leak in error handling paths in the probe function
+979fdd055854 Dan Carpenter        qlcnic: Fix error code in probe
+3336a75e04b3 Zheng Zengkai        perf record: Fix memory leak when using '--user-regs=?' to list registers
+fb7e2c50455c Zhang Qilong         clk: ti: Fix memleak in ti_fapll_synth_setup
+54729c577c0a Vincent Stehlé       net: korina: fix return value
+96eb7bda0544 Christophe JAILLET   net: allwinner: Fix some resources leak in the error handling path of the probe and in the remove function
+3a59554ce400 Christophe JAILLET   net: bcmgenet: Fix a resource leak in an error handling path in the probe functin
+a4afc3b522ca Dwaipayan Ray        checkpatch: fix unescaped left brace
+135681d833f9 Vincent Stehlé       powerpc/ps3: use dma_mapping_error()
+8d409b947ba6 Bongsu Jeon          nfc: s3fwrn5: Release the nfc firmware
+36a6b6d63c46 Anton Ivanov         um: chan_xterm: Fix fd leak
+5af66400bab3 Dan Carpenter        ASoC: wm_adsp: remove "ctl" from list on error in wm_adsp_create_control()
+57217be476a0 Marek Szyprowski     extcon: max77693: Fix modalias string
+2bfd3bc1b78e Masami Hiramatsu     x86/kprobes: Restore BTF if the single-stepping is cancelled
+1fb6af62ceb1 Cheng Lin            nfs_common: need lock during iterate through the list
+fce134d438f0 Yang Yingliang       speakup: fix uninitialized flush_lock
+5a88d034da64 Zhang Qilong         usb: oxu210hp-hcd: Fix memory leak in oxu_create
+61218a70c619 Zhang Qilong         usb: ehci-omap: Fix PM disable depth umbalance in ehci_hcd_omap_probe
+20e5b2fa8f9f Nathan Lynch         powerpc/pseries/hibernation: drop pseries_suspend_begin() from suspend ops
+e25a61d6b777 Zhang Changzhong     scsi: fnic: Fix error return code in fnic_probe()
+1e3a40233d04 Arnd Bergmann        seq_buf: Avoid type mismatch for seq_buf_init
+15b5e2f535dd Zhang Qilong         scsi: pm80xx: Fix error return in pm8001_pci_probe()
+4e3a8c4e6069 Pali Rohár           cpufreq: scpi: Add missing MODULE_ALIAS
+7cb8d94a30bb Pali Rohár           cpufreq: loongson1: Add missing MODULE_ALIAS
+7b1bdb0c5aab Pali Rohár           cpufreq: highbank: Add missing MODULE_DEVICE_TABLE
+b5ff4065076f Keqian Zhu           clocksource/drivers/arm_arch_timer: Correct fault programming of CNTKCTL_EL1.EVNTI
+a6e29385c27b Qinglang Miao        dm ioctl: fix error return code in target_message
+6ba1ed3141b2 Chuhong Yuan         ASoC: jz4740-i2s: add missed checks for clk_get()
+72207e5c2544 Jing Xiangfeng       memstick: r592: Fix error return in r592_probe()
+9b83e53d0e64 Yu Kuai              pinctrl: falcon: add missing put_device() call in pinctrl_falcon_probe()
+00878cbb0114 Dan Carpenter        media: saa7146: fix array overflow in vidioc_s_audio()
+93f556c6f9ac NeilBrown            NFS: switch nfsiod to be an UNBOUND workqueue.
+674f1bf31ad9 Calum Mackay         lockd: don't use interval-based rebinding over TCP
+bb8901be241a Olga Kornievskaia    NFSv4.2: condition READDIR's mask for security label based on LSM state
+dee5e1419f29 Qinglang Miao        mips: cdmm: fix use-after-free in mips_cdmm_bus_discover
+29f2cddbd0b6 Qinglang Miao        cw1200: fix missing destroy_workqueue() on error in cw1200_init_common
+b17e549b3b16 Sebastian Andrzej Siewior orinoco: Move context allocation after processing the skb
+ffd46c3f8afc Cristian Birsan      ARM: dts: at91: sama5d3_xplained: add pincontrol for USB Host
+55cc0224ad46 Cristian Birsan      ARM: dts: at91: sama5d4_xplained: add pincontrol for USB Host
+d8258bb95e76 Qinglang Miao        memstick: fix a double-free bug in memstick_check
+99c367e8b6ca Zhihao Cheng         drivers: soc: ti: knav_qmss_queue: Fix error return code in knav_queue_probe
+1560a7447f7c Zhang Qilong         soc: ti: Fix reference imbalance in knav_dma_probe
+59d79e7cff3f Zhang Qilong         soc: ti: knav_qmss: fix reference leak in knav_queue_probe
+d9309ff20a87 Christophe Leroy     powerpc/feature: Fix CPU_FTRS_ALWAYS by removing CPU_FTRS_GENERIC_32
+b5671228e3d2 Dmitry Torokhov      Input: ads7846 - fix unaligned access on 7845
+e43d44187fd6 Oleksij Rempel       Input: ads7846 - fix integer overflow on Rt calculation
+010278c42735 Yang Yingliang       drm/omap: dmm_tiler: fix return error code in omap_dmm_probe()
+785af0e288d3 Qinglang Miao        media: solo6x10: fix missing snd_card_free in error handling case
+334eeb468709 Necip Fazil Yildiran MIPS: BCM47XX: fix kconfig dependency bug for BCM47XX_BCMA
+2758fcc48944 Arnd Bergmann        RDMa/mthca: Work around -Wenum-conversion warning
+1c2e589ecdfb Zhang Qilong         spi: tegra114: fix reference leak in tegra spi ops
+79141a274053 Zhang Qilong         spi: tegra20-sflash: fix reference leak in tegra_sflash_resume
+b0b45edb199e Zhang Qilong         spi: tegra20-slink: fix reference leak in slink ops of tegra20
+bd375b9a0498 Zhang Qilong         spi: spi-ti-qspi: fix reference leak in ti_qspi_setup
+5199ab55cfed Anmol Karn           Bluetooth: Fix null pointer dereference in hci_event_packet()
+ab589fe38986 Cezary Rojewski      ASoC: pcm: DRAIN support reactivation
+72b485053c40 Zhang Qilong         spi: img-spfi: fix reference leak in img_spfi_resume
+b074b601efba Christophe Leroy     crypto: talitos - Fix return type of current_desc_hdr()
+82b8dbddc881 Ard Biesheuvel       ARM: p2v: fix handling of LPAE translation in BE mode
+59086165fbef Tom Rix              drm/gma500: fix double free of gma_connector
+50f524549e4a Peilin Ye            Bluetooth: Fix slab-out-of-bounds read in hci_le_direct_adv_report_evt()
+e1a32b88ae78 Antti Palosaari      media: msi2500: assign SPI bus number dynamically
+c743c27185cf Fabio Estevam        usb: chipidea: ci_hdrc_imx: Pass DISABLE_DEVICE_STREAMING flag to imx6ul
+a05523123adc Will McVicker        USB: gadget: f_rndis: fix bitrate for SuperSpeed and above
+bf2440db4ee2 Johan Hovold         USB: serial: option: add interface-number sanity check to flag handling
+47bd0654d29d Nicolin Chen         soc/tegra: fuse: Fix index bug in get_process_id
+4f09681f9178 Thomas Gleixner      dm table: Remove BUG_ON(in_interrupt())
+98c06253616b Leon Romanovsky      RDMA/cm: Fix an attempt to use non-valid pointer when cleaning timewait
+814c9917e1bf Zhang Qilong         can: softing: softing_netdev_open(): fix error handling
+61495326e44a Randy Dunlap         scsi: bnx2i: Requires MMU
+a7ec032b72e1 Brant Merryman       USB: serial: cp210x: enable usb generic throttle/unthrottle
+81dd59618200 Alexander Sverdlin   serial: 8250_omap: Avoid FIFO corruption caused by MDR1 access
+c676de68a3f8 Takashi Iwai         ALSA: pcm: oss: Fix potential out-of-bounds shift
+2910d08b7c1d Thomas Gleixner      USB: sisusbvga: Make console support depend on BROKEN
+db33e5830755 Li Jun               xhci: Give USB2 ports time to enter U3 in bus suspend
+d85822d07ceb Takashi Iwai         ALSA: usb-audio: Fix control 'access overflow' errors from chmap
+03f13b8b5d61 Takashi Iwai         ALSA: usb-audio: Fix potential out-of-bounds shift
+3b6940d802ee Oliver Neukum        USB: add RESET_RESUME quirk for Snapscan 1212
+ad43e1e768a7 Bui Quang Minh       USB: dummy-hcd: Fix uninitialized array use in init()
+e4037975aa71 Zhang Changzhong     net: bridge: vlan: fix error return code in __vlan_add()
+e1f53c6d14b0 Fugang Duan          net: stmmac: delete the eee_ctrl_timer after napi disabled
+9de9c664e67a Neal Cardwell        tcp: fix cwnd-limited bug for TSO deferral where we send nothing
+a88da2efd073 Moshe Shemesh        net/mlx4_en: Avoid scheduling restart task if it is already running
+56ea79388d14 Lukas Wunner         spi: Prevent adding devices below an unregistering controller
+a01afae1c0ae Coiby Xu             pinctrl: amd: remove debounce filter setting in IRQ type setting
+b36864e95b86 Chris Chiu           Input: i8042 - add Acer laptops to the i8042 reset list
+15b8bace32c3 Dmitry Torokhov      Input: cm109 - do not stomp on control URB
+fd09f83d9fc1 Timo Witte           platform/x86: acer-wmi: add automatic keyboard background light toggle key as KEY_LIGHTS_TOGGLE
+8ca9c8fcb73e Vineet Gupta         ARC: stack unwinding: don't assume non-current task is sleeping
+0201b276010e Nathan Chancellor    spi: bcm2835aux: Restore err assignment in bcm2835aux_spi_probe
+31f2b92445e9 Lukas Wunner         spi: bcm2835aux: Fix use-after-free on unbind
+project lineage-sdk/
+54d862ca     Michael W            SystemUI: NetworkTraffic: Refactor message handling
+project lineage/hudson/
+368fd5c      Daniel Köster        hudson: Promote FP3 to 17.1
+project lineage/mirror/
+e6c6534      Kevin F. Haggerty    Updated to 31-Dec-2020 15:30 UTC
+c07fe56      Tim Schumacher       Updated lineage-minimal to 30-Dec-2020 13:01 UTC
+project lineage/wiki/
+44e1c32      Jarl-Penguin         wiki: Add Adreno 308 as a valid GPU
+project packages/apps/AudioFX/
+89a6bb9      Michael Bestas       AudioFX: Convert to Android.bp
+493a7e6      Michael Bestas       AudioFX: Remove deprecated ONE_SHOT_MAKEFILE
+4d06212      Adrian DC            AudioFX: Use the TARGET_EXCLUDES_AUDIOFX flag in products, not .mk
+project packages/apps/Nfc/
+1c9d53d3     Adrian DC            nxp: Add support for Android 11 API changes
+b5c160a9     Alessandro Astone    nxp: Q api updates
+b63424ec     Adrian DC            nxp: jni: Implement AOSP P abstract methods
+5de09242     Adrian DC            nxp: jni: Remove unused variables and functions
+757e2ae0     Steven Moreland      nxp: jni: use proper nativehelper headers
+6269e324     Bruno Martins        nxp: NativeNfcManager: Implement missing inherited abstract methods
+8582bf42     Adrian DC            nxp: jni: Forward-port the stack sources
+748a5e06     Adrian DC            NFC: Restore legacy NXP stack
+project packages/apps/SetupWizard/
+e90cf31      Timi                 SetupWizard: update recovery after setup
+project system/core/
+0e2192444    Adrian DC            init: Add activation logs for flattened APEX folders with details
+f7603c96d    Nikita Ioffe         Reboot sequence: Unmount active apexes before unmounting /data
+5dcd1b88f    Adrian DC            init: Sort the list of flattened APEX folders to avoid variations
+project tools/extract-utils/
+55ec886      Bruno Martins        templates: Support extracting only either common or target device blobs
+805a684      Michael Bestas       Update sdat2img.py
+41cd5a0      Michael Bestas       Replace Apache 2.0 boilerplate/reference with SPDX
+830a9cb      Michael Bestas       Add multi-device templates and update normal templates
+project vendor/lineage/
+151e1711     Michael Bestas       build: Relocate extract utils to tools/extract-utils
+790ab1de     Adrian DC            config: Handle TARGET_EXCLUDES_AUDIOFX in the products definitions
+3aa50f85     Michael Bestas       config: Add dataservices to PRODUCT_SOONG_NAMESPACES if needed
+f17c8550     Zachariah Anderson   lineage: apns: Update T-Mobile US to reflect latest carrier changes
+project vendor/qcom/opensource/dataservices/
+821b3b0      razorloves           dataservices: Define soong namespace
