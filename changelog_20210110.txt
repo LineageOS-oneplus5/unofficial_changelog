@@ -1,0 +1,108 @@
+project android/
+6e91822      Alessandro Astone    manifest: Import common display_intf_headers for QSSI supported platforms
+869041b      Peter Cai            manifest: Track our forked hardware/google/pixel
+c1c7802      Michael Bestas       manifest: android-11.0.0_r19 -> android-11.0.0_r27
+5ae2bba      LuK1337              manifest: Sync QTI bootctrl HAL
+project build/make/
+c5362f074    Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project development/
+c140a3153    Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project device/lineage/sepolicy/
+3e9d48f      Arian                touch: Add IKeySwapper context
+1165bf2      Bruno Martins        qcom: gmscore_app: Ignore denials on DSP files too
+0ee6bd8      Bruno Martins        lineage: Suppress bash related ioctl denials
+811e656      Adam Shih            qcom: gmscore_app: suppress denials on firmware
+cbba130      Arian                common: dynamic: Replace packageblacklist with packageexludelist
+project device/oneplus/msm8998-common/
+a9bda1206    arian                msm8998-common: doze: Add vector icons
+a2d551553    Timi                 msm8998-common: doze: update preference category title text color
+425e2e01e    Arian                msm8998-common: doze: Allow to wake the screen on gestures instead of pulsing
+04f7b7da5    TheScarastic         msm8998-common: doze: Refactor whole code
+86ed88f8b    Luca Stefani         msm8998-common: doze: Move Utils.checkDozeService in an handler
+3351dbede    Bruno Martins        msm8998-common: doze: Fix dark theme issues
+3db9482fb    Michael Bestas       msm8998-common: manifest: Remove Trust interface entry
+609a359f5    Michael Bestas       msm8998-common: Switch to standalone extract utils
+9f9b2e813    Michael Bestas       msm8998-common: Remove android.hardware.graphics.composer@2.1-impl
+6ec3632de    Michael Bestas       msm8998-common: Don't build tinymix
+9e038be05    Steven Moreland      msm8998-common: Only include bitness of hal impls that is used.
+d279fbbf2    Volodymyr Zhdanov    msm8998-common: update aptX blobs from walleye QP1A.190711.020
+project external/gptfdisk/
+60f8818      Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project frameworks/av/
+ea00c9fc3c   Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project frameworks/base/
+b4296af952e  Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+b0d54ee8dcd  Michal Pražák        SystemUI: add FloatingRotationButton for hw-key devices
+364462f9631  Sauhard Pande        camera: Support exposing aux camera to apps
+project frameworks/native/
+144dd1eac    Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project hardware/lineage/interfaces/
+ba7d528      Arian                touch: Add keys swap interface
+4f96e3f      Michael Benedict     trust: set system vintf fragment xml to framework
+315d284      Nick Desaulniers     gnss: fix -Wreorder-init-list
+742a534      Michael Bestas       trust: Include VINTF fragments
+project hardware/qcom-caf/bootctrl/
+d1c4ad0      LuK1337              Expose 1.1 impl via cc_defaults
+dc8ec5d      Hridya Valsaraju     Build bootctrl.sdm845 using Android.bp
+432ead1      LuK1337              Drop dependency on librecovery_updater
+project hardware/qcom-caf/common/
+5bd19fa      Alessandro Astone    os_pickup: Import common display_intf_headers for QSSI supported platforms
+project hardware/qcom-caf/sdm845/display/
+3a9e02ba0    Bruno Martins        display: Remove display-commonsys-intf git subtree
+project hardware/qcom-caf/sm8150/display/
+0b034a6e5    Bruno Martins        display: Remove display-commonsys-intf git subtree
+project hardware/qcom-caf/sm8250/audio/
+cf10f092c    Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sm8250/display/
+42ad8e54d    Bruno Martins        display: Remove display-commonsys-intf git subtree
+eb5016cd4    Pig                  display: Drop LOCAL_COPY_HEADERS usage
+efb069690    Davide Garberi       Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
+project hardware/qcom-caf/sm8250/media/
+41e7d380e    LuK1337              media: Add local fastcv header
+21dcb528f    Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project lineage-sdk/
+056187e7     Arian                LineageHardwareManager: Introduce keys swap feature support
+project lineage/crowdin/
+b65c024      Michael Bestas       Initial setup for lineage-18.1 translations
+project lineage/hudson/
+00a8434      CryllicBuster273     hudson: Ship OnePlus Nord
+69758ef      Marc Bourgoin        hudson: add Asus Zenfone 5Z (ZS620KL)
+24da43f      Francescodario Cuzzocrea hudson: promote s3ve3g{xx,jv,ds} to 17.1
+project lineage/mirror/
+12701dd      Kevin F. Haggerty    Updated to 08-Jan-2021 20:15 UTC
+c42c2c9      Kevin F. Haggerty    Updated to 08-Jan-2021 20:06 UTC
+7f859fd      Kevin F. Haggerty    Updated to 08-Jan-2021 19:46 UTC
+ca2677f      Tim Schumacher       Updated aosp-minimal to 08-Jan-2021 13:01 UTC
+1e70f99      Tim Schumacher       Updated lineage-minimal to 07-Jan-2021 13:01 UTC
+project lineage/scripts/
+f07e158      Chirayu Desai        aosp-merger: Get branch reliably
+project lineage/wiki/
+3479d7f      LuK1337              wiki: Add Adreno 504/650/675/685 to schema
+b52a5a0      LuK1337              wiki: Add Kryo 560/585 to schema
+cf4fb1d      LuK1337              wiki: Add Bluetooth 5.1 to schema
+28e39aa      KakatkarAkshay       wiki: Add OnePlus Nord (avicii)
+71a95c6      rohan                wiki: Add Asus Zenfone 5Z (Z01R)
+1242f0d      Francescodario Cuzzocrea wiki: devices: promote s3ve3g{xx,jv,ds} to 17.1
+project packages/apps/DocumentsUI/
+532d2bd17    Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project packages/apps/LineageParts/
+c77e9f8      Arian                ButtonSettings: Add a setting to swap capacitive keys
+5f25790      Timi                 LineageParts: update preference category title text color
+project packages/apps/Trebuchet/
+94afb12f2    Michael Bestas       Revert "Trebuchet: Add extra privapp permissions xml"
+project system/bt/
+c1f9733f6    Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project vendor/lineage/
+9f160e6e     Alessandro Astone    lineage: Commonize display_intf_headers for QSSI supported platforms
+d8ad094a     Adrian DC            audio: Add missing Effect_Tick.ogg effect sound used by the UI
+64b5b1ca     Ethan Chen           partner_gms: Simplify if/else if logic
+project vendor/qcom/opensource/commonsys-intf/display/
+7884ddef     Alessandro Astone    display-commonsys-intf: Define a soong namespace
+project vendor/qcom/opensource/commonsys/system/bt/
+b3a556339    Myles Watson         ACL: Drop broadcasts
+f23129f70    Ted Wang             Fix potential OOB write in libbluetooth
+62a128847    Hansong Zhang        Fix a security issue in sdp_server.cc
+37a143b4e    Chen Chen            Check Classic key before cross-key derivation
+26aa76874    Rahul Sabnis         Send a response to an smp security request depending on the callback event
+1f868deb3    Nick Desaulniers     [system][bt] fix -Wdangling-gsl
+d7ae8315c    Jakub Pawlowski      Fix read out of bounds in BtifAvEvent::DeepCopy
