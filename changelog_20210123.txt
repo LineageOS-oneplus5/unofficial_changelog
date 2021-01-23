@@ -1,0 +1,164 @@
+project android/
+afc0d41      Nolen Johnson        manifest: Sync 8994 HALS
+dfed70a      Peter Cai            manifest: Track our fork of qcom sm8150 display and media HALs
+d42aa2b      Pig                  lineage: Track wfd-commonsys
+40cab48      Pig                  lineage: Sync QCOM USB HAL
+project build/make/
+78c28df40    Peter Cai            mainline_system: Exclude vendor.lineage.power@1.0 from artifact path requirements
+project device/google/atv/
+9c591b4      Nolen Johnson        products: Include ATV x86_64 target
+479e60b      Nolen Johnson        products: Add generic x86_64 TV target
+project device/lineage/sepolicy/
+9840990      Bruno Martins        lineage: Make FastCharge service discoverable by Settings app
+3f20ce2      Francescodario Cuzzocrea sepolicy: add hal_lineage_fastcharge
+project device/oneplus/msm8998-common/
+b2bc0afd     Timi                 msm8998-common: sepolicy: allow init to read sysfs_leds
+a46cb57a     Bharat Pawar         msm8998-common: Enable LED based vibrator
+c29abc37     Bharat Pawar         msm8998-common: Disable vibrator HAL interface
+63a0f3c5     Pranav Vashi         msm8998-common: Move telephony packages to system_ext
+d882080a     Timi                 msm8998-common: convert vendor_prop.mk to vendor.prop
+268eeae0     Timi                 msm8998-common: manifest: set btconfigstore version to match blobs
+6f7f4548     Bruno Martins        msm8998-common: Use CodeAurora ImsService implementation for RCS
+cf2caf18     Bruno Martins        msm8998-common: Remove unused jars and 32-bit radio libs
+7347cf43     David Su             msm8998-common: Don't sign Wifi RROs with platform cert
+9ef1d46a     enesykaya            msm8998-common: Uprev some RIL/IMS hals
+8cc7ebe1     Bruno Martins        msm8998-common: Migrate to Health 2.1 HAL
+project device/qcom/sepolicy-legacy-um/
+c3a3f76c     Jarl-Penguin         common: Allow system_app to read fm_radio_device
+project frameworks/base/
+0177db12a69  Arne Coucheron       SystemUI: Use AVCProfileMain for screen recorder
+project hardware/lineage/interfaces/
+8fac36e      Francescodario Cuzzocrea lineage/interfaces: add fastcharge HAL
+25c9051      Jaekyun Seok         Add 'vendor.' prefix to a vendor HAL service name
+6841153      Felix                Add interface info to .rc files
+project hardware/qcom-caf/msm8994/audio/
+23c562e46    Arne Coucheron       audio: Include media headers
+c5417d2d9    Arne Coucheron       audio: Add audio headers lib
+project hardware/qcom-caf/msm8994/display/
+3bf44d6f5    Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/msm8994/media/
+234b63258    Arne Coucheron       media: Include display headers
+16125df9a    Arne Coucheron       media: Add media headers lib
+project hardware/qcom/sm8150/data/ipacfg-mgr/
+4f288b0      Eamon Powell         Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"
+project hardware/qcom/sm8150/display/
+57e1155f     Pig                  display: Drop LOCAL_COPY_HEADERS usage
+08cbcb9b     Bruno Martins        Add C2D_FORMAT_BT601_FULLRANGE to C2D_FORMAT_MODE
+ccfdee7d     LuK1337              Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+a75bd033     Peter Cai            gralloc: pull in content of libion_path.mk from core-utils
+65e527f8     Eamon Powell         libhistogram: Use generated kernel headers
+8407823a     Dyneteve             Revert "Add conditional controls for Android.bp"
+09798671     Alessandro Astone    sm8150: display: Import display commonsys interfaces namespace
+project hardware/qcom/sm8150/media/
+59924302     Pig                  media: Drop LOCAL_COPY_HEADERS usage
+30420206     Peter Cai            vidc: pull in content of libion_path.mk from core-utils
+9c787f69     Dyneteve             media: Include display_headers instead of display_intf_headers
+project kernel/oneplus/msm8998/
+8bc76370071d Michael Bestas       dts: qcom: {cheeseburger,dumpling}: Update pmi8998_haptics config for new driver
+80d9ccc4c194 Michael Bestas       oneplus5: Disable CONFIG_QPNP_HAPTIC
+531b71662a56 Swetha Chikkaboraiah oneplus5: enable LEDS_QPNP_HAPTICS
+7667e428da20 Swetha Chikkaboraiah oneplus5: Enable CONFIG_HID_NINTENDO
+30833eb5dd40 Swetha Chikkaboraiah oneplus5: Enable CONFIG_UTS_NS
+f66725433a31 Timi                 Merge tag 'LA.UM.9.2.r1-02000-SDMxx0.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into HEAD
+ffffb1c9b5b7 Petri Gynther        Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"
+02da85a4562a Timi                 fixup! pwm: qpnp-pwm: add api for synchronous enable of pwms
+eb74f32d2847 Timi                 fixup! ASoC: msm: qdsp6v2: Make version checking no-op
+b1a9d0d3f8e1 Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+249823475b29 Timi                 Merge branch 'kernel.lnx.4.4.r39-rel' of https://github.com/android-linux-stable/msm-4.4 into HEAD
+9e8db5bcd064 Brian Anderson       staging android: Keep timestamp info of merged fences.
+e3779a1682b8 Timi                 Revert "pwm: qpnp-pwm: add api for synchronous enable of pwms"
+6b737029628d John Dias            sched/fair: vruntime should normalize when switching from fair
+39efec72de6c Alex Naidis          msm-core: Rework resampling processing
+2c30a802fa71 Archana Sriram       msm: kgsl: Compare pid pointer instead of TGID for a new process
+e5049750d8ae Timi                 Revert "msm: kgsl: Stop slab shrinker when no more pages can be reclaimed"
+33b5161cec14 Timi                 Revert "Revert "msm: kgsl: Do not memset pages to zero while adding to pool""
+d0ae2af4fe32 Timi                 Revert "drivers: cpuidle: lpm-levels: Reset suspend wake time"
+06524fcf6142 Timi                 Revert "cpuidle: lpm-levels: Do not predict LPM for isolated cpus"
+a3fbe91f8160 Alex Naidis          cpu-boost: Boost priority of notifier_block
+e506c61518e8 Adrian Salido        msm: mdss: add idle state node
+0828a6c7cb8d Nathan Chancellor    msm: mdss: Fix potential buffer overflow
+5b7599b5974c Sultanxda            ASoC: core: Don't assign an out-of-bounds address to rtd_aux
+23a9f89fee99 Xiaojun Sang         ipc: Implement FIFO queue to fix sequence inconsistency
+ae5922724fd7 Liam Mark            ion: ensure prefetch/drain requests are processed in order
+b76f847823f1 Prakash Gupta        ion: use unbounded wq for prefetch work
+c8f59175c668 Ian Abbott           BACKPORT: bug: split BUILD_BUG stuff out into <linux/build_bug.h>
+8a2abd089ba6 Stephen Rothwell     UPSTREAM: include/linux/dcache.h: use unsigned chars in struct name_snapshot
+217e03ade306 Ian Abbott           BACKPORT: kernel.h: handle pointers to arrays better in container_of()
+bc2d691e6bf4 Yang Shi             mm: introduce arg_lock to protect arg_start|end and env_start|end in mm_struct
+5e60f18ba896 Wei Wang             dts: msm8998: disable hotplug in BCL mitigation
+879e5b4aaac9 zhaoji1              Retry if gpio_request_one fails
+291e6f9d6193 Neeraj Soni          drivers/misc: skip revocation check if no device connected
+20005bb6c770 Pranav Vashi         drivers: Fixes for clang-11 compilation
+56ca9c77d1e8 Rama Aparna Mallavarapu PM / devfreq: bw_hwmon: Fix a race condition in hwmon stop
+ef83f6a2d9c1 Wilco Dijkstra       arm64: Use optimized memcmp
+206f107a5988 Sami Tolvanen        FROMLIST: BACKPORT: arm64: keep .altinstructions and .altinstr_replacement
+4dff0a162564 Adam Buchbinder      arm64: Fix misspellings in comments.
+1dc47f9e7d9d Sultan Alsawaf       Makefile: Use -O3 optimization for CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE
+bc2b9f7012dd chitrasr             Null pointers check to handle Kernel Panic
+7071e9c747ef Volodymyr Zhdanov    ASoC: msm8998: kill logspam if max wsa devices property is set to 0
+7f659fbd59a4 Pavankumar Kondeti   power: qos: Use effective affinity mask
+95e85bc02aa1 Thomas Gleixner      genirq: Introduce effective affinity mask
+b395f87b7daa Pavankumar Kondeti   genirq: Honour IRQ's affinity hint during migration
+c965ae44d3db Pavankumar Kondeti   cpuset: Restore tasks affinity while moving across cpusets
+1e72df9d81fd Connor O'Brien       cpufreq: stats: optimize proc files
+d6fdfcf0971a Pranav Vashi         devfreq: Remove OOS QoS changes
+47ef0a4568d7 Pranav Vashi         drivers: usb: Remove PM QOS changes
+5763d8f91ab7 Sultanxda            qcom-cpufreq: Use CLKFLAG_NO_RATE_CACHE
+78cbb906d3e4 Pranav Vashi         mm: Remove OnePlus changes
+928a566296c3 Sanjay Singh         msm: vidc: Correct error handling for allocation failure cases
+04a62a0a7242 Maheshwar Ajja       msm: vidc: Add memory barrier after queue header update
+24845b320e69 Sultan Alsawaf       fib_rules: Fix payload calculation
+6c97d2e0268c Cheng Jian           sched/idle: Micro-optimize the idle loop
+0d1890585793 Will Deacon          FROMGIT: pinctrl: devicetree: Avoid taking direct reference to device name string
+f7f5d812a2af Pranav Vashi         android: lowmemorykiller: Remove OnePlus changes
+c3cd6d0f0f73 Linux Build Service Account Merge "net: ipv6: Use passed in table for nexthop lookups" into kernel.lnx.4.4.r44-rel
+77b4f07fe8d6 David Ahern          net: ipv6: Use passed in table for nexthop lookups
+9ad7003fa045 Shreyas Narayan      Merge commit '8017a0d307e03f8a9d4ec192f7ea6e4699b0ee0e' into HEAD
+project lineage/hudson/
+88bebad      razorloves           Regenerate device dependency mappings
+f6d0295      Jarl-Penguin         hudson: Ship Moto G5S (montana)
+b19d5bc      Jarl-Penguin         hudson: Ship Moto G5 (cedric)
+7465aa4      Jarl-Penguin         hudson: Ship Moto E5 Plus (ahannah/hannah/rhannah)
+234e951      Nolen Johnson        hudson: Enter the ether
+03e6f51      Michael Bestas       hudson: Drop find7
+project lineage/mirror/
+bbb1713      Kevin F. Haggerty    Updated to 19-Jan-2021 14:02 UTC
+69647a9      Kevin F. Haggerty    Updated to 19-Jan-2021 13:12 UTC
+65e78e4      Tim Schumacher       Updated to 18-Jan-2021 13:01 UTC
+77fcf3a      Tim Schumacher       Updated aosp-minimal to 14-Jan-2021 13:01 UTC
+07cfe2d      Tim Schumacher       Updated lineage-minimal to 13-Jan-2021 13:01 UTC
+3eedb67      Tim Schumacher       Updated lineage-minimal to 11-Jan-2021 13:01 UTC
+project lineage/wiki/
+7c5fb038     razorloves           wiki: Improve special boot mode naming
+ae0217ed     Jarl-Penguin         wiki: Add Moto G5S (montana)
+470c52c3     Jarl-Penguin         wiki: Add Moto G5 (cedric)
+d025341b     Jarl-Penguin         wiki: Add Moto E5 Plus (ahannah/hannah/rhannah)
+d4f9b8cd     Nolen Johnson        wiki: devices: Promote ether to 17.1
+be3d76e1     razorloves           wiki: Fix recovery mode boot steps on pixels
+ee0b20e9     Marc Bourgoin        wiki: payton: update maintainers
+3d3d5201     razorloves           wiki: Fix FP3 supported versions
+3c7f61f7     Michael Bestas       Remove myself from legacy devices
+e75831e5     aleasto              wiki: Update aleasto nickname
+a3668cc2     Nolen Johnson        wiki: devices: flox: Opt-in to fastboot boot requirement
+94d21d4a     Nolen Johnson        wiki: templates: Add support for requiring fastboot boot
+ae0008df     Daniel Jacob Chittoor devices: ms013g: Specify that we use TWRP
+abf67ee3     razorloves           wiki: Remove leftover custom_recovery_codename
+da268aeb     razorloves           wiki: Fix us996 supported versions
+e3a1f038     Michael W            wiki: How-tos: Add adb over wifi
+0c8b7cec     Michael W            wiki: bugreporting: Move logcat requirement to an alert
+project packages/apps/Settings/
+920510fe8a   Bruno Martins        Settings: Add FastCharge preference into Battery settings
+project packages/apps/Snap/
+b6ebe166a    zhang sanshan        Snap: there is no camera icon shown if have no camera in first boot up
+project system/core/
+cbb1c720a    Alessandro Astone    fastbootd: hacks for legacy
+3a16b1bf7    Alessandro Astone    fastbootd: usb: fallback to v1 descriptors
+8d61af8ea    Arne Coucheron       core: Bring back support for legacy FunctionFS
+project tools/repohooks/
+147b6c3      Jiyong Park          Add aidl-format as a new builtin hook
+project vendor/lineage/
+c2d63c64     Nolen Johnson        lineage: targets: Add support for ATV GSI builds
+c3710bad     Han Wang             config: Remove persist.sys.dun.override again
+2552c634     Alessandro Astone    lineage: More checks for copying AB backuptool scripts
+project vendor/qcom/opensource/wfd-commonsys/
+2fefd77      Bruno Martins        wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS
