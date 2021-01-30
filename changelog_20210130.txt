@@ -1,0 +1,41 @@
+project android/
+bf91c0f      Michael Bestas       lineage: Enable msm8952 HALs
+project device/oneplus/cheeseburger/
+3bd15f2      dianlujitao          cheeseburger: touch: Implement key swapper interface
+project device/oneplus/msm8998-common/
+100dbd50     Timi                 msm8998-common: add input boost configuration
+ada2843a     Timi                 msm8998-common: remove duplicated cpu bringup
+575901ff     xshu                 msm8998-common: wifi: Disable BSS flush
+2bb6b545     Roshan Pius          msm8998-common: wifi: Increase max bss count
+935fe576     Michael W            msm8998-common: wifi: Enable 2.4GHz channel bonding
+e89edd1f     Pranav Vashi         msm8998-common: Move telephony packages to system_ext
+e2de51e8     Timi                 msm8998-common: convert vendor_prop.mk to vendor.prop
+project hardware/qcom-caf/msm8916/audio/
+8eea1010c    Michael W            hal: Fix warnings
+project hardware/qcom-caf/msm8952/media/
+7514c222b    Santhosh Behara      mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
+project kernel/oneplus/msm8998/
+9e0d18071aa2 Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kern el/common into HEAD
+2813aedc2062 Timi                 Merge branch 'kernel.lnx.4.4.r39-rel' of https://github.com/android-linux-stable/msm-4.4 into backup/lineage-new-28012021
+a9d85eeff277 Timi                 oneplus5: update various configs
+5eeec7d60619 dianlujitao          mdss_fb: Initialize brightness before use
+3d3919fb27ef Petri Gynther        Revert "serial: msm_serial_hs: Protect spurious irqs after wakeup irq enablement"
+4d050cf8320c Timi                 fixup! pwm: qpnp-pwm: add api for synchronous enable of pwms
+b19f7d9b458a Timi                 fixup! ASoC: msm: qdsp6v2: Make version checking no-op
+c16fe4cac286 Brian Anderson       staging android: Keep timestamp info of merged fences.
+cee1ebb7ba47 Timi                 Revert "pwm: qpnp-pwm: add api for synchronous enable of pwms"
+f0821672823c John Dias            sched/fair: vruntime should normalize when switching from fair
+b53aac693861 Timi                 Revert "msm: kgsl: Stop slab shrinker when no more pages can be reclaimed"
+00b7ded522cd Timi                 Revert "Revert "msm: kgsl: Do not memset pages to zero while adding to pool""
+fd10f1f57b3c Timi                 Revert "drivers: cpuidle: lpm-levels: Reset suspend wake time"
+fc5ae3685ed5 Timi                 Revert "cpuidle: lpm-levels: Do not predict LPM for isolated cpus"
+f730ac02fa60 Adrian Salido        msm: mdss: add idle state node
+23bb048ac6e2 Nathan Chancellor    msm: mdss: Fix potential buffer overflow
+5288dc78b4ac Sultanxda            ASoC: core: Don't assign an out-of-bounds address to rtd_aux
+b03c66c91c79 Xiaojun Sang         ipc: Implement FIFO queue to fix sequence inconsistency
+759a5e574bfa Liam Mark            ion: ensure prefetch/drain requests are processed in order
+97ac3cac0262 Prakash Gupta        ion: use unbounded wq for prefetch work
+project packages/apps/Gallery2/
+4e96ca6f3    Timi                 Gallery2: dark theme
+project packages/apps/Settings/
+c98196ffe6   Michael W            Settings: Remove empty category from Security Settings
