@@ -1,0 +1,55 @@
+project android/
+2572a5b      Kevin F. Haggerty    manifest: android-11.0.0_r27 -> android-11.0.0_r29
+project build/make/
+0e7a236      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+project device/oneplus/cheeseburger/
+e8c7b77      Timi                 cheeseburger: update mixer paths from OOS 10.0
+84ca141      Timi                 cheeseburger: add default volume table
+project device/oneplus/dumpling/
+c9e2d89      Timi                 dumpling: update mixer paths from OOS 10.0
+577ff19      Timi                 dumpling: add default volume table
+project device/oneplus/msm8998-common/
+900d27ba     Georg Veichtlbauer   msm8998-common: Use genfscon to label LED nodes
+ad9136ae     Roman Kiryanov       msm8998-common: Replace audio@2.0-service with audio.service
+23de77f6     Bruno Martins        msm8998-common: Drop obsolete priv-app permissions
+591b4c81     Georg Veichtlbauer   msm8998-common: Remove obsolete product priv-app permissions XML
+9f29660f     Georg Veichtlbauer   msm8998-common: Add vendor prefix to touch HAL service
+7b65e8c1     Georg Veichtlbauer   msm8998-common: Move livedisplay manifest to VINTF fragment
+1b15ed8b     Georg Veichtlbauer   msm8998-common: Move lights manifest to VINTF fragment
+081cd2b4     Timi                 msm8998-common: split default volume tables to device trees
+ccd71a63     dianlujitao          msm8998-common: Disable WFD for now
+34b3de86     Georg Veichtlbauer   msm8998-common: Remove LED setup from init.qcom.rc
+project device/oppo/common/
+3b2a000      Bruno Martins        common: ConfigPanel: Use all shared resources from devicesettings
+project external/chromium-webview/
+d8c9c41      Kevin F. Haggerty    Update Chromium Webview to 88.0.4324.152
+project frameworks/av/
+da85637      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/av into staging/lineage-18.1_merge-android-11.0.0_r29
+project frameworks/base/
+d7c3493b     Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-18.1_merge-android-11.0.0_r29
+project frameworks/native/
+f1201c6      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+project kernel/oneplus/msm8998/
+447aaf42     Georg Veichtlbauer   oneplus5: disable a whole bunch of network drivers
+project lineage/hudson/
+c714e23      tImIbreakdown        hudson: Promote s2 to 17.1
+project lineage/mirror/
+e422c3f      Kevin F. Haggerty    Updated to 08-Feb-2021 20:50 UTC
+project lineage/wiki/
+d23bc0f      Michael W            wiki: Correct d803 architecture
+project packages/apps/Bluetooth/
+cc597b3      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+project packages/apps/Settings/
+513e45d      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+project packages/apps/SetupWizard/
+2b90a7f      Michael W            SetupWizard: Add device specific hook page
+project packages/providers/ContactsProvider/
+755039c      Kevin F. Haggerty    Merge tag 'android-11.0.0_r29' into staging/lineage-18.1_merge-android-11.0.0_r29
+project system/core/
+f29ed7d      Michael Bestas       init: Don't run update_sys_usb_config if /data isn't mounted
+project tools/repohooks/
+f1e0b3b      Mike Frysinger       android_test_mapping_format: drop Python 2 support
+project vendor/lineage/
+c63fa84      Alessandro Astone    backuptool: Support seamless backup and restore to extra partitions
+project vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+9a8c62b      Jakub Pawlowski      Check permission before sending batch scan result
