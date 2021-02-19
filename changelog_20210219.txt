@@ -1,0 +1,110 @@
+
+project bootable/recovery/
+fd1fbeb      Alessandro Astone    updater: Do not null terminate mount_flags_list array
+project build/make/
+e661b59      Tom Powell           releasetools: support reading release keys out of some sort of command
+project device/oneplus/cheeseburger/
+9a7cda2      Georg Veichtlbauer   cheeseburger: Copy keylayout to vendor
+project device/oneplus/dumpling/
+afb0f03      Georg Veichtlbauer   dumpling: Copy keylayout to vendor
+project device/oneplus/msm8998-common/
+dc03efe2     Georg Veichtlbauer   msm8998-common: Implement DT2W feature in power-libperfmgr
+33104ce7     Georg Veichtlbauer   msm8998-common: Switch to EAS/schedutil
+7d9211d4     Alex Hong            msm8998-common: Solve the naming problem for vendor property
+2da4e587     Wei Wang             msm8998-common: Use property node to manage hints
+a071aa16     Georg Veichtlbauer   msm8998-common: Remove perf related blobs and props
+4681ed4c     Georg Veichtlbauer   msm8998-common: Update soong namespace in makefile
+a7120ce3     Georg Veichtlbauer   msm8998-common: power: Remove libhidltransport
+83ac7b8f     Bruno Martins        msm8998-common: power: Switch to vintf fragments
+87970a46     Wei Wang             msm8998-common: power: set PowerHAL hwbinder thread to high CFS priority
+6407843a     Wei Wang             msm8998-common: Remove CPU0 governor check
+5fcea186     Wei Wang             msm8998-common: Remove additional 2.5s boost for camera launch
+3bf486f4     Wei Wang             msm8998-common: power: fix camera launch hint to use correct time
+3651426d     Bruno Martins        msm8998-common: sepolicy: Grant power HAL access to rpm
+7991082b     Ethan Chen           msm8998-common: Disable WLAN power stats
+7f71c8f9     Ethan Chen           msm8998-common: Allow hal_power_default to write to cgroups/schedtune
+5e2c8b67     Ethan Chen           msm8998-common: Allow vendor_init to set vendor.power.* properties
+66f546a3     Ethan Chen           msm8998-common: Remove unused hal_perf_default policy
+59c7be0a     Ethan Chen           msm8998-common: More power HAL policy
+119c7e6c     Michael Wright       msm8998-common: Update power HAL to version 1.3.
+0b41f5e9     Wei Wang             msm8998-common: Power: make powerhal starts handling powerhint after boot_complete
+d781a441     Wei Wang             msm8998-common: powerhint.json: change to use Value directly
+0e159ea7     Wei Wang             msm8998-common: power: change CPU min freq to 0 in config
+fcbdea0b     Wei Wang             msm8998-common: power: fix timeout in powerhint.json
+0fede8a5     Wei Wang             msm8998-common: power: add dumpstate support in Power HAL
+473a627f     Wei Wang             msm8998-common: Power: restart PowerHAL if audio HAL died with active low_latency hint
+b1f88e92     Wei Wang             msm8998-common: power: fix typo in log
+2b7951fb     Wei Wang             msm8998-common: power: Reorder cpu max node value priority
+5cf1e1a8     Wei Wang             msm8998-common: power: set cpufreq max first
+68275958     Wei Wang             msm8998-common: power: Add hint state into PowerHAL in case of restart
+653f0f17     Wei Wang             msm8998-common: power: add atrace into powerhint calls and improve camera powerhint
+442b3094     Wei Wang             msm8998-common: power: change node owner early to reduce permission denial log spam
+2b2240d2     Wei Wang             msm8998-common: power: switch to libperfmgr for powerhint
+0e23769c     Georg Veichtlbauer   msm8998-common: Import Google Pixel hardware for libperfmgr
+65610bec     Skylar Chang         msm8998-common: init.qcom.rc: FR 53051: remove configs for vendor data ipa modules
+project external/chromium-webview/
+c7ee4db      Kevin F. Haggerty    Chomium Webview repository administrative note
+project frameworks/base/
+b213dbd4     Michael W            SystemUI: Fix shutter sound
+project hardware/lineage/livedisplay/
+3e29877      dianlujitao          livedisplay: Remove SDM-backended AdaptiveBacklight implementation
+project kernel/oneplus/msm8998/
+a39d21c0028e Georg Veichtlbauer   oneplus5: enable EAS, WALT and stune boost
+21af7a1f9c56 Josh Choo            sched: Turn on MIN_CAPACITY_CAPPING feature
+7d376e18efda Ionela Voinescu      sched/fair: use min capacity when evaluating active cpus
+376ba9239621 Ionela Voinescu      sched/fair: use min capacity when evaluating idle backup cpus
+1eeb1df8c0f5 Ionela Voinescu      sched/fair: use min capacity when evaluating placement energy costs
+d3c4316013fe Ionela Voinescu      sched/fair: introduce minimum capacity capping sched feature
+c4e57e436e8c Ionela Voinescu      sched: add arch_scale_min_freq_capacity to track minimum capacity caps
+4493da7fcd28 Dietmar Eggemann     sched/fair: introduce an arch scaling function for max frequency capping
+5d07bff5ae46 Joel Fernandes       FROMLIST: sched: Make iowait_boost optional in schedutil
+eb0e964a1e37 Joel Fernandes       FROMLIST: cpufreq: Make iowait boost a policy option
+3194b4b3deab Josh Choo            sched: deadline: Add missing WALT code
+ea5578d4d3af Josh Choo            sched/fair: Add bias schedtune boosted tasks sched feature
+5adc9def7249 Josh Choo            cpu-boost: Create separate tunable for Dynamic Schedtune Boost duration
+a35534e089e0 Josh Choo            Documentation: scheduler: Add Dynamic SchedTune Boost documentation
+b6b8cc0cb57f Josh Choo            init: Make DYNAMIC_STUNE_BOOST depend on CGROUP_SCHEDTUNE
+049858690ed5 joshuous             sched/boost: Update functions for newer Dynamic Schedtune Boost changes
+ef57a4cbdc3f joshuous             cpu-boost: Update functions for newer Dynamic Schedtune Boost changes
+025429e79f04 joshuous             sched/tune: Switch Dynamic Schedtune Boost to a slot-based tracking system
+3962f27e52be joshuous             sched/stune: Rename stune_boost() to do_stune_sched_boost()
+e1f6f5824ca9 joshuous             sched/tune: Rename dynamic_boost parameter to sched_boost
+8e9f4632dfb4 joshuous             sched/tune: Track active boosts on a per-Schedtune basis
+10407981f2ec joshuous             sched/tune: Reset Dynamic Schedtune Boost only if no more boosts running
+24452c072295 joshuous             cpu-boost: Reset Dynamic SchedTune Boost only if it is currently active
+199a2cfe43bb joshuous             sched/boost: Perform SchedTune boosting when sched_boost is triggered
+823411321db7 joshuous             sched/boost: Re-introduce sched_boost proc from HMP
+04c2e6dc156f joshuous             sched/tune: Introduce stune_boost() function
+0c27eaf05567 joshuous             sched/tune: Refactor do_stune_boost()
+682102f88d67 joshuous             sched/tune: Create dynamic_boost SchedTune parameter
+3e71f97c2a1a joshuous             sched/tune: Rename dynamic_boost_write() to dynamic_boost()
+4e2db1174f02 joshuous             cpu-boost: Implement Dynamic SchedTune Boost v3
+f711d258f764 joshuous             sched/tune: Add initial support for Dynamic SchedTune Boost
+3bc0c9233f39 Joel Fernandes       sched/fair: Fix issue where frequency update not skipped
+50f1634955cd Chris Redpath        ANDROID: Move schedtune en/dequeue before schedutil update triggers
+5309e918a5ca Joel Fernandes       sched/fair: Skip frequency updates if CPU about to idle
+5248009a3810 Josh Choo            sched: Add stub function for core_ctl_set_boost
+e1836c719518 Josh Choo            sched: Add stub functions for wake_up_idle API
+02631a3b6140 Joonwoo Park         sched: EAS: upmigrate misfit current task
+918d4587fe3c Joonwoo Park         sched: EAS: kill incorrect nohz idle cpu kick
+11bab0e0bf94 Leo Yan              sched/fair: kick nohz idle balance for misfit task
+89607c8407ff Srivatsa Vaddagiri   sched: Extend active balance to accept 'push_task' argument
+7d8e1d6d0071 Amit Pundir          sched/walt: use do_div instead of division operator
+8a18680da25b Joonwoo Park         sched: WALT: account cumulative window demand
+2a3d81f16097 Josh Choo            sched: Add missing WALT code
+f246f6281a78 Josh Choo            dts: Import msm8998 energy model from Pixel 2
+20502bc1f9d3 Josh Choo            Revert "cpufreq: cpu-boost: Force most/all tasks to big cluster on input event"
+db91cd00594d Josh Choo            sched: Remove HMP scheduling and core_ctl
+b13ec23d07a4 Josh Choo            Revert "sched: WALT: account cumulative window demand"
+project lineage/hudson/
+010927c      Tom Powell           Add experimental build targets
+project lineage/mirror/
+14be6cd      Tim Schumacher       Updated aosp-minimal to 18-Feb-2021 13:01 UTC
+project lineage/wiki/
+2e96479      razorloves           wiki: Mark remaining 16.0 devices discontinued
+project packages/apps/Recorder/
+3661dd2      2bllw8               Recorder: Bring back original wav recording as an option
+project packages/apps/Snap/
+97755cb      Arne Coucheron       Revert "Snap: Let mediaprovider add entry for newly taken photos"
+project vendor/lineage/
+f16993e      Alessandro Astone    backuptool: Correct supported partitions for addon.d v3
