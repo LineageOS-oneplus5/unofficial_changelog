@@ -1,0 +1,137 @@
+
+project device/oneplus/msm8998-common/
+23f9532      Georg Veichtlbauer   msm8998-common: sepolicy: Allow changing read-ahead value in init
+project device/oppo/common/
+6cac01f      Michael Bestas       Automatic translation import
+project frameworks/base/
+df71b935     LuK1337              BatteryManager: Mark battery moto mods constants as hidden
+project hardware/lineage/interfaces/
+4e8790e      Vachounet            Import Motorola Health HAL
+project kernel/oneplus/msm8998/
+e04560ad31df Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+project lineage-sdk/
+09b2736      Michael Bestas       Automatic translation import
+project lineage/mirror/
+10ac4b5      Tim Schumacher       Updated aosp-minimal to 02-Mar-2021 13:01 UTC
+project lineage/website/
+872416a      Aayush Gupta         Engineering: Basics of Working with SELinux on Android
+project packages/apps/AudioFX/
+61c0b0c      Michael Bestas       Automatic translation import
+project packages/apps/Bluetooth/
+8e8a27e      Michael Bestas       Automatic translation import
+project packages/apps/Camera2/
+ff976ad      Michael Bestas       Automatic translation import
+project packages/apps/CellBroadcastReceiver/
+6d2de4a      Michael Bestas       Automatic translation import
+project packages/apps/CertInstaller/
+a76e061      Michael Bestas       Automatic translation import
+project packages/apps/Contacts/
+c9fdee6      Michael Bestas       Automatic translation import
+project packages/apps/DeskClock/
+a6ca1e0      Michael Bestas       Automatic translation import
+project packages/apps/Dialer/
+5a1bf25      Michael Bestas       Automatic translation import
+project packages/apps/DocumentsUI/
+860e6bd      Michael Bestas       Automatic translation import
+project packages/apps/Eleven/
+fd4180f      Michael Bestas       Automatic translation import
+project packages/apps/EmergencyInfo/
+80a9b04      Michael Bestas       Automatic translation import
+project packages/apps/Etar/
+85c3563      Michael Bestas       Automatic translation import
+project packages/apps/FlipFlap/
+c243b20      Michael Bestas       Automatic translation import
+project packages/apps/Gallery2/
+12dedab      Michael Bestas       Automatic translation import
+project packages/apps/HTMLViewer/
+28c88ac      Michael Bestas       Automatic translation import
+project packages/apps/Jelly/
+0591712      Michael Bestas       Automatic translation import
+project packages/apps/KeyChain/
+4ae08c8      Michael Bestas       Automatic translation import
+project packages/apps/LineageParts/
+b723287      Michael Bestas       Automatic translation import
+project packages/apps/ManagedProvisioning/
+9e0b3f2      Michael Bestas       Automatic translation import
+project packages/apps/Messaging/
+d23ebe4      Michael Bestas       Automatic translation import
+project packages/apps/Nfc/
+b96085d      Michael Bestas       Automatic translation import
+project packages/apps/PermissionController/
+245faee      Michael Bestas       Automatic translation import
+project packages/apps/PhoneCommon/
+6a7dd26      Michael Bestas       Automatic translation import
+project packages/apps/Recorder/
+d21a50f      Michael Bestas       Automatic translation import
+project packages/apps/SafetyRegulatoryInfo/
+7a20e4b      Michael Bestas       Automatic translation import
+project packages/apps/Settings/
+c4a02fd      Michael Bestas       Automatic translation import
+project packages/apps/SetupWizard/
+f1b9098      Michael Bestas       Automatic translation import
+project packages/apps/Snap/
+2a72f37      Michael Bestas       Automatic translation import
+project packages/apps/Stk/
+1b18e7d      Michael Bestas       Automatic translation import
+project packages/apps/StorageManager/
+5e17b9c      Michael Bestas       Automatic translation import
+project packages/apps/Tag/
+6856a19      Michael Bestas       Automatic translation import
+project packages/apps/ThemePicker/
+71d5df0      Michael Bestas       Automatic translation import
+project packages/apps/Trebuchet/
+6ec5de2      Michael Bestas       Automatic translation import
+project packages/apps/TvSettings/
+3f97219      Michael Bestas       Automatic translation import
+project packages/apps/Updater/
+5a9c747      Michael Bestas       Automatic translation import
+project packages/apps/WallpaperPicker2/
+9fccfe5      Michael Bestas       Automatic translation import
+project packages/inputmethods/LatinIME/
+2da36c4      Michael Bestas       Automatic translation import
+project packages/modules/CaptivePortalLogin/
+f07b392      Michael Bestas       Automatic translation import
+project packages/providers/BlockedNumberProvider/
+8721f75      Michael Bestas       Automatic translation import
+project packages/providers/BookmarkProvider/
+f9f7d5b      Michael Bestas       Automatic translation import
+project packages/providers/CalendarProvider/
+625d6f7      Michael Bestas       Automatic translation import
+project packages/providers/CallLogProvider/
+0b14c94      Michael Bestas       Automatic translation import
+project packages/providers/ContactsProvider/
+d25b1d5      Michael Bestas       Automatic translation import
+project packages/providers/DownloadProvider/
+cb1fbfe      Michael Bestas       Automatic translation import
+project packages/providers/MediaProvider/
+f1bbe5e      Michael Bestas       Automatic translation import
+project packages/providers/TelephonyProvider/
+5c9d45a      Michael Bestas       Automatic translation import
+project packages/providers/UserDictionaryProvider/
+ac74f35      Michael Bestas       Automatic translation import
+project packages/resources/devicesettings/
+254e40a      Michael Bestas       Automatic translation import
+project packages/screensavers/Basic/
+191ea06      Michael Bestas       Automatic translation import
+project packages/screensavers/PhotoTable/
+cc71e4e      Michael Bestas       Automatic translation import
+project packages/services/BuiltInPrintService/
+b57d21e      Michael Bestas       Automatic translation import
+project packages/services/Mms/
+75b2c16      Michael Bestas       Automatic translation import
+project packages/services/Telecomm/
+d8959b6      Michael Bestas       Automatic translation import
+project packages/services/Telephony/
+6c79ae1      Taesu Lee            Automatic translation import
+project packages/wallpapers/LivePicker/
+0b31d3a      Michael Bestas       Automatic translation import
+project prebuilts/extract-tools/
+2ffd09a      Sebastiano Barezzi   tools-lineage: Add prebuilt patchelf v0.8
+project tools/extract-utils/
+7f0c788      Sebastiano Barezzi   extract_utils: Implement versioned patchelf and patchelf 0.8
+project vendor/lineage/
+7c42814      Nolen Johnson        soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional
+project vendor/qcom/opensource/cryptfs_hw/
+aaa8a78      Neeraj Soni          cryptfs_hw: Choose keymaster version for key signing
+project vendor/qcom/opensource/fm-commonsys/
+bfbc875      Michael Bestas       Automatic translation import
