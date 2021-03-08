@@ -1,0 +1,1029 @@
+project android/
+2914b89      Kevin F. Haggerty    manifest: android-11.0.0_r29 -> android-11.0.0_r32
+project art/
+aad295f      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project bionic/
+3a00387      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project bootable/recovery/
+b320ec0      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project build/blueprint/
+48e46e9      Colin Cross          Add CreateAliasVariation
+project build/make/
+2f68654      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project build/soong/
+72b6170      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project compatibility/cdd/
+88cb8ac      Vikas Marwaha        Merge "CDD: Require writing LMK_KILL_OCCURRED_FIELD_NUMBER to the statsd log  when an app is terminated by the Low Memory Killer." into rvc-dev am: 81794619a3 am: 1cb3a92e96
+project cts/
+7aca361e     Hyundo Moon          Turn screen on when testing with MediaRouter2TestActivity
+project development/
+c140a31      Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project device/common/
+6b398d7      Bill Yi              [automerger skipped] Add product partition file support am: 9feca325c6 -s ours am: 3cdb8d085f -s ours am: 1b07b20d66 -s ours
+project device/generic/armv7-a-neon/
+b13c00e      Roman Kiryanov       Import goldfish soong namespaces to mini_common.mk am: 31a435732a am: bb1ac0b977
+project device/generic/car/
+aec096f      android-build-team Robot Snap for 6978884 from 64fd501a37436b14254eb49b1fee02feb8c8a5e1 to rvc-qpr2-release
+project device/generic/common/
+7fe0484      Colin Cross          Use inclusive language for PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST am: a1c7121c26 am: 0cb0fc2ec5
+project device/generic/goldfish/
+4394963      Luca Stefani         camera: Fix -Wformat warnings
+project device/generic/goldfish-opengl/
+5259dd9      Luca Stefani         android-emu: Fix -Wunused-function warning
+project device/generic/mini-emulator-arm64/
+600319b      Roman Kiryanov       Retire device/generic/mini-emulator-arm64 am: 6e5559bd6e am: 301010c8ff
+project device/generic/mini-emulator-armv7-a-neon/
+de9e774      Roman Kiryanov       Retire device/generic/mini-emulator-armv7-a-neon am: d6bb19d6c2 am: 992d5b9afc
+project device/generic/mini-emulator-x86/
+64b80cc      Roman Kiryanov       Retire device/generic/mini-emulator-x86 am: f4db79332c am: ca71e70d4e
+project device/generic/mini-emulator-x86_64/
+3aaa50c      Roman Kiryanov       Retire device/generic/mini-emulator-x86_64 am: 0914fc21da am: 04d99cf882
+project device/generic/qemu/
+8234bab      Roman Kiryanov       Retire device/generic/qemu am: 12b48753e5 am: 2d6807ae09
+project device/generic/trusty/
+365e529      Roman Kiryanov       Import the d/g/goldfish soong namespace am: 57436fbd9c am: 034372fe32
+project device/google/atv/
+9c591b4      Nolen Johnson        products: Include ATV x86_64 target
+project device/lineage/atv/
+076ade1      Aaron Kling          Enable bluetooth remote pairing in Setupwraith
+project device/lineage/sepolicy/
+9175be9      Aayush Gupta         fixup! sepolicy: common: Move Moto Health HAL to dynamic policy
+project device/oneplus/cheeseburger/
+9a7cda2      Georg Veichtlbauer   cheeseburger: Copy keylayout to vendor
+project device/oneplus/dumpling/
+afb0f03      Georg Veichtlbauer   dumpling: Copy keylayout to vendor
+project device/oneplus/msm8998-common/
+46ee619      Timi                 msm8998-common: don't include init.msm.usb.configfs.rc
+project device/oppo/common/
+6cac01f      Michael Bestas       Automatic translation import
+project device/qcom/sepolicy/
+d826131      Michael Bestas       Merge tag 'LA.QSSI.11.0.r1-07500-qssi.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into lineage-18.0
+project device/qcom/sepolicy-legacy/
+480fed5      Bruno Martins        legacy: display.qservice is now a vendor service for everyone
+project device/qcom/sepolicy-legacy-um/
+c3a3f76      Jarl-Penguin         common: Allow system_app to read fm_radio_device
+project device/qcom/sepolicy_vndr/
+0a4f9ef      Bruno Martins        legacy: Allow writing WLAN driver/fw version into property
+project device/sample/
+5c4f1d0      calvinpan            Update the README description am: be031e4949 am: adccfe3dc9
+project external/OpenCL-CTS/
+5f72eac      Dan Willemsen        Remove .gitattributes file that tries to configure git-lfs am: 3f1debd688 am: d580c3be85
+project external/OpenCSD/
+060a9da      Haibo Huang          Upgrade OpenCSD to v0.14.0 am: 1923c1b2e1 am: 1c483ec4ae
+project external/aac/
+8ad12f2      Fraunhofer IIS FDK   [automerger skipped] [DO NOT MERGE] Fix heap buffer overflow in sbrDecoder_AssignQmfChannels2SbrChannels(). am: 50aa5be388 am: 0468e02e5b am: d20df7ee14 -s ours am: 80ebc985fb -s ours am: 035cf671b8 am: ce38f54339 -s ours am: a3d45a6804 am: aa6329fb90
+project external/adhd/
+9d7dd95      Chih-Hung Hsieh      Remove TEST_MAPPING, failing rust tests am: 09c247d569 am: 3a68b40e7f
+project external/android-clat/
+5a98240      Rocco Yue            update last poll time when the interface poll frequency is reached am: 276fdd023c am: f7cbaf36df
+project external/angle/
+e395d58      Geoff Lang           Merge remote-tracking branch 'goog/master' into rvc-dev am: e0379aae9b am: fff55c6819
+project external/ant-wireless/ant_client/
+53546c7      Linux Build Service Account Merge c22a23654174c524ac5735a5ee194451b20ab5dd on remote branch
+project external/ant-wireless/hidl/
+5f0fab9      Linux Build Service Account Merge a27fc25350403ce1506d8f53d51bb7e997d78aea on remote branch
+project external/apache-http/
+3ed8712      Paul Duffin          Add lint-baseline.txt am: 426077d091 am: 1d6c204608
+project external/avb/
+5a2b0ed      Nikita Ioffe         Check that there is enough space for AvbDescriptor am: 66872e8dc9 am: b7fe9c3b20
+project external/bash/
+f7be77e      LuK1337              bashrc: Use full current working directory path for root as well
+project external/boringssl/
+7bac33a      Adrian DC            libcrypto: Add support for toybox_static build dependencies
+project external/bouncycastle/
+4bc9e6a      evitayan             Convert bouncycastle_ike_digests filegroup to java_library am: 3e65155a1f am: d88061d7ff
+project external/brotli/
+619bffd      Josh Gao             Make brotli available to adb. am: 47a09886c5 am: f8137b7dff
+project external/cblas/
+d82c5f4      Victor Khimenko      Make libblas buildable for native_bridge am: 46a6a11e52 am: d1997df2b9
+project external/chromium-libpac/
+935c415      Rubin Xu             Cherry-pick "Refactor Regexp.prototype" am: 780b5e3420 am: fd88a6d57e am: 40be1f0a48 am: 8419031c72 am: 3157132735 am: 96c75dc8d8 am: e8640cee53 am: 13bd15d8c5
+project external/chromium-webview/
+c7ee4db      Kevin F. Haggerty    Chomium Webview repository administrative note
+project external/clang/
+0a1c53a      Victor Khimenko      Make libbcinfo buildable for native_bridge am: 7edf675440 am: 20ce4f2b3e
+project external/cldr/
+1e4de98      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project external/conscrypt/
+07bcb01      Pete Bentley         [automerger skipped] Add Unsupported App Usage annotations to ConscryptEngineSocket. am: 8ab56ceb66 -s ours am: 001a17cdf8 -s ours am: c7b52c5968 -s ours
+project external/cpuinfo/
+2e369ef      Miao Wang            Add -mcpu=generic to arm32 build target am: b6d99557be am: d24ff61ddf
+project external/cros/system_api/
+62a171f      Automerger Merge Worker Add kUpdateStatusCleanupPreviousUpdate. am: 4b3c76a71e am: 5a59b94d97
+project external/crosvm/
+4083f84      Chih-Hung Hsieh      Remove TEST_MAPPING, failing rust tests am: 2adaf0a1d9 am: 25afa6627e
+project external/deqp/
+27af2c4      android-build-team Robot Snap for 6918817 from 0d492fc885262efafa8f620793b5234fde83882a to rvc-qpr2-release
+project external/deqp-deps/SPIRV-Headers/
+5bd3950      Chris Forbes         Merge commit 'f8bf11a0253a32375c32cad92c841237b96696c0' into rvc-dev am: 5a5d05464a am: 2f43347fbe
+project external/deqp-deps/SPIRV-Tools/
+f57cb35      Chris Forbes         Merge commit '34be23373b9e73694c3b214ba857283bad65aedb' into HEAD am: 9653fde9e5 am: 13918d9516
+project external/deqp-deps/amber/
+a191500      Colin Cross          Use libvulkan for platform variant of deqp_amber am: 82e4066d66 am: 2ee0bb5848
+project external/deqp-deps/glslang/
+1f7fa07      Bob Badour           Merge "Add license type: BSD+Apache2+MMIT = NOTICE license am: ff61c416b7 am: 4aefaf749a am: 1053732957 am: 4007ab5cc8 am: e1da0c6ae2" into rvc-dev am: 086876f471 am: 6ac57ccb94
+project external/dng_sdk/
+b6815a1      Z Stern              Targeted minimal fix for security issue in CVE-2020-9589. am: 8051967ac1 am: 17f4b85725 am: ab47f56729 am: 0d886a49d3 am: ecb2edbc9a am: dd40fd0c8c am: 234929445c am: a3a89a2c0a
+project external/dnsmasq/
+845e073      android-build-team Robot Merge cherrypicks of [13320072, 13319971, 13320351, 13320073, 13320352, 13320131, 13320074, 13320075, 13321410, 13320132, 13319972, 13320076, 13320077, 13320353, 13320354] into rvc-qpr2-release
+project external/doclava/
+baa68d6      Andrew Sapperstein   Merge "Stop suppressing @see tags in frameworks/base." into rvc-dev am: a1bf688efb am: 3c9e3cfea2
+project external/dokka/
+fb76ba5      Tiem Song            Rev version to g011 am: b1a107c30e am: c2161ccff7
+project external/e2fsprogs/
+f6638bb      Bruno Martins        resize: Make a target for standalone resize2fs_static binary
+project external/eigen/
+d2f82e2      Victor Khimenko      Make libF77blas buildable for native_bridge am: 938430171d am: 45e708a1d8
+project external/exfatprogs/
+aaf0f99      Kevin F. Haggerty    exfatprogs: Set _FILE_OFFSET_BITS=64 for Android build
+project external/exoplayer/
+1367a0c      Santiago Seifert     Remove unnecessary lines am: a3bff77ab8 am: 5fe66b0de3
+project external/expat/
+787f5e1      Jiyong Park          Set apex_available property am: a5c33edaa6 am: ba26774855
+project external/f2fs-tools/
+75ec640      Robin Hsu            fsck.f2fs: Split build_segment_manager() to speed up auto-fix am: b5cd946910 am: 7fbab69c44
+project external/fdlibm/
+9b1875e      Jiyong Park          Set apex_available property am: 107a8b56b7 am: 981d96b395
+project external/flac/
+2cf6170      android-build-team Robot Snap for 6890386 from 74bdd1955c8dadcc5556ad931e26127e21fd3d61 to rvc-qpr2-release
+project external/flatbuffers/
+1912eaa      TreeHugger Robot     Merge "Revert "Upgrade flatbuffers to v1.12.0"" into rvc-dev am: 673da866d1 am: 0957d0db69
+project external/fmtlib/
+aa6fa3a      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 08d43ba3e5 am: 0b9e748089
+project external/freetype/
+5521875      android-build-team Robot Snap for 6966897 from 6f4fe149c0e553b612e71b8fedb197c3316c05dc to rvc-qpr2-release
+project external/fsck_msdos/
+0fa08a6      Xin Li               Sync with upstream 2ccadef (svn revision 360428): am: 4f36a18db8 am: b0ad11e60a
+project external/gemmlowp/
+f96628c      Victor Khimenko      Make libbnnmlowpV8 buildable for native_bridge am: 8c5fba4013 am: de847ae085
+project external/google-fonts/barlow/
+efc104d      Jay Aliomer          Remove new styles from AOSP am: f2971b3b02
+project external/google-fonts/big-shoulders-text/
+a205363      Jay Aliomer          Remove new styles from AOSP am: ec4d8a9ca6
+project external/google-fonts/fraunces/
+b98b9c5      Jay Aliomer          Remove new styles from AOSP am: 04d81baaac
+project external/google-fonts/karla/
+3c029a1      Jay Aliomer          Remove new styles from AOSP am: 9bc73333b0
+project external/google-fonts/lustria/
+3a47268      Jay Aliomer          Remove new styles from AOSP am: aff58cef5c
+project external/googletest/
+783dd00      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 8b6ec9573f am: 637a1b7ad1
+project external/gptfdisk/
+60f8818      Michael Bestas       Merge tag 'android-11.0.0_r27' into staging/lineage-18.1_merge-android-11.0.0_r27
+project external/grpc-grpc/
+75bfcd0      Hao Chen             Add bionic vm_sockets header am: b1dbb1d2a2 am: 296ab8feda
+project external/guava/
+f68acb2      Jiyong Park          Set apex_available property am: c3dc70d161 am: 9a22dc9364
+project external/guice/
+341b365      Luca Stefani         guice: Remove .class files from srcjar
+project external/gwp_asan/
+76e2fec      Jiyong Park          gwp_asan_headers is marked as available to platform am: 50332c5d6f am: 6c12a1494a
+project external/htop/
+622d7c9      Sam Mortimer         htop: disable warnings that cause errors
+project external/icu/
+9631b02      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project external/ims/
+ecb6182      android-build-team Robot Snap for 7012656 from d61e15930734b443b36116d9dd8c1367b9df38b1 to rvc-qpr2-release
+project external/iptables/
+db32596      Maciej Żenczykowski  ANDROID: do not leak memory in iptables-restore
+project external/jarjar/
+51d1c00      Artur Satayev        Add RemoveAndroidCompatAnnotationsJarTransformer to JarJar. am: 05bc010f95 am: 2cbb48ea11
+project external/jemalloc_new/
+45117af      Christopher Ferris   Only retain for 64 bit. am: d3a7616aa2 am: ae06453fb8
+project external/json-c/
+06a40b8      Sasha Smundak        Remove header copying (LOCAL_COPY_HEADERS)
+project external/jsoncpp/
+ceed690      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 3c3f271211 am: 85efb03d15
+project external/jsr305/
+2c190e4      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 459aacf942 am: c06187f31d
+project external/libaom/
+e35b54d      android-build-team Robot Snap for 6890386 from cf5de99a83d4e8bd061338c2dd190b98df639e8c to rvc-qpr2-release
+project external/libavc/
+cbd7a73      android-build-team Robot Snap for 7022639 from 82e6bc3fd0c831483c5d3a577f50015e5f1c1bdf to rvc-qpr2-release
+project external/libcap/
+7e0408a      Jooyung Han          Set min_sdk_version to be part of mainline modules am: bb244395ca am: a943951dc6
+project external/libchrome/
+e871b0b      hscham               libchrome: downgrade mojom types at arc build time am: 7b91003f18 am: 631a6e103b
+project external/libcups/
+ec1d847      Bryan Ferris         Fix bounds check in ipp am: 239ddbfc0c am: db773ddf76
+project external/libcxx/
+8e12f3e      Aaron Kling          Make libc++fs vendor available and as a shared lib
+project external/libcxxabi/
+e3c7223      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 50938ff95b am: f40d9efd7a
+project external/libdrm/
+9d5089e      Inseob Kim           Export include dirs with -isystem am: 7f68efe4ae am: 5ab5b6ca07
+project external/libexif/
+21eff72      android-build-team Robot Snap for 6957789 from ec9ac7b9c558bc75453e3a9be97aa1644a57ca3e to rvc-qpr2-release
+project external/libfuse/
+dfbcbb8      Woody Lin            libfuse: Mark vendor_available am: b9ab0b743e am: f0dcdfe56f
+project external/libgav1/
+b2c0e2f      James Zern           external/libgav1: update to v0.16.0
+project external/libgsm/
+2822c44      Jooyung Han          Set min_sdk_version to be part of mainline modules am: 1d42a459b2 am: e59897af49
+project external/libhevc/
+a6e295a      android-build-team Robot Snap for 6886900 from 847af0f209fc535ff90c143a1aeabc232d27bb81 to rvc-qpr2-release
+project external/libjpeg-turbo/
+7c73a83      android-build-team Robot Snap for 7025657 from 080c4cc6fa41ec10eed0ff8253b02065b1d746dc to rvc-qpr2-release
+project external/libmpeg2/
+92caa89      Ray Essick           Merge "decoder: Returned frame_decoded true after decoding both fields" into rvc-dev am: 7cdf266cda am: ac044457bc
+project external/libncurses/
+61a6a4f      Bruno Martins        Exclude nonexistent terminfo files
+project external/libnl/
+eaf0ff4      Automerger Merge Worker attr: mark nested attributes as NLA_F_NESTED am: 8bdf14986a am: ad73771fdf
+project external/libopus/
+91bf556      Ray Essick           point to new repo hooks for mainline uploads am: cb8afe4343 am: a72fb8739d
+project external/libpng/
+9e1f873      Victor Khimenko      Make libpng buildable for native_bridge am: dff687c088 am: 469cbcab73
+project external/libtextclassifier/
+b82ba94      TreeHugger Robot     Merge "Ship the v710 models to the system image" into rvc-dev am: 667ce51be7 am: d5cad8bd55
+project external/libunwind_llvm/
+b015df4      Jooyung Han          Set min_sdk_version to be part of mainline modules am: b6b048f0f3 am: c6cea656ee
+project external/libutf/
+a767ddf      Jiyong Park          Set apex_available property am: bd276cc1a6 am: 249a0780ea
+project external/libvpx/
+fb52613      TreeHugger Robot     Merge "point to new repo hooks for mainline uploads" into rvc-dev am: 1af41a383e am: 03640d1598
+project external/libxaac/
+895c0e3      Ray Essick           point to new repo hooks for mainline uploads am: 9087c50905 am: 5402bcf5ed
+project external/libyuv/
+38bdba2      Jooyung Han          Set min_sdk_version to be part of mainline modules am: edabab205c am: 3087a6b713
+project external/linux-kselftest/
+96e90b2      Dan Shi              Update kselftest README.md am: 6e43f7af61 am: 6a0a999c73
+project external/llvm/
+f7b5e7df     Victor Khimenko      Make libbcinfo buildable for native_bridge am: 72db02d933 am: 8dfc67cdfc
+project external/ltp/
+b506acb      TreeHugger Robot     Merge "syscalls/mknod07: whiteout creation no longer requires privileges" into rvc-dev am: 8744c0f080 am: 57efac526b
+project external/lua/
+afada5c      Jiyong Park          Set apex_available property am: 149d81183c am: 8f8a7ec415
+project external/lz4/
+fdd43c6      Victor Khimenko      Make liblz4 buildable for native_bridge am: 3ef36a535b am: 7adefdc5b8
+project external/lzma/
+7ad0c10      Jiyong Park          Set apex_available property am: c83537b439 am: 735da46eab
+project external/mdnsresponder/
+249adc6      Jiyong Park          Set apex_available property am: 06d7695f0f am: 80d4dd833d
+project external/minigbm/
+aa65a6a      Jason Macnak         cros_gralloc: map custom drm fourcc back to standard fourcc
+project external/minijail/
+13c257b      Jooyung Han          Set min_sdk_version to be part of mainline modules am: dd66b18a9f am: a8a2f8b68e
+project external/mksh/
+7703b0f      Luca Stefani         mksh: Set TERM to xterm-256color
+project external/nano/
+67ac008      LuK1337              input: Disable bracketed paste properly
+project external/nos/host/generic/
+e4f1465      android-build-team Robot Merge cherrypicks of [13343779, 13343968, 13343886, 13343395, 13341216, 13343957, 13343958, 13343762, 13343763, 13343764, 13344125, 13344126, 13344127, 13344128, 13344129, 13344130, 13344131, 13343396, 13343780, 13343781, 13343782, 13343783, 13343784, 13344185, 13343959, 13343960, 13343961, 13343962, 13343963, 13343964, 13344205, 13344206, 13344207, 13344208, 13344209, 13344186, 13343969, 13343970, 13343971, 13343972, 13343973, 13343974, 13343975, 13343918, 13343919, 13343976, 13343397, 13344187] into rvc-qpr2-release
+project external/noto-fonts/
+0d82872      Siyamed Sinir        Emoji 13.1 Font
+project external/ntfs-3g/
+2b03195      Michael Bestas       Ignore Waddress-of-packed-member warnings
+project external/oj-libjdwp/
+34fcbf5      Jiyong Park          Set apex_available property am: 82947d327a am: 09e586fcf5
+project external/okhttp/
+5008e1e      android-build-team Robot Snap for 7025657 from 89c7e1929d4c864912f412ea7eb090039db79181 to rvc-qpr2-release
+project external/openssh/
+19d35b8      Michael Bestas       Move build targets back to system
+project external/p7zip/
+6f674e4      Vasyl Gello          p7zip: Enforce large files support
+project external/pcre/
+7fed2aa      Elliott Hughes       Revert Android.bp workaround. am: c3d97aa421 am: 12413aa875
+project external/pdfium/
+28a4b16      Victor Chang         export libandroidicu headers instead of libandroidicu_headers am: 5e4734882f am: 519bc304ce
+project external/perfetto/
+8efd17c      Wang Han             perfetto: Conditionally remove version check for memfd_create()
+project external/ply/
+21c343d      Jim Tang             Enable ply an importable module. am: edb5967727 am: 82957451d3
+project external/ppp/
+e4712fc      Paul Mackerras       pppd: Fix bounds check in EAP code am: f9fec5c369 am: 0adf11c24c am: 5788de2192 am: 024dbd1dc3 am: 39855b1e5b am: 80896b9c49 am: fdffd0deaf am: 7bbd97dd7c
+project external/protobuf/
+b8cde20      Victor Khimenko      Make libprotobuf-cpp-full buildable for native_bridge am: 1ff51e3198 am: 5c7c7ddfd6
+project external/python/parse_type/
+b3dec94      Jim Tang             Import platform/external/python/parse_type am: 81e1c61c10 am: 86fdec7c7d
+project external/robolectric-shadows/
+863497a      Rubin Xu             Add shadow for PersistentDataBlockManager am: 8b93ba7471 am: 60aba8d30d
+project external/rsync/
+029a278      Michael Bestas       Resolve LOCAL_MODULE_TAGS error
+project external/rust/crates/proc-macro2/
+ee5eeb3      Chih-Hung Hsieh      Remove TEST_MAPPING, failing rust tests am: 24df3a1ccf am: c8228faa2c
+project external/rust/crates/unicode-xid/
+e651222      Chih-Hung Hsieh      Remove TEST_MAPPING, failing rust tests am: 19b50d7e67 am: 18f8214edc
+project external/scudo/
+9ae674f      Kostya Kortchinsky   [scudo][standalone] Skip irrelevant regions during release
+project external/selinux/
+0731e73      Jiyong Park          libselinux is LLNDK, not VNDK-core am: e1eae96a17 am: 0be1b0c9c2
+project external/setupcompat/
+2dcf5f9      Setup Wizard Team    Import updated Android SetupCompat Library 312662043 am: c6d9290302 am: 20bab2f6f4
+project external/setupdesign/
+09a5e8e      Setup Wizard Team    Import updated Android Setupdesign Library 313865830 am: d4a805c416 am: 74f6535e66
+project external/skia/
+933c634      android-autoroll     [RESTRICT AUTOMERGE]: Stop discarding stencil buffers on tilers am: 6630269822 am: 644cd98ceb
+project external/skqp/
+21e70f4      Xin Li               Merge stage-aosp-rvc-ts-dev into rvc-dev am: cc2381c482 am: 7bd81fc2ed
+project external/sl4a/
+6c77ff7      Jimmy Chen           wifi: add ocsp field for wifi enterprise config am: 7efbbce7b1 am: 7ec79b38a6
+project external/smali/
+aff0371      Andrei Onea          Add dexlib target that doesn't bundle commons-cli am: 9b3c02f8d1 am: ea36b09549
+project external/sonivox/
+291ac99      android-build-team Robot Snap for 6886900 from b67202e2673ce68051635a3d91217364a4841a1d to rvc-qpr2-release
+project external/speex/
+999f3e2      Jooyung Han          Set min_sdk_version to be part of mainline modules am: f11c3bb0f1 am: c62b2c33bb
+project external/sqlite/
+1a3f0b9      Narayan Kamath       Update fix for issue 147928666. am: bb1d95a02e am: b23e9c1375
+project external/swiftshader/
+f5c5d50a     Jason Macnak         Import gralloc buffers in prepareForExternalUseANDROID am: 7288081543 am: 56412c960f
+project external/tensorflow/
+c3d31c8f     Kazuhiro Inaba       Fix TFLite logging on Android. am: bd06f09aed am: 64fba64813
+project external/tinyalsa/
+65b23d8      Michael Bestas       Mark tinymix/tinyplay as vendor_available
+project external/tinycompress/
+d78bf3b      Michael Bestas       tinycompress: Conditionally enable extended compress format
+project external/toybox/
+48ba553      Adrian DC            toybox: Restore support for toybox_static binary
+project external/tremolo/
+39cff6c      android-build-team Robot Snap for 6886900 from 509285e0b7af31925d86b270cfac3d609e9089a3 to rvc-qpr2-release
+project external/unicode/
+e6d4822      Siyamed Sinir        Unicode Emoji 13.1 Data
+project external/v4l2_codec2/
+25c3c32      Chih-Yu Huang        V4L2Decoder: Handle V4L2 queue QBUF error am: fde4c9e1c0 am: a44190e97e
+project external/v8/
+6a8898b      android-build-team Robot Merge cherrypicks of [13320072, 13319971, 13320351, 13320073, 13320352, 13320131, 13320074, 13320075, 13321410, 13320132, 13319972, 13320076, 13320077, 13320353, 13320354] into rvc-qpr2-release
+project external/vim/
+7a3f2fe      MarijnS95            Fix copy rule correctness (requirement for Android 10).
+project external/vixl/
+c150fd7      Jiyong Park          Set apex_available property am: 5c997a052f am: eb12cb84ad
+project external/walt/
+66fd6f7      Tai Kuo              pywalt: fix stuck communication am: de48cf557f am: 842e8b8860 am: 26b4ade211 am: d1f48d2d84
+project external/wayland-protocols/
+0023658      Merissa Tan          Add gamepad rumble support in Wayland interface in Android output pipeline. am: f3f48c908a am: e235b92e57
+project external/wpa_supplicant_8/
+340f0ea      android-build-team Robot Snap for 7017347 from 00032f7ae0e8b7e6ecfa039ae665dd62edef1419 to rvc-qpr2-release
+project external/zlib/
+1a9b432      Jiyong Park          Merge "Reland "Set apex_available property"" into rvc-dev am: 83fda04e5a am: 7f4e3c2e0f
+project frameworks/av/
+26a64fb      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project frameworks/base/
+e388fe78     LuK1337              Sharesheet: Set max ranked items to 8
+project frameworks/compile/libbcc/
+fff6169      Victor Khimenko      Make libbcinfo buildable for native_bridge am: a9ef3596ed am: bf44b698a1
+project frameworks/compile/slang/
+122ad4e      Victor Khimenko      Make libbcinfo buildable for native_bridge am: e8ce95fc3d am: 7272ca7169
+project frameworks/hardware/interfaces/
+79e15d9      Jayant Chowdhary     Fix VtsHalCameraServiceV2_0TargetTest to account for secure only cameras which may not support color output. am: 39cefce63e am: 5064137177 am: 22e9b275b3
+project frameworks/layoutlib/
+da8ac83      android-build-team Robot Snap for 6949869 from b707cd3ba15b04325a844d611ab1ef6c7a4f6465 to rvc-qpr2-release
+project frameworks/libs/modules-utils/
+410b53b      Roshan Pius          frameworks/libs/utils: Add test mapping am: 1dac00b2d5 am: 423cb9f89a
+project frameworks/libs/native_bridge_support/
+c2e2211      Lev Rumyantsev       2020-09-25: merge master to rvc-dev am: b5679b45e8 am: 720cae9753
+project frameworks/libs/net/
+3c1c253      Luke Huang           Add the visibility of net-utils-framework-common for cts-net am: 652aa2918b am: 3517c6d70a
+project frameworks/libs/systemui/
+4fcec24      Sunny Goyal          Adding gitignore and remoing unwanted files from git am: 6cb0317b21 am: 7ba411c7ed
+project frameworks/minikin/
+aa9e737      android-build-team Robot Snap for 6957789 from 7dbff203b2b14cf815fbac312299ec7a223d094f to rvc-qpr2-release
+project frameworks/ml/
+6070521      android-build-team Robot Snap for 6908631 from 7541c8a3e958585308b82beff3eb8e5dde2c3432 to rvc-qpr2-release
+project frameworks/native/
+8734385      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project frameworks/opt/car/services/
+833b074      android-build-team Robot Snap for 6966897 from 71f349738c840f813abe64a5da89e3ae34772848 to rvc-qpr2-release
+project frameworks/opt/car/setupwizard/
+08c08e5      android-build-team Robot Snap for 7035057 from 9f790e7bb1e9a32839040d2f25478581cd709321 to rvc-qpr2-release
+project frameworks/opt/chips/
+330de9e      android-build-team Robot Snap for 6993488 from da4b93be37189e7e1b3e2e61548cc82665fe6fa7 to rvc-qpr2-release
+project frameworks/opt/colorpicker/
+e39d8b0      Bill Yi              Import translations. DO NOT MERGE ANYWHERE
+project frameworks/opt/net/ethernet/
+bb92f4c      Remi NGUYEN VAN      Add TRANSPORT_TEST to test ethernet interfaces am: 2d4d2efadd am: 8193fea316
+project frameworks/opt/net/ims/
+59ded88      Brad Ebinger         Remove IMS logs that may contain PII
+project frameworks/opt/net/voip/
+e96c5af      android-build-team Robot Snap for 7032793 from c6a5e51cfaa0f49450b336bbf395dec26e11a1c5 to rvc-qpr2-release
+project frameworks/opt/net/wifi/
+5f3c73c      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project frameworks/opt/photoviewer/
+bf41bbd      android-build-team Robot Snap for 6993488 from f587365a5ac4636cd36dac4a221d655572a3b0e2 to rvc-qpr2-release
+project frameworks/opt/telephony/
+fad7a3a      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project frameworks/opt/timezonepicker/
+b001963      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project frameworks/opt/tv/tvsystem/
+1c99e79      Robert Horvath       Add PackageInstaller#uninstallExistingPackage API to TvSystem am: 74cb65d47b am: 6d77d222fc
+project frameworks/opt/vcard/
+88212b1      Andrew Cheng         [automerger skipped] PBAP client, download favorite contacts am: e266b849f8 -s ours am: 782d98358c -s ours am: be9036e266 -s ours
+project frameworks/rs/
+b3242e0      Victor Khimenko      Use __ANDROID_NATIVE_BRIDGE__ define instead of target:arm_on_x86 am: c0754c6f0d am: 1305884494
+project frameworks/wilhelm/
+7508cc6      android-build-team Robot Snap for 7032793 from 0f31f10ff06ca27cfc6c8228e7c61fc40e0fb272 to rvc-qpr2-release
+project hardware/broadcom/libbt/
+ec39e72      Nagarjuna Kristam    correct WBS config VSC params
+project hardware/broadcom/nfc/
+5e07a5b      Steven Moreland      nfc: Remove libhwbinder/libhidltransport deps
+project hardware/broadcom/wlan/
+8f608ec      Winnie Chen          Wifi: Support of channel stats in HAL V1.3 am: 661f0af7af am: 0922113b0d
+project hardware/google/apf/
+8e3611d      Automerger Merge Worker Maximum value of uint32_t should be UINT32_MAX instead of ULONG_MAX am: 937551c7d1 am: a302d02ec7
+project hardware/google/camera/
+054cdc9      Justin Hou           camera: Add error handling prevent native crash am: f79e434d66
+project hardware/google/interfaces/
+7fd0e6a      linpeter             Add pixel-display interface am: 2575315799
+project hardware/google/pixel/
+3439a86      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project hardware/google/pixel-sepolicy/
+3f8fb3e      android-build-team Robot Snap for 7037678 from ffe859e40b3351c676c14c0c0cc949605260f115 to rvc-qpr2-release
+project hardware/interfaces/
+229285d      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project hardware/knowles/athletico/sound_trigger_hal/
+339f25d      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project hardware/libhardware/
+90e3ce2      Arun Kumar K.R       hardware/libhw: Add display_defs.h to declare custom enums/flags
+project hardware/lineage/interfaces/
+4e8790e      Vachounet            Import Motorola Health HAL
+project hardware/lineage/livedisplay/
+3e29877      dianlujitao          livedisplay: Remove SDM-backended AdaptiveBacklight implementation
+project hardware/nxp/nfc/
+111aecc      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project hardware/nxp/secure_element/
+8453b0b      anil.hiranniah       Fix warnings from static analysis tools am: 1c9df71d7b am: 4abe3741dd
+project hardware/qcom-caf/bootctrl/
+d1c4ad0      LuK1337              Expose 1.1 impl via cc_defaults
+project hardware/qcom-caf/bt/
+a11ce8f      Sagar Verma          A2DP: Send min of peer & MTU based AAC bit-rate to Audio
+project hardware/qcom-caf/common/
+5bd19fa      Alessandro Astone    os_pickup: Import common display_intf_headers for QSSI supported platforms
+project hardware/qcom-caf/msm8916/audio/
+8eea101      Michael W            hal: Fix warnings
+project hardware/qcom-caf/msm8916/display/
+4e02428      Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/msm8916/media/
+bf62f59      Arne Coucheron       media: Add media headers lib
+project hardware/qcom-caf/msm8952/audio/
+fa159a0      Arne Coucheron       audio: Include media headers
+project hardware/qcom-caf/msm8952/display/
+a5643f0      Ruchi Kandoi         msm8952: libmemtrack: Add open method for msm8952.memtrack
+project hardware/qcom-caf/msm8952/media/
+7514c22      Santhosh Behara      mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
+project hardware/qcom-caf/msm8960/audio/
+7d62e7d      Arne Coucheron       Partial revert of "hal: update input source type during open input stream"
+project hardware/qcom-caf/msm8960/display/
+5132541      Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/msm8960/media/
+a6a9070      Arne Coucheron       media: Remove unneeded LOCAL_C_INCLUDES
+project hardware/qcom-caf/msm8974/audio/
+5662f04      Arne Coucheron       audio: Include media headers
+project hardware/qcom-caf/msm8974/display/
+05538f8      Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/msm8974/media/
+e8a5955      Arne Coucheron       media: Include display headers
+project hardware/qcom-caf/msm8994/audio/
+23c562e      Arne Coucheron       audio: Include media headers
+project hardware/qcom-caf/msm8994/display/
+3bf44d6      Arne Coucheron       display: Add display headers lib
+project hardware/qcom-caf/msm8994/media/
+234b632      Arne Coucheron       media: Include display headers
+project hardware/qcom-caf/msm8996/audio/
+13e39bb      Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8996/display/
+bc83fe5      Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8996/media/
+0f04f3c      Arne Coucheron       media: Switch to display_headers lib include
+project hardware/qcom-caf/msm8998/audio/
+ab83bf0      Wei Wang             Remove log spam when placing power hint call
+project hardware/qcom-caf/msm8998/display/
+a7f8fc8      Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/msm8998/media/
+c31b591      Arne Coucheron       media: Switch to display_headers lib include
+project hardware/qcom-caf/sdm845/audio/
+1291ace      Wei Wang             Remove log spam when placing power hint call
+project hardware/qcom-caf/sdm845/display/
+3a9e02b      Bruno Martins        display: Remove display-commonsys-intf git subtree
+project hardware/qcom-caf/sdm845/media/
+761548f      Arne Coucheron       media: Switch to display_headers lib include
+project hardware/qcom-caf/sm8150/audio/
+63f6fc3      Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sm8150/display/
+0b034a6      Bruno Martins        display: Remove display-commonsys-intf git subtree
+project hardware/qcom-caf/sm8150/media/
+7cf64b8      Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sm8250/audio/
+cf10f09      Pig                  audio: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom-caf/sm8250/display/
+42ad8e5      Bruno Martins        display: Remove display-commonsys-intf git subtree
+project hardware/qcom-caf/sm8250/media/
+41e7d38      LuK1337              media: Add local fastcv header
+project hardware/qcom-caf/thermal/
+aec37d4      Steven Moreland      thermal: Remove libhidltransport deps
+project hardware/qcom-caf/wlan/
+bb71c38      Michael Bestas       wcnss-service: Opt-in to disable copying WCNSS_qcom_cfg.ini to userdata
+project hardware/qcom/audio/
+3e48b40      Arne Coucheron       audio: Add audio headers lib
+project hardware/qcom/camera/
+28d813d      Shuzhen Wang         QCamera2: HAL3: Fix ERROR_REQUEST/ERROR_BUFFER bugs am: 6777bc3ddc am: a19eb7e545
+project hardware/qcom/data/ipacfg-mgr/
+d9334ba      Bruno Martins        ipacfg-mgr: Use generated kernel headers
+project hardware/qcom/display/
+818ef15      Elektroschmock       msm8084: hwcomposer: fix some build  warnings
+project hardware/qcom/gps/
+9bd070f      Elektroschmock       msm8084: Silence build warnings
+project hardware/qcom/media/
+4c1c087      Elektroschmock       msm8974: Fix build warning
+project hardware/qcom/sdm845/display/
+39287d7      LuK1337              Add C2D_COLOR_FORMAT_420_TP10 to C2D_YUV_FORMAT
+project hardware/qcom/sdm845/gps/
+36b1cce      Dante Russo          Report Locations to AFW only when active tracking
+project hardware/qcom/sdm845/media/
+ac972a6      Alex Hong            Merge remote-tracking branch 'goog/qcom/release/LA.UM.7.8.9.C2.08.00.00.618.012' into rvc-dev am: 463d752f5b am: 36a2e54ac7
+project hardware/qcom/sdm845/thermal/
+08972b2      Alex Hong            Merge remote-tracking branch 'goog/qcom/release/LA.UM.7.8.9.C2.08.00.00.618.012' into rvc-dev am: 30ce54b7b0 am: e473ba3d58
+project hardware/qcom/sm7150/gps/
+5b483a0      Shinru Han           Merge CR2660953 am: 8d1057762d am: 457ec7749e
+project hardware/qcom/sm7250/display/
+ad5fd8a      Davide Garberi       Add C2D_COLOR_FORMAT_420_P010 to C2D_YUV_FORMAT
+project hardware/qcom/sm7250/gps/
+eb3b91e      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project hardware/qcom/sm7250/media/
+fef0fc6      Dyneteve             media: Include display_headers instead of display_intf_headers
+project hardware/qcom/sm8150/data/ipacfg-mgr/
+4f288b0      Eamon Powell         Partial revert "skip building when BUILD_WITHOUT_VENDOR = true"
+project hardware/qcom/sm8150/display/
+57e1155      Pig                  display: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom/sm8150/gps/
+41e7863      android-build-team Robot Snap for 6952272 from fc34b82ced8877b16cbbb8ee57e42c08c7e1a133 to rvc-qpr2-release
+project hardware/qcom/sm8150/media/
+5992430      Pig                  media: Drop LOCAL_COPY_HEADERS usage
+project hardware/qcom/wlan/
+8996467      Veerendranath Jakkam wifihal: Update driver control param to check driver is ready
+project hardware/ril/
+f958793      Danny Baumann        Make RIL command headers overlayable by devices.
+project hardware/st/nfc/
+82e0777      android-build-team Robot Snap for 7025657 from df0dddc1f8166735f4f922d2658228292a5efcdb to rvc-qpr2-release
+project hardware/st/secure_element/
+aceb6bb      android-build-team Robot Snap for 7025657 from 57cb663656fc58d1898ed7fdffdf05ea0859ddac to rvc-qpr2-release
+project kernel/configs/
+e410299      Yifan Hong           resolve merge conflicts of 0c0ce4d223c78d2d333f2fc71af52fbe6cba507e to qt-dev am: 1d2f6e2ec5 am: a75f17bb43 am: f735ca427b am: 6ed731396b
+project kernel/oneplus/msm8998/
+e04560ad     Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+a39d21c0     Georg Veichtlbauer   oneplus5: enable EAS, WALT and stune boost
+project kernel/tests/
+0b69217      Treehugger Robot     [automerger skipped] Merge "Use blocking sockets with timeout for xfrm_tunnel_test" into pie-vts-dev am: 092e8067d4 am: 05ad5dcbce -s ours am: 9334bb1f2e -s ours am: b742e21dc4 -s ours am: 2bfdc7d34f -s ours am: 4ffa864ffd -s ours
+project libcore/
+47b86a1      android-build-team Robot Snap for 7025657 from d793f7215aaa775e1c3ca166821e5529fefdd30b to rvc-qpr2-release
+project libnativehelper/
+82e9863      android-build-team Robot Snap for 7037678 from 8f6772e9eae4e8c4544546062ac0803334edb797 to rvc-qpr2-release
+project lineage-sdk/
+4457a81      Han Wang             lineage-sdk: Fix NPE when using getPictureAdjustmentRanges()
+project lineage/charter/
+c6252b9      Ryan Grachek         charter: Remove exception from hardware codecs for Tegra devices
+project lineage/contributors-cloud-generator/
+a264670      Kevin F. Haggerty    Fix rebase derp
+project lineage/crowdin/
+b65c024      Michael Bestas       Initial setup for lineage-18.1 translations
+project lineage/hudson/
+010927c      Tom Powell           Add experimental build targets
+project lineage/mirror/
+10ac4b5      Tim Schumacher       Updated aosp-minimal to 02-Mar-2021 13:01 UTC
+project lineage/scripts/
+6c01311      Kevin F. Haggerty    Update default webview to 88.0.4324.152
+project lineage/website/
+872416a      Aayush Gupta         Engineering: Basics of Working with SELinux on Android
+project lineage/wiki/
+494a9d2      Alessandro Astone    wiki: g2: Instruct to exit adb shell after bootloader dd
+project packages/apps/AudioFX/
+61c0b0c      Michael Bestas       Automatic translation import
+project packages/apps/Backgrounds/
+44344d3      Michael Bestas       Backgrounds: Move to /product
+project packages/apps/BasicSmsReceiver/
+24073c6      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Bluetooth/
+4953e5b      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Camera2/
+ff976ad      Michael Bestas       Automatic translation import
+project packages/apps/Car/Calendar/
+c7f5ae0      android-build-team Robot Snap for 7025657 from 7d430a6b6adcdf803124ef2f0943c8917a0dc916 to rvc-qpr2-release
+project packages/apps/Car/Cluster/
+0158208      android-build-team Robot Snap for 6916057 from b6ed456a1af678bb283acc1ecda1b00ee8d7410e to rvc-qpr2-release
+project packages/apps/Car/CompanionDeviceSupport/
+6acf462      android-build-team Robot Snap for 7062031 from a1a6f094d696ccbc883dbbcd71eb507ec9e5df0b to rvc-qpr2-release
+project packages/apps/Car/Dialer/
+19e081c      android-build-team Robot Snap for 7044894 from 31a5543d359cb66e5f1cc520615e4dd32a81162c to rvc-qpr2-release
+project packages/apps/Car/Launcher/
+161dcf4      android-build-team Robot Snap for 7042724 from 81afb47f9fc5389f4340efabef88ec92df21ea47 to rvc-qpr2-release
+project packages/apps/Car/LinkViewer/
+6eeb285      Saeid Farivar Asanjan Migrate LinkViewer app to use baselayout am: d2a4a0f5f1 am: 6aace196bd
+project packages/apps/Car/LocalMediaPlayer/
+d6f432b      Simon Dai            Add error resolution for missing permission am: e7cb020b5d am: ad53ed36a2
+project packages/apps/Car/Media/
+3f4997e      android-build-team Robot Snap for 6998915 from 7efd9bf0f79b9088d0032117ecee743189db41f8 to rvc-qpr2-release
+project packages/apps/Car/Messenger/
+c7420e9      Babak                Fix group message title when switching to RTL languages
+project packages/apps/Car/Notification/
+404834b      android-build-team Robot Snap for 7044894 from d42cd6d64a077636c2ca53664e30cfd10a7de1e5 to rvc-qpr2-release
+project packages/apps/Car/Radio/
+74eb1c9      android-build-team Robot Snap for 6903324 from ceed9750e8a3a16b270bd871cd0b3b65144a80a9 to rvc-qpr2-release
+project packages/apps/Car/RotaryController/
+0b4cd4a      android-build-team Robot Snap for 7017347 from 0281de144d2df376b034e8fd7d5f2b903480749b to rvc-qpr2-release
+project packages/apps/Car/Settings/
+c97a10e      android-build-team Robot Snap for 7059469 from a5bcdb9ad9cee471e0f7d70170942589157f4e53 to rvc-qpr2-release
+project packages/apps/Car/SystemUpdater/
+9ce306f      android-build-team Robot Snap for 6997403 from b03ecf2af5e4e466ec4603b550fd9ba8197902ca to rvc-qpr2-release
+project packages/apps/Car/libs/
+3045b75      android-build-team Robot Snap for 7044894 from e8d8b64967fb5c5e3aa0eca737b280ffc4dfb31e to rvc-qpr2-release
+project packages/apps/Car/tests/
+bea8980      android-build-team Robot Snap for 7002428 from d2a33c0982a8047ebb94f9214b7b229c0f924604 to rvc-qpr2-release
+project packages/apps/CarrierConfig/
+f9c56d7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/CellBroadcastReceiver/
+2daf3ec      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/CertInstaller/
+615fe43      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Contacts/
+514d1ab      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/DeskClock/
+a6ca1e0      Michael Bestas       Automatic translation import
+project packages/apps/Dialer/
+5a1bf25      Michael Bestas       Automatic translation import
+project packages/apps/DocumentsUI/
+27a3507      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Eleven/
+fd4180f      Michael Bestas       Automatic translation import
+project packages/apps/EmergencyInfo/
+9c1ad2e      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Etar/
+85c3563      Michael Bestas       Automatic translation import
+project packages/apps/ExactCalculator/
+c3602a5      Michael Bestas       ExactCalculator: Move to /product
+project packages/apps/FMRadio/
+8ba2e5d      Michael Bestas       Automatic translation import
+project packages/apps/FlipFlap/
+c243b20      Michael Bestas       Automatic translation import
+project packages/apps/Gallery2/
+12dedab      Michael Bestas       Automatic translation import
+project packages/apps/HTMLViewer/
+28c88ac      Michael Bestas       Automatic translation import
+project packages/apps/Jelly/
+0591712      Michael Bestas       Automatic translation import
+project packages/apps/KeyChain/
+4ae08c8      Michael Bestas       Automatic translation import
+project packages/apps/LineageParts/
+b723287      Michael Bestas       Automatic translation import
+project packages/apps/ManagedProvisioning/
+778a6b5      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Messaging/
+d23ebe4      Michael Bestas       Automatic translation import
+project packages/apps/Nfc/
+71a38be      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/OnDeviceAppPrediction/
+ee2d2f1      Kyle Cai             Adding new QUERY_ALL_PACKAGES permission in AndroidManifest.xml to allow querying of other apps by AppPredictionService.
+project packages/apps/PermissionController/
+f4b38f2      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/PhoneCommon/
+aa2a9c7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Profiles/
+fc49dee      LuK1337              Profiles: Switch to public API getting WiFi SSID
+project packages/apps/QuickAccessWallet/
+0c8be97      android-build-team Robot Snap for 7042724 from 2647f1a9544e5e9ff57cc9b7dfb404dbba701ddc to rvc-qpr2-release
+project packages/apps/Recorder/
+d21a50f      Michael Bestas       Automatic translation import
+project packages/apps/SafetyRegulatoryInfo/
+7a20e4b      Michael Bestas       Automatic translation import
+project packages/apps/SecureElement/
+57ba8db      Jack Yu              Refresh terminal instances when switching between SS and DS am: a0108ddb86 am: 66db1eb283
+project packages/apps/Seedvault/
+7694eb3      Torsten Grote        Move to different versioning scheme and show version in About dialog
+project packages/apps/Settings/
+5b06dc2      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/SettingsIntelligence/
+b3da2c5      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/SetupWizard/
+f1b9098      Michael Bestas       Automatic translation import
+project packages/apps/SimpleDeviceConfig/
+b13034a      Danny Lin            SimpleDeviceConfig: Allow setting empty values
+project packages/apps/Snap/
+2a72f37      Michael Bestas       Automatic translation import
+project packages/apps/Stk/
+1b18e7d      Michael Bestas       Automatic translation import
+project packages/apps/StorageManager/
+6792c91      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/TV/
+6f600bc      shubang              Sample TIS with Tuner APIs. am: 1c8ef0a170 am: 2391dcef94
+project packages/apps/Tag/
+e2c10b7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Terminal/
+5e45ffa      LineageOS Builder    Automatic translation import
+project packages/apps/Test/connectivity/
+22d6ee3      Automerger Merge Worker Revert "Revert "Pass in active device to all BluetoothA2dp APIs ..." am: 39b5b839bd am: 18ae74f65a
+project packages/apps/ThemePicker/
+05efb67      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Traceur/
+ee15011      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Trebuchet/
+fd3fde7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/TvSettings/
+d7facce      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/apps/Updater/
+5a9c747      Michael Bestas       Automatic translation import
+project packages/apps/WallpaperPicker2/
+6b89cbd      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/inputmethods/LatinIME/
+2da36c4      Michael Bestas       Automatic translation import
+project packages/modules/ArtPrebuilt/
+d078c40      Yan Wang             iorap-functional-test: Add a filegroup to export test apks. am: 7299a273c1 am: c298d14268
+project packages/modules/CaptivePortalLogin/
+352c5d4      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/modules/CellBroadcastService/
+2c2d338      android-build-team Robot Snap for 6990741 from 99d60ad1ba50fc17fe7203efe347edf7bd4c9307 to rvc-qpr2-release
+project packages/modules/Cronet/
+618b9f9      Automerger Merge Worker DO NOT MERGE: Remove Cronet module am: c223ec50c2 am: 557d6fc395
+project packages/modules/DnsResolver/
+561a7ad      android-build-team Robot Snap for 7055775 from 4a35e6793be00ff285aee844941b0f9d4f254d6f to rvc-qpr2-release
+project packages/modules/ExtServices/
+e9e080a      Julia Reynolds       Log keys instead of notification.tostring()
+project packages/modules/IPsec/
+3d53347      Yan Yan              Merge changes from topic "bouncycastle_ike_digests" into rvc-dev am: ea6eaf8cd5 am: 090d1eecb6
+project packages/modules/NetworkPermissionConfig/
+78b33ff      Remi NGUYEN VAN      Bump NetworkPermissionConfig target SDK to 30 am: 25e11738ef am: 244ed47525
+project packages/modules/NetworkStack/
+05fd0bb      android-build-team Robot Snap for 6944357 from 459eb4b4ad6ed54008a9a47596bfef5d1d6f5131 to rvc-qpr2-release
+project packages/modules/SdkExtensions/
+c571e6f      Anton Hansson        Merge "Remove sdkextension sdk definition" into rvc-dev am: f3b1cd617e am: 92d7c1d854
+project packages/modules/vndk/
+9d2db0e      Automerger Merge Worker Remove vnd*.libraries.txt from /system/etc am: 65560bb9e7 am: b8dc05117c
+project packages/overlays/Lineage/
+0a9abbd      Josh Fox (XlxFoXxlX) overlays: Adjust black accent for light/dark themes
+project packages/providers/BlockedNumberProvider/
+8721f75      Michael Bestas       Automatic translation import
+project packages/providers/BookmarkProvider/
+f9f7d5b      Michael Bestas       Automatic translation import
+project packages/providers/CalendarProvider/
+625d6f7      Michael Bestas       Automatic translation import
+project packages/providers/CallLogProvider/
+0b14c94      Michael Bestas       Automatic translation import
+project packages/providers/ContactsProvider/
+9237c99      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/providers/DownloadProvider/
+f9d9d32      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/providers/MediaProvider/
+8124230      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/providers/TelephonyProvider/
+2bcb7d9      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/providers/TvProvider/
+5d3d278      Bill Yi              Import translations. DO NOT MERGE ANYWHERE
+project packages/providers/UserDictionaryProvider/
+ac74f35      Michael Bestas       Automatic translation import
+project packages/resources/devicesettings/
+254e40a      Michael Bestas       Automatic translation import
+project packages/screensavers/Basic/
+191ea06      Michael Bestas       Automatic translation import
+project packages/screensavers/PhotoTable/
+cc71e4e      Michael Bestas       Automatic translation import
+project packages/services/AlternativeNetworkAccess/
+b4955a6      Sooraj Sasindran     Do not allow ONS to be stopped by other apps am: 5a85287add am: c99bf47840
+project packages/services/BuiltInPrintService/
+c8a1e5c      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/services/Car/
+1b1b117      android-build-team Robot Snap for 7062031 from b6508c0dc1ec8e76edf657a0beb5bc4ad3647423 to rvc-qpr2-release
+project packages/services/Mms/
+75b2c16      Michael Bestas       Automatic translation import
+project packages/services/Mtp/
+8788b99      James Wei            MTP: Add MTP host exception handling#2 am: e0297ce1af am: 073d5efa7c
+project packages/services/Telecomm/
+84063bd      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/services/Telephony/
+030ccd7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project packages/wallpapers/LivePicker/
+c282b0b      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project platform_testing/
+da36362      android-build-team Robot Snap for 7058652 from ff24ca4d656bc4b6edd6e3690074aa89648961e2 to rvc-qpr2-release
+project prebuilts/abi-dumps/ndk/
+cfba832      Svet Ganov           Updating NDK dumps for API 30 am: e3b3828ccb am: 0b0fe4063f
+project prebuilts/abi-dumps/platform/
+dc6751d      Josh Gao             Update adbd_auth dump. am: cf9a15b631 am: 72bd03e017
+project prebuilts/abi-dumps/vndk/
+595c795      Marco Ballesio       libbinder: adopt BINDER_GET_FROZEN_INFO symbols
+project prebuilts/android-emulator/
+6b9d3cc      android-build-team Robot Snap for 6957789 from d75a457e03a65387642353391588c37d97de7460 to rvc-qpr2-release
+project prebuilts/asuite/
+485b2e9      Sam Chiu             ASuite: Cherry pick prebuilt acloud from aosp_master.(6677366). am: 78d760a9a5 am: f01dca664e
+project prebuilts/build-tools/
+c1ce7c0      Kevin F. Haggerty    prebuilts: Update xz to non-broken version
+project prebuilts/bundletool/
+4297370      Dario Freni          [automerger skipped] Upgrade bundletool to bundletool-20191212.Thu.12 RC00 am: 3b23f6528a -s ours am: 77b83df402 -s ours am: 388ff26590 -s ours
+project prebuilts/checkstyle/
+c05b54f      Sam Saccone          Migrate from blame to history scoped blame am: adef809ab8 am: c2fc52cc78
+project prebuilts/clang-tools/
+fe0a2e9      Hsin-Yi Chen         Update clang-tools to ab/6339306 am: bca5d20b3a am: 3ae68b3cc3
+project prebuilts/clang/host/linux-x86/
+659f7ca      android-build-team Robot Snap for 6886900 from 7e2d7f3e8dba20760df041bf90ca5a15913631c8 to rvc-qpr2-release
+project prebuilts/cmdline-tools/
+6c5a91f      Colin Cross          Export jars needed to compile new lint checkers am: 3e865a8272 am: 9dd8cf43e4
+project prebuilts/extract-tools/
+2ffd09a      Sebastiano Barezzi   tools-lineage: Add prebuilt patchelf v0.8
+project prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
+be79a1c      Josh Fox (XlxFoXxlX) gcc-4.9: Restore GCC
+project prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/
+da10d2b      Josh Fox (XlxFoXxlX) gcc-4.9: Restore GCC
+project prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9/
+33cdb04      althafvly            gcc-4.9: Restore GCC
+project prebuilts/jdk/jdk11/
+2af5744      Automerger Merge Worker Add remote toolchain inputs for java and javac. am: c796f24444 am: 7a957ff0ed
+project prebuilts/jdk/jdk9/
+3930f83      Ramy Medhat          [automerger skipped] [DO NOT MERGE] Add remote toolchain inputs for java and javac. am: 38b18b13d9 am: fc8dfbc09e -s ours am: a8aac0cb4f am: f57bb6c4a8
+project prebuilts/misc/
+bd90f3b      Julien Desprez       Update ddmlib for new ipv6 detection am: 2cdd113ff0 am: 607662118d
+project prebuilts/ndk/
+4a0fef6      Colin Cross          Use libnativewindow for platform variant of android_native_app_glue am: e02ef7672a am: 2f879b488f
+project prebuilts/qemu-kernel/
+084fa0f      Roman Kiryanov       Update the go/ab branch in update_54_kernel.sh am: 2dc3b8e878 am: 97e4578843
+project prebuilts/r8/
+8a13b9d      Christoffer Quist Adamsen Update D8 and R8 to 2.1.7-r3
+project prebuilts/remoteexecution-client/
+c6ca8e5      android-build-team Robot Snap for 7040187 from 3670a6160a46cd9a28d47d7d58da70a16807473e to rvc-qpr2-release
+project prebuilts/sdk/
+98518f7      Ming-Shin Lu         DO NOT MERGE Import AndroidX from build 6762995
+project prebuilts/tools/
+287795d      android-build-team Robot Snap for 6886900 from e28f95d20d869137f8bae3cde99458e0335347f4 to rvc-qpr2-release
+project prebuilts/tools-lineage/
+214ba0c      Michael Bestas       Relocate extract tools to prebuilts/extract-tools
+project system/apex/
+22613b7      Martijn Coenen       Use new LOOP_CONFIGURE ioctl for configuring loop devices.
+project system/bpf/
+81b26a8      Maciej Żenczykowski  start bpfloader asynchronously am: 5a0fdfa8e8 am: 372cc578d3
+project system/bpfprogs/
+df5007d      Maciej Żenczykowski  bpf programs - switch to LICENSE() macro am: bc268c6e8d am: 65abf27c15
+project system/bt/
+464b040      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project system/ca-certificates/
+71863ee      Jaewoong Jung        Update prebuilt_etc package name. am: 1f4f211d8d am: 8e2af2251f
+project system/chre/
+536dd3e      android-build-team Robot Snap for 7055775 from 872b6a3aaf2dc12eb51496c402c2d523da1d5848 to rvc-qpr2-release
+project system/connectivity/wificond/
+6636cc1      android-build-team Robot Merge cherrypicks of [13320072, 13319971, 13320351, 13320073, 13320352, 13320131, 13320074, 13320075, 13321410, 13320132, 13319972, 13320076, 13320077, 13320353, 13320354] into rvc-qpr2-release
+project system/core/
+38d2a0e      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project system/extras/
+b35a59e      Will Shiu            ext4_utils: add declaration for ext4_bg_has_super_block()
+project system/gsid/
+353bd5f      Jiyong Park          Mark some aidl_interface modules as unstable am: 5e06a0a2fb am: 66478cb04b
+project system/hardware/interfaces/
+a2fe15b      Kalesh Singh         Ignore SIGPIPE when dumping stats from SystemSuspend am: ce3c6a66c4 am: c4c90ecd9a
+project system/hwservicemanager/
+9ed41f2      Peter Kalauskas      Call guaranteeClient on all services in interface chain am: 85c2f4e1d6 am: 528f369a79
+project system/incremental_delivery/
+766ee48      Luca Stefani         libdataloader: Don't pollute namespace with android::dataloader
+project system/iorap/
+322b226      android-build-team Robot Snap for 6957789 from d51ec6be97d92d9cea1f9d28b3faeada5d808165 to rvc-qpr2-release
+project system/keymaster/
+e04f5ba      android-build-team Robot Snap for 7002428 from c6aaab44fee6db7c3a8bf1d473510f562aae29dd to rvc-qpr2-release
+project system/libfmq/
+c5f45ad      Victor Khimenko      Make libfmq buildable for native_bridge am: 6c32823073 am: 9e130b001e
+project system/libhidl/
+3eec5b9      Steven Moreland      tryRegistrationImpl: better error checking
+project system/libhwbinder/
+a07762f      Victor Khimenko      Make  bhwbinder-impl-internalbuildable for native_bridge am: 8ad7e7aa07 am: 9fe6cca22e
+project system/libsysprop/
+27c3ec6      Malcolm Chen         Add max.active.modems system property into TelephonyProperties.sysprop am: ac709d1bc9 am: 931888d7db
+project system/libufdt/
+4eff1af      Luca Stefani         mkdtboimg: Sanitize dt filename
+project system/libvintf/
+b200cfd      Yifan Hong           Correct paths in ValidateHalManifestTest. am: 09337cabc3 am: 2dda488470 am: 31de3c0553
+project system/linkerconfig/
+3883433      android-build-team Robot Snap for 7040187 from 935f98a97b2e225cc515f2c4fcfec978ea2fa523 to rvc-qpr2-release
+project system/media/
+257b087      android-build-team Robot Snap for 7010201 from 0ca63168a46b28551b3beca0c46393d8c9907594 to rvc-qpr2-release
+project system/memory/libion/
+0802930      Hridya Valsaraju     Delete VtsKernelLibIonTest am: e09d209b45 am: 6bdc68ba3c
+project system/memory/libmeminfo/
+69298f7      Victor Khimenko      Make libmeminfo buildable for native_bridge am: dc0343e038 am: d3a22faf9a
+project system/memory/libmemunreachable/
+0c0852b      Dan Shi              Rename vts-core to vts am: 33d3c069b1 am: 603ced1acf
+project system/memory/lmkd/
+140385d      Suren Baghdasaryan   lmkd: report kill reason, and meminfo details to statsd for each kill
+project system/netd/
+a3947bd      Lukas0610            netd: Allow devices to force-add directly-connected routes
+project system/nfc/
+1377e58      android-build-team Robot Snap for 7044894 from e1cd411564f576ea82b5ad5348a4221fe3cfda76 to rvc-qpr2-release
+project system/security/
+e5c1348      android-build-team Robot Snap for 6957789 from c5fa3c5375a7d13919846adac1e039287648dbc2 to rvc-qpr2-release
+project system/sepolicy/
+f351416      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project system/server_configurable_flags/
+594a01f      Jooyung Han          Set min_sdk_version to be part of mainline modules am: ee61c0b504 am: 22b8553e29
+project system/teeui/
+add4ebe      Yabin Cui            Fix compile error for clang update. am: 38f5f676c7 am: 3f223c1ac1
+project system/timezone/
+4181b85      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project system/tools/aidl/
+fda4a4a      android-build-team Robot Snap for 6944357 from 4d08ea788767db87b3d69cd68bfd34a47ca97270 to rvc-qpr2-release
+project system/tools/dtbtool/
+ffd4bcb      Alessandro Astone    dtbtool: Convert to Android.bp
+project system/tools/hidl/
+8821c0c      android-build-team Robot Snap for 7022639 from 7ecf6089972101fbc413630f90abf2a1521c01c7 to rvc-qpr2-release
+project system/tools/mkbootimg/
+ed76fcc      M1cha                mkbootimg: add support for --dt
+project system/tools/xsdc/
+0be301d      Sundong Ahn          Support final and nullability am: c9e30c0f72 am: 4ae92fd359
+project system/update_engine/
+0732d12      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project system/vold/
+748ecf7      Kevin F. Haggerty    Merge tag 'android-11.0.0_r32' into staging/lineage-18.1_merge-android-11.0.0_r32
+project test/framework/
+c44480a      Dan Shi              Rename vts-core to vts am: 855d22f4c5 am: c76e4adfee
+project test/mlts/benchmark/
+13abfc2      Slava Shklyaev       Fix memory leak am: 32f40e1a30 am: 0c6671f06e am: afc2064324
+project test/mts/
+a92b902      Chen Zhu             Add test plan mts-user-sep for 2020-sep-train. am: cb688ba8c3 am: 0058ad9f02
+project test/suite_harness/
+d7bd914      android-build-team Robot Snap for 7007636 from 4681b1c4be4957da2dff28392b5b5a26d4a4c844 to rvc-qpr2-release
+project test/vts/
+f001416      Hongguang Chen       FastbootVerifyUserspaceTest: Use new getFastbootSerialNumber() API. am: e911c64473 am: 622711d055 am: 7fccc2576b
+project test/vts-testcase/hal/
+430829c      Slava Shklyaev       Fix memory leak am: bd48529dba am: f9d86b16c0 am: 336fb0a54c
+project test/vts-testcase/kernel/
+3f8a513      android-build-team Robot Snap for 6935026 from 226bd0313ecb7ad236b4c0cfcf1e636aeb345df9 to rvc-qpr2-release
+project test/vts-testcase/security/
+fff787f      Inseob Kim           Add missing return statement am: 33b69620be am: 659118df8a
+project test/vts-testcase/vndk/
+f50dcf4      android-build-team Robot Snap for 6886900 from 66a450e3cc08e79d346047280113d8d690918118 to rvc-qpr2-release
+project toolchain/pgo-profiles/
+df7cd88      Pirama Arumuga Nainar [DO NOT MERGE] Update PGO profiles for hwbinder am: 0ddc6dc312 am: 189af66d4e
+project tools/apifinder/
+dfa8cfc      Jeff Sharkey         Relax JavaApiUsedByMainlineModule to SUGGESTION. am: a2caca55f1 am: b4a2f4f695
+project tools/apksig/
+6890ac8      Michael Groover      Add API to obtain certificates in source stamp signer's lineage am: 5983b339ae am: e98caa1db5
+project tools/asuite/
+5474d4e      David Dietrich       Exempt-From-Owners-Approval: sync tradefed (test harness) changes to rvc-dev BUG: 156482663 am: 89a1d37fd2 am: 7e08f1c787
+project tools/carrier_settings/
+0283791      Meng Wang            CarrierConfigConverterV2 should accept version as long instead of int. am: 3e7f81f982 am: 9e53ab73b4
+project tools/doc_generation/
+f030fba      android-build-team Robot Snap for 6886900 from 197c862d83eecb60c4a3ee390a5df806eb10d7bd to rvc-qpr2-release
+project tools/extract-utils/
+7f0c788      Sebastiano Barezzi   extract_utils: Implement versioned patchelf and patchelf 0.8
+project tools/loganalysis/
+915dbf1      Kun Niu              Exempt-From-Owners-Approval: rebase to 8e4315a1d702627f5ddc7b91d942986bdcf577ea BUG: 160902031 am: 5aa2a225d8 am: 62d75ec6af
+project tools/metalava/
+21659a2      Makoto Onuki         [Metalava] don't use reflections
+project tools/platform-compat/
+b553fea      Artur Satayev        Export compat change id processor. am: 8b897ebc7e am: e3bb481ba8
+project tools/repohooks/
+a3ae3b0      Mike Frysinger       android_test_mapping_format: drop Python 2 support am: f1e0b3bf4f
+project tools/test/connectivity/
+c53382b      android-build-team Robot Snap for 7040187 from 9eec9ad4283782921d858b139652e4ae61d6f323 to rvc-qpr2-release
+project tools/test/graphicsbenchmark/
+7c31a9c      Colin Cross          Use libnativewindow for platform variant of libagq am: 57155bd1ba am: f9918a8572
+project tools/tradefederation/contrib/
+0ff7007      David Dietrich       Exempt-From-Owners-Approval: rebase to rvc-dev BUG: 161541332 am: fca35d3b46 am: 53522f0bcf
+project tools/tradefederation/core/
+f0b6bb5      android-build-team Robot Snap for 6955225 from a306f39c33430b2d4c5eb901de14b1c4c090698b to rvc-qpr2-release
+project tools/treble/
+4a70b7b      Daniel Norman        RESTRICT AUTOMERGE Use the Kati stamp to include makefile dependencies. am: dba92766b7 am: ac43c7d853
+project vendor/codeaurora/telephony/
+0eb1829      Michael Bestas       Merge tag 'LA.QSSI.11.0.r1-07500-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/codeaurora/telephony into lineage-18.0
+project vendor/lineage/
+7c42814      Nolen Johnson        soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional
+project vendor/nxp/opensource/commonsys/external/libnfc-nci/
+1a62ed1      Linux Build Service Account Merge 90dcf51252c12d8463b3e18ea1c64a3f608c9fc9 on remote branch
+project vendor/nxp/opensource/commonsys/frameworks/
+cfe757a      Linux Build Service Account Merge 59168cf36d32a4fcab64a02c53df3faf07ddaf59 on remote branch
+project vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+2a434b1      Linux Build Service Account Merge 2192d1bfa5fb5b05012d66e24a559cfa5247271b on remote branch
+project vendor/nxp/opensource/interfaces/nfc/
+6b30fe8      Linux Build Service Account Merge 3595f360d4c9eb43db378ec3bc2d689aff2d031e on remote branch
+project vendor/nxp/opensource/pn5xx/halimpl/
+b5a5253      Alisher Alikhodjaev  A stack OOB write vuln of nxp nfc hal library
+project vendor/nxp/opensource/pn5xx/hidlimpl/
+a210f5e      Linux Build Service Account Merge caa7ca612a8f57ca4e2f020d030f5d21e84ed4ad on remote branch
+project vendor/nxp/opensource/sn100x/halimpl/
+cad836e      Alisher Alikhodjaev  A stack OOB write vuln of nxp nfc hal library
+project vendor/nxp/opensource/sn100x/hidlimpl/
+f0c9006      Linux Build Service Account Merge 7d333fb9415ce10a293010fe32ffed7430f69396 on remote branch
+project vendor/qcom/opensource/audio/
+ebd9d38      Michael Bestas       Merge tag 'LA.QSSI.11.0.r1-07500-qssi.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/audio into lineage-18.0
+project vendor/qcom/opensource/commonsys-intf/bluetooth/
+3e3f35d      Linux Build Service Account Merge 9470aa269a2f3ce86d4a6b66ec0592f47076d6c6 on remote branch
+project vendor/qcom/opensource/commonsys-intf/display/
+7884dde      Alessandro Astone    display-commonsys-intf: Define a soong namespace
+project vendor/qcom/opensource/commonsys/bluetooth_ext/
+2c44f6e      Linux Build Service Account Merge 49ed2965c4b9569825c03f9b41fe4ea3ec6a5576 on remote branch
+project vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/
+2592b10      Jakub Pawlowski      Prevent drawing on top of Bluetooth activities
+project vendor/qcom/opensource/commonsys/system/bt/
+3a0ad0d      Myles Watson         SDP: Only start discovery once
+project vendor/qcom/opensource/cryptfs_hw/
+aaa8a78      Neeraj Soni          cryptfs_hw: Choose keymaster version for key signing
+project vendor/qcom/opensource/data-ipa-cfg-mgr/
+adcb834      Michael Bestas       Merge tag 'LA.UM.9.12.r1-09000-SMxx50.0' of https://source.codeaurora.org/quic/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr into lineage-18.0
+project vendor/qcom/opensource/dataservices/
+821b3b0      razorloves           dataservices: Define soong namespace
+project vendor/qcom/opensource/fm-commonsys/
+bfbc875      Michael Bestas       Automatic translation import
+project vendor/qcom/opensource/interfaces/
+a7d6842      dianlujitao          Add reversed perf HAL interfaces
+project vendor/qcom/opensource/libfmjni/
+e33227e      Michael Bestas       libfmjni: Resolve property isolation issues
+project vendor/qcom/opensource/power/
+061c303      Quallenauge          power: Reduce log level of setBoost() method to VERBOSE.
+project vendor/qcom/opensource/thermal-engine/
+d016322      Linux Build Service Account Merge 3254395841b3d4dec4b309494dac256fe2c68aa4 on remote branch
+project vendor/qcom/opensource/usb/
+7f11835      Michael Bestas       Add soong namespace for init scripts
+project vendor/qcom/opensource/vibrator/
+f1366d3      Pig                  aidl: Simplify soc check and drop prop dep
+project vendor/qcom/opensource/wfd-commonsys/
+2fefd77      Bruno Martins        wfd-commonsys: Guard against non-QSSI_SUPPORTED_PLATFORMS
