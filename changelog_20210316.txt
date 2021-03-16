@@ -1,0 +1,38 @@
+project device/oneplus/cheeseburger/
+d1cc244      Timi                 cheeseburger: add device specific camera blobs
+
+project device/oneplus/dumpling/
+685524c      Timi                 dumpling: add device specific camera blobs
+
+project device/oneplus/msm8998-common/
+7dc1ded      Timi                 Revert "msm8998-common: use full usb 1.0 hal, not basic"
+a62a9f5      Timi                 msm8998-common: clean up camera blobs
+
+project frameworks/base/
+b10457e1     Han Wang             Revert "No need to 'addChild' when start 'FLAG_ACTIVITY_CLEAR_TOP' Activity."
+
+project hardware/lineage/interfaces/
+ce829a8      LuK1337              Regenerate fastcharge HIDL blueprint
+
+project kernel/oneplus/msm8998/
+3fc28a06f3f6 Timi                 Revert "ARM: dts: msm: Enable vibrator in msm8998"
+de48d5c51f72 Timi                 Merge tag 'LA.UM.9.2.r1-02500-SDMxx0.0' of https://source.codeaurora.org/quic/la/kernel/msm-4.4 into HEAD
+12a6f936bda2 Timi                 Merge branch 'android-4.4-p' of https://android.googlesource.com/kernel/common into HEAD
+
+project lineage/hudson/
+476f594      Nolen Johnson        hudson: Show Recovery on castor
+
+project lineage/mirror/
+e1f3f15      Tim Schumacher       Updated aosp-minimal to 15-Mar-2021 13:01 UTC
+
+project lineage/wiki/
+66fc4d9      LuK1337              wiki: Reorder gts4lv maintainers
+
+project packages/apps/Dialer/
+f321ae8      Nahid Hasan Riyad    dialer: Allow Call Recording For Bangladesh
+
+project packages/apps/Recorder/
+9148e67      Paul Keith           Recorder: Correct WAV header creation
+
+project vendor/lineage/
+ade9895      Alessandro Astone    config: Set screen size defaults globally
