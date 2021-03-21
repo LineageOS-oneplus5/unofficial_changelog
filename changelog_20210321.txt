@@ -1,0 +1,38 @@
+project device/oneplus/msm8998-common/
+9903b50      Timi                 Revert "msm8998-common: use full usb 1.0 hal, not basic"
+246bc68      Timi                 msm8998-common: sepolicy: allow init to read sysfs_leds
+b20cf52      Bharat Pawar         msm8998-common: Enable LED based vibrator
+2ad71a0      Bharat Pawar         msm8998-common: Disable vibrator HAL interface
+977edb8      Georg Veichtlbauer   msm8998-common: Start dashd in power-off charging mode
+
+project frameworks/base/
+d209b410     Luca Stefani         SystemUI: AmbientTile: Default the setting to 1
+
+project frameworks/opt/telephony/
+26b8abd      Wileen Chiu          Update external card state based on current app
+
+project kernel/oneplus/msm8998/
+645c16fd04f59 Timi                 drivers: qcacld-3.0: fixup disabling BUILD_DEBUG_VERSION
+80b5d137ac444 Timi                 drivers: qcacld-3.0: disable debug build
+d35e8b71ed326 Timi                 oneplus5: disable unused camera drivers
+511603e2bbf10 Timi                 dts: qcom: {cheeseburger,dumpling}: use direct play-mode
+7dabcfc86cd03 Timi                 dts: qcom: {cheeseburger,dumpling}: use qwd for auto resonance mode
+bc37556dd23bf Timi                 dts: qcom: {cheeseburger,dumpling}: lower haptics vmax-mv for reduced vibration
+52933776755b1 Michael Bestas       dts: qcom: {cheeseburger,dumpling}: Update pmi8998_haptics config for new driver
+816c9268819ac Michael Bestas       oneplus5: Disable CONFIG_QPNP_HAPTIC
+0750c90de1660 Swetha Chikkaboraiah oneplus5: enable LEDS_QPNP_HAPTICS
+7f2218c500fde Timi                 Revert "Revert "ARM: dts: msm: Enable vibrator in msm8998""
+1930a14b4dbef Timi                 drivers: qpnp-haptic: restore CAF driver
+c75753595b6a4 Georg Veichtlbauer   oneplus5: Disable Qualcomm Snapdragron Smart Protection
+
+project lineage/mirror/
+fe36af6      Kevin F. Haggerty    Updated to 17-Mar-2021 13:52 UTC
+
+project lineage/wiki/
+b2fefa9      Kevin F. Haggerty    wiki: contributors: Update Committers/Reviewers to match Gerrit
+
+project packages/apps/Eleven/
+ba4ec3a      Marcos Lopez         Eleven: Add a Material Theme and a Dark Theme
+
+project packages/apps/SetupWizard/
+bc224d5      Luca Stefani         SetupWizard: Remove libphonenumber dep
