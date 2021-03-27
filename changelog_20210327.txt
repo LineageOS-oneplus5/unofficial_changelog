@@ -1,0 +1,49 @@
+project bootable/recovery/
+119a2a3      Alessandro Astone    roots: Correct mount flags in /etc/fstab
+
+project build/make/
+8c8f429      Gabriele M           releasetools: Add script to sign zips
+
+project build/soong/
+3ead21d      LuK1337              Revert "Add AIDL lineage power HAL to VndkMustUseVendorVariantList"
+
+project device/google/atv/
+61e3e9f      Aaron Kling          Remove minimize debug symbol flags
+
+project device/oneplus/msm8998-common/
+bb500c2      Georg Veichtlbauer   msm8998-common: Fix copying MBN_OTA during radio init
+
+project external/chromium-webview/
+dcdf525      Kevin F. Haggerty    Update Chromium Webview to 89.0.4389.105
+
+project frameworks/base/
+6b50064330a  Timi                 SystemUI: global actions: fix icon position on multi-line action
+bc36ac0dcbb  LuK1337              SystemUI: AODTile: Actually start using SecureSetting
+
+project hardware/lineage/interfaces/
+af905cd      LuK1337              Drop VNDK support from vendor.lineage.power aidl interface
+
+project kernel/oneplus/msm8998/
+5cfad297ddf12 Georg Veichtlbauer   usb: Revert changes by OnePlus
+f5a3259ee7afe Timi                 dts: qcom: {cheeseburger,dumpling}: use direct play-mode
+
+project lineage/hudson/
+6a6ddbf      Nolen Johnson        experimentals: Cover all test-cases
+
+project lineage/wiki/
+6e24e58      Tim Schumacher       wiki: templates: Add instructions for building emulator images
+
+project packages/apps/Eleven/
+9e08cc0      Alexander Martinz    Eleven: ensure we got proper permissions before initializing
+
+project packages/apps/SetupWizard/
+6b9de1c      Luca Stefani         SetupWizard: Move to system_ext
+
+project packages/apps/Snap/
+113ebcf      Arne Coucheron       Snap: Fix SD card visibility for secondary users
+
+project packages/providers/MediaProvider/
+7a9f0c3      Wang Haijun          MediaProvider: Fix insert fail while file saved in sdcard
+
+project vendor/lineage/
+271ba02      Luca Stefani         sensitive_pn: Run XML lint against the schema
